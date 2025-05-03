@@ -16,6 +16,7 @@ import type {
 import type * as businesses from "../businesses.js";
 import type * as categories from "../categories.js";
 import type * as fetchGooglePlaces from "../fetchGooglePlaces.js";
+import type * as realBusinesses from "../realBusinesses.js";
 import type * as refreshData from "../refreshData.js";
 import type * as seed from "../seed.js";
 import type * as updateBusinessCategories from "../updateBusinessCategories.js";
@@ -34,6 +35,7 @@ declare const fullApi: ApiFromModules<{
   businesses: typeof businesses;
   categories: typeof categories;
   fetchGooglePlaces: typeof fetchGooglePlaces;
+  realBusinesses: typeof realBusinesses;
   refreshData: typeof refreshData;
   seed: typeof seed;
   updateBusinessCategories: typeof updateBusinessCategories;
