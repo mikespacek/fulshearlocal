@@ -15,8 +15,10 @@ import type {
 } from "convex/server";
 import type * as businesses from "../businesses.js";
 import type * as categories from "../categories.js";
+import type * as cleanDatabase from "../cleanDatabase.js";
 import type * as fetchGooglePlaces from "../fetchGooglePlaces.js";
 import type * as realBusinesses from "../realBusinesses.js";
+import type * as realBusinessesWithDescriptions from "../realBusinessesWithDescriptions.js";
 import type * as refreshData from "../refreshData.js";
 import type * as seed from "../seed.js";
 import type * as updateBusinessCategories from "../updateBusinessCategories.js";
@@ -34,8 +36,10 @@ import type * as utils_googlePlaces from "../utils/googlePlaces.js";
 declare const fullApi: ApiFromModules<{
   businesses: typeof businesses;
   categories: typeof categories;
+  cleanDatabase: typeof cleanDatabase;
   fetchGooglePlaces: typeof fetchGooglePlaces;
   realBusinesses: typeof realBusinesses;
+  realBusinessesWithDescriptions: typeof realBusinessesWithDescriptions;
   refreshData: typeof refreshData;
   seed: typeof seed;
   updateBusinessCategories: typeof updateBusinessCategories;
