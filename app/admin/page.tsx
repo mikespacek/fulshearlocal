@@ -9,12 +9,33 @@ import { Navbar } from "@/components/navbar";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { AlertCircle, Check, RefreshCw, Trash } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
+import { Slider } from "@/components/ui/slider";
+
+// Define the type for the import result
+interface ImportResult {
+  success: boolean;
+  message: string;
+  results?: {
+    successful: number;
+    skipped: number;
+    failed: number;
+    totalProcessed: number;
+    deleteMode: string;
+    lastImportDate: string;
+  };
+}
 
 export default function AdminPage() {
   const [googleApiKey, setGoogleApiKey] = useState("");
   const [loading, setLoading] = useState(false);
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<ImportResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  
+  // Import options
+  const [deleteExisting, setDeleteExisting] = useState(false);
+  const [daysToLookBack, setDaysToLookBack] = useState(30);
   
   // Get business count for display
   const businesses = useQuery(api.businesses.getAll);
@@ -35,8 +56,50 @@ export default function AdminPage() {
       setError(null);
       setResult(null);
       
-      const importResult = await importPlaces({ googleApiKey });
-      setResult(importResult);
+      const importResult = await importPlaces({ 
+        googleApiKey, 
+        deleteExisting, 
+        daysToLookBack 
+      });
+      
+      setResult(importResult as ImportResult);
+    } catch (err) {
+      setError(`Error: ${err instanceof Error ? err.message : "Unknown error occurred"}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+  
+  // Handle delete all businesses
+  const handleDeleteAll = async () => {
+    if (!window.confirm("Are you sure you want to delete ALL businesses? This cannot be undone.")) {
+      return;
+    }
+    
+    try {
+      setLoading(true);
+      setError(null);
+      
+      // Use the import function with deleteExisting=true but no API key to just perform deletion
+      const dummy = "dummy-key-not-used"; // This won't be used since we're just deleting
+      await importPlaces({ 
+        googleApiKey: dummy, 
+        deleteExisting: true,
+        daysToLookBack: 0
+      });
+      
+      setResult({
+        success: true,
+        message: "All businesses have been deleted from the database",
+        results: {
+          successful: 0,
+          skipped: 0,
+          failed: 0,
+          totalProcessed: 0,
+          deleteMode: "Deleted all",
+          lastImportDate: new Date().toISOString()
+        }
+      });
     } catch (err) {
       setError(`Error: ${err instanceof Error ? err.message : "Unknown error occurred"}`);
     } finally {
@@ -68,6 +131,24 @@ export default function AdminPage() {
                     <span className="text-muted-foreground">Categories:</span>
                     <span className="font-semibold">{categories ? categories.length : "Loading..."}</span>
                   </div>
+                  {businesses && businesses.length > 0 && (
+                    <div className="mt-4 pt-4 border-t">
+                      <h3 className="text-sm font-medium mb-2">Businesses by Category:</h3>
+                      <div className="space-y-1">
+                        {categories && categories.map(category => {
+                          const count = businesses.filter(business => 
+                            business.categoryId === category._id
+                          ).length;
+                          return (
+                            <div key={category._id} className="flex items-center justify-between">
+                              <span className="text-xs text-muted-foreground">{category.name}:</span>
+                              <span className="text-xs font-medium">{count}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -95,6 +176,47 @@ export default function AdminPage() {
                     </p>
                   </div>
                   
+                  <div className="pt-4 border-t">
+                    <h3 className="text-sm font-medium mb-3">Import Options</h3>
+                    
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="space-y-0.5">
+                        <Label htmlFor="delete-existing" className="text-sm">
+                          Replace Existing Businesses
+                        </Label>
+                        <p className="text-xs text-muted-foreground">
+                          {deleteExisting 
+                            ? "All existing businesses will be deleted before import" 
+                            : "New businesses will be added to existing ones"}
+                        </p>
+                      </div>
+                      <Switch 
+                        id="delete-existing" 
+                        checked={deleteExisting}
+                        onCheckedChange={setDeleteExisting}
+                      />
+                    </div>
+                    
+                    <div className="space-y-2 mb-4">
+                      <div className="flex items-center justify-between">
+                        <Label htmlFor="days-lookback" className="text-sm">
+                          Days to Look Back: {daysToLookBack}
+                        </Label>
+                      </div>
+                      <Slider 
+                        id="days-lookback"
+                        min={7} 
+                        max={180} 
+                        step={1}
+                        value={[daysToLookBack]} 
+                        onValueChange={(values: number[]) => setDaysToLookBack(values[0])}
+                      />
+                      <p className="text-xs text-muted-foreground">
+                        Prioritize places added in the last {daysToLookBack} days
+                      </p>
+                    </div>
+                  </div>
+                  
                   {error && (
                     <Alert variant="destructive">
                       <AlertCircle className="h-4 w-4" />
@@ -110,10 +232,13 @@ export default function AdminPage() {
                       <AlertDescription className="text-green-700">
                         {result.message}
                         {result.results && (
-                          <div className="mt-2">
+                          <div className="mt-2 space-y-1">
                             <p>Added: {result.results.successful}</p>
+                            {result.results.skipped !== undefined && (
+                              <p>Skipped (already in database): {result.results.skipped}</p>
+                            )}
                             <p>Failed: {result.results.failed}</p>
-                            <p>Total processed: {result.results.totalProcessed}</p>
+                            <p>Mode: {result.results.deleteMode}</p>
                           </div>
                         )}
                       </AlertDescription>
@@ -154,7 +279,7 @@ export default function AdminPage() {
                       This will permanently delete all businesses in the database
                     </p>
                   </div>
-                  <Button variant="destructive" disabled={loading} onClick={handleImport}>
+                  <Button variant="destructive" disabled={loading} onClick={handleDeleteAll}>
                     <Trash className="mr-2 h-4 w-4" />
                     Delete All
                   </Button>

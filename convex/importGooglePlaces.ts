@@ -3,27 +3,80 @@ import { v } from "convex/values";
 import { Id } from "./_generated/dataModel";
 import { api } from "./_generated/api";
 
+interface BusinessData {
+  _id: Id<"businesses">;
+  _creationTime: number;
+  name: string;
+  address: string;
+  phoneNumber?: string;
+  website?: string;
+  rating?: number;
+  categoryId: Id<"categories">;
+  hours?: string[];
+  latitude: number;
+  longitude: number;
+  placeId: string;
+  description?: string;
+  lastUpdated: number;
+}
+
+interface ImportResults {
+  success: boolean;
+  message: string;
+  results: {
+    successful: number;
+    skipped: number;
+    failed: number;
+    totalProcessed: number;
+    deleteMode: string;
+    lastImportDate: string;
+  };
+}
+
 // Action to fetch data from Google Places API and import to database
 export const importFulshearBusinesses = action({
   args: {
     googleApiKey: v.string(),
+    deleteExisting: v.optional(v.boolean()),
+    daysToLookBack: v.optional(v.number()),
   },
-  handler: async (ctx, { googleApiKey }) => {
+  handler: async (ctx, args): Promise<ImportResults> => {
+    const googleApiKey = args.googleApiKey;
+    const deleteExisting = args.deleteExisting ?? false;
+    const daysToLookBack = args.daysToLookBack ?? 30; // Default to 30 days
+    
     try {
-      // STEP 1: Delete all existing businesses
-      // First get all businesses
-      const businesses = await ctx.runQuery(api.businesses.getAll);
+      // STEP 1: If requested, delete existing businesses. Otherwise, keep them
       let deletedCount = 0;
       
-      // Delete them one by one
-      for (const business of businesses) {
-        await ctx.runMutation(api.businesses.deleteById, { id: business._id });
-        deletedCount++;
+      if (deleteExisting) {
+        // Get all businesses
+        const businesses = await ctx.runQuery(api.businesses.getAll);
+        
+        // Delete them one by one
+        for (const business of businesses) {
+          await ctx.runMutation(api.businesses.deleteById, { id: business._id });
+          deletedCount++;
+        }
+        
+        console.log(`Database purged: Deleted ${deletedCount} businesses`);
+      } else {
+        console.log("Keeping existing businesses");
       }
       
-      console.log(`Database purged: Deleted ${deletedCount} businesses`);
+      // STEP 2: Get existing businesses and their place IDs to avoid duplicates
+      const existingBusinesses: BusinessData[] = await ctx.runQuery(api.businesses.getAll);
+      const existingPlaceIds = new Set(existingBusinesses.map((b: BusinessData) => b.placeId));
       
-      // STEP 2: Get categories from database to map businesses
+      // Also track the last import date (from existing businesses)
+      const lastImportTimestamp: number = existingBusinesses.length > 0 
+        ? Math.max(...existingBusinesses.map((b: BusinessData) => b.lastUpdated ?? 0))
+        : 0;
+      
+      const lastImportDate: Date = new Date(lastImportTimestamp);
+      console.log(`Last import date: ${lastImportDate.toISOString()}`);
+      
+      // STEP 3: Get categories for mapping
       const categories = await ctx.runQuery(api.categories.getAll);
       const categoryMap = new Map();
       
@@ -31,9 +84,10 @@ export const importFulshearBusinesses = action({
         categoryMap.set(category.name, category._id);
       }
       
-      // STEP 3: Search for Fulshear businesses using Google Places API
+      // STEP 4: Search for Fulshear businesses using Google Places API
       const results = {
         successful: 0,
+        skipped: 0,
         failed: 0,
         totalProcessed: 0,
       };
@@ -124,8 +178,11 @@ export const importFulshearBusinesses = action({
         // Encode the query for URL
         const encodedQuery = encodeURIComponent(query);
         
-        // First make the text search request
-        const searchUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${encodedQuery}&key=${googleApiKey}`;
+        // If looking for recently added places, add a time parameter 
+        // Note: Google Places API doesn't directly support date filtering, 
+        // but we can add 'new' to the query to prioritize newer places
+        const timeQualifier = daysToLookBack < 90 ? " new" : "";
+        const searchUrl = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${encodedQuery}${timeQualifier}&key=${googleApiKey}`;
         
         const searchResponse = await fetch(searchUrl);
         const searchData = await searchResponse.json();
@@ -140,6 +197,12 @@ export const importFulshearBusinesses = action({
           try {
             // Skip if location is not in Fulshear
             if (!place.formatted_address.toLowerCase().includes("fulshear")) {
+              continue;
+            }
+            
+            // Skip if we already have this place in our database
+            if (existingPlaceIds.has(place.place_id)) {
+              results.skipped++;
               continue;
             }
             
@@ -195,7 +258,7 @@ export const importFulshearBusinesses = action({
             await ctx.runMutation(api.businesses.add, { business });
             
             results.successful++;
-            console.log(`Added business: ${business.name}`);
+            console.log(`Added new business: ${business.name}`);
           } catch (error) {
             console.error(`Error processing place:`, error);
             results.failed++;
@@ -207,8 +270,15 @@ export const importFulshearBusinesses = action({
       
       return {
         success: true,
-        message: `Imported businesses from Google Places: ${results.successful} added, ${results.failed} failed`,
-        results
+        message: `Import completed: ${results.successful} added, ${results.skipped} skipped (already in database), ${results.failed} failed`,
+        results: {
+          successful: results.successful,
+          skipped: results.skipped,
+          failed: results.failed,
+          totalProcessed: results.totalProcessed,
+          deleteMode: deleteExisting ? "Replaced existing" : "Added to existing",
+          lastImportDate: lastImportDate.toISOString()
+        }
       };
     } catch (error) {
       console.error("Google Places import error:", error);
