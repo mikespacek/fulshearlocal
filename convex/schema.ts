@@ -14,6 +14,7 @@ export default defineSchema({
     longitude: v.number(),
     placeId: v.string(),
     photos: v.optional(v.array(v.string())),
+    description: v.optional(v.string()),
     lastUpdated: v.number(),
   }),
 

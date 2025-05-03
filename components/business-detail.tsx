@@ -25,6 +25,7 @@ interface Business {
   longitude?: number;
   hours?: string[];
   categoryId: Id<"categories">;
+  description?: string;
 }
 
 interface Category {
@@ -132,7 +133,7 @@ export function BusinessDetail({ id }: BusinessDetailProps) {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold">About</h2>
                 <p className="text-muted-foreground">
-                  Local business in Fulshear, TX
+                  {business.description || "Local business in Fulshear, TX"}
                 </p>
               </div>
             </div>
