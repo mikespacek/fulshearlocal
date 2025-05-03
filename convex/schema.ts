@@ -21,5 +21,8 @@ export default defineSchema({
   categories: defineTable({
     name: v.string(),
     icon: v.optional(v.string()),
+    imageUrl: v.optional(v.string()),
+    description: v.optional(v.string()),
+    order: v.optional(v.number()),
   }),
 }); 

@@ -26,6 +26,7 @@ import type * as refreshData from "../refreshData.js";
 import type * as seed from "../seed.js";
 import type * as updateBusinessCategories from "../updateBusinessCategories.js";
 import type * as updateCategories from "../updateCategories.js";
+import type * as updateCategoryImages from "../updateCategoryImages.js";
 import type * as utils_googlePlaces from "../utils/googlePlaces.js";
 
 /**
@@ -50,6 +51,7 @@ declare const fullApi: ApiFromModules<{
   seed: typeof seed;
   updateBusinessCategories: typeof updateBusinessCategories;
   updateCategories: typeof updateCategories;
+  updateCategoryImages: typeof updateCategoryImages;
   "utils/googlePlaces": typeof utils_googlePlaces;
 }>;
 export declare const api: FilterApi<

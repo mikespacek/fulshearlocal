@@ -24,6 +24,8 @@ interface Business {
 interface Category {
   _id: Id<"categories">;
   name: string;
+  imageUrl?: string;
+  description?: string;
 }
 
 export default function Home() {
@@ -60,6 +62,18 @@ export default function Home() {
     });
   }
 
+  // Get the selected category name and description
+  let selectedCategoryName = "All Businesses";
+  let selectedCategoryDescription = "Discover local businesses in Fulshear, TX";
+  
+  if (selectedCategory && categories) {
+    const category = categories.find(c => c._id === selectedCategory);
+    if (category) {
+      selectedCategoryName = category.name;
+      selectedCategoryDescription = category.description || `${category.name} in Fulshear, TX`;
+    }
+  }
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -86,20 +100,40 @@ export default function Home() {
       
       <main className="flex-1 py-12">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="mb-12 bg-gray-50 p-6 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-semibold mb-6">Categories</h2>
-            <CategoryFilter 
-              selectedCategory={selectedCategory} 
-              onCategorySelect={setSelectedCategory} 
-            />
-          </div>
+          {/* Categories Section */}
+          <section className="mb-16">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-8">
+              <div>
+                <h2 className="text-2xl font-semibold mb-2">Browse Categories</h2>
+                <p className="text-muted-foreground mb-6">Find businesses by category</p>
+              </div>
+              {selectedCategory && (
+                <button 
+                  onClick={() => setSelectedCategory(null)}
+                  className="text-primary hover:underline text-sm font-medium"
+                >
+                  View All Categories
+                </button>
+              )}
+            </div>
+            <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+              <CategoryFilter 
+                selectedCategory={selectedCategory} 
+                onCategorySelect={setSelectedCategory} 
+              />
+            </div>
+          </section>
           
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-6">
-              {searchTerm ? `Search Results: "${searchTerm}"` : 
-               selectedCategory ? `${categoryMap.get(selectedCategory) || "Category"}` : 
-               "All Businesses"}
-            </h2>
+          {/* Businesses Section */}
+          <section className="mb-12">
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-2">
+                {searchTerm ? `Search Results: "${searchTerm}"` : selectedCategoryName}
+              </h2>
+              <p className="text-muted-foreground">
+                {searchTerm ? `Showing results for "${searchTerm}"` : selectedCategoryDescription}
+              </p>
+            </div>
             
             {!businesses ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -130,7 +164,7 @@ export default function Home() {
                 ))}
               </div>
             )}
-          </div>
+          </section>
         </div>
       </main>
       
