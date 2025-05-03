@@ -1,102 +1,142 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
+import { Id } from "@/convex/_generated/dataModel";
+import { Navbar } from "@/components/navbar";
+import { SearchBar } from "@/components/search-bar";
+import { CategoryFilter } from "@/components/category-filter";
+import { BusinessCard } from "@/components/business-card";
+import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
+
+interface Business {
+  _id: Id<"businesses">;
+  name: string;
+  address: string;
+  phoneNumber?: string;
+  website?: string;
+  rating?: number;
+  categoryId: Id<"categories">;
+}
+
+interface Category {
+  _id: Id<"categories">;
+  name: string;
+}
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<Id<"categories"> | null>(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+  // Always fetch these queries unconditionally
+  const searchResults = useQuery(api.businesses.search, { searchTerm });
+  const allBusinesses = useQuery(api.businesses.getAll);
+  
+  // Use null when no category is selected
+  const categoryResults = useQuery(api.businesses.getByCategory, { 
+    categoryId: selectedCategory 
+  });
+  
+  // Determine which businesses to show based on filters
+  let businesses: Business[] | undefined;
+  if (searchTerm && searchResults) {
+    businesses = searchResults;
+  } else if (selectedCategory && categoryResults) {
+    businesses = categoryResults;
+  } else {
+    businesses = allBusinesses;
+  }
+
+  // Fetch categories for our filter
+  const categories = useQuery(api.categories.getAll) as Category[] | undefined;
+
+  // Get category name map for display
+  const categoryMap = new Map();
+  if (categories) {
+    categories.forEach((category) => {
+      categoryMap.set(category._id, category.name);
+    });
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      {/* Hero Section with Background Image */}
+      <div className="relative bg-cover bg-center h-[50vh]" style={{ backgroundImage: "url('/hero-background.jpg')" }}>
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white px-4">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
+              Find Local Businesses in Fulshear, TX
+            </h1>
+            <p className="text-xl md:text-2xl text-center mb-8 max-w-3xl mx-auto">
+              Discover the best local restaurants, shops, and services in our community
+            </p>
+            <div className="w-full max-w-md mx-auto">
+              <SearchBar 
+                onSearch={setSearchTerm} 
+                placeholder="Search for restaurants, shops, services..." 
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <main className="flex-1 py-12">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="mb-12 bg-gray-50 p-6 rounded-xl shadow-sm">
+            <h2 className="text-2xl font-semibold mb-6">Categories</h2>
+            <CategoryFilter 
+              selectedCategory={selectedCategory} 
+              onCategorySelect={setSelectedCategory} 
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
+          
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-6">
+              {searchTerm ? `Search Results: "${searchTerm}"` : 
+               selectedCategory ? `${categoryMap.get(selectedCategory) || "Category"}` : 
+               "All Businesses"}
+            </h2>
+            
+            {!businesses ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <BusinessCardSkeleton key={i} />
+                ))}
+              </div>
+            ) : businesses.length === 0 ? (
+              <div className="text-center py-12 bg-gray-50 rounded-xl">
+                <h3 className="text-xl font-medium mb-2">No businesses found</h3>
+                <p className="text-muted-foreground">
+                  Try adjusting your search or category filters
+                </p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {businesses.map((business) => (
+                  <BusinessCard
+                    key={business._id}
+                    id={business._id}
+                    name={business.name}
+                    address={business.address}
+                    rating={business.rating}
+                    phoneNumber={business.phoneNumber}
+                    website={business.website}
+                    category={categoryMap.get(business.categoryId) || "Unknown"}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      
+      <footer className="border-t py-8">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
+          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Fulshear Local. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );

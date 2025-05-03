@@ -1,0 +1,8 @@
+# Convex deployment URL
+NEXT_PUBLIC_CONVEX_URL=your_convex_deployment_url
+
+# Google Maps API key
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+
+# Admin key for refreshing data
+ADMIN_KEY=your_admin_secret_key 
