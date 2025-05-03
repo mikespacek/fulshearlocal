@@ -1,4 +1,4 @@
-import { query } from "./_generated/server";
+import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 
 // Get all businesses
@@ -42,5 +42,38 @@ export const getById = query({
   args: { id: v.id("businesses") },
   handler: async (ctx, args) => {
     return await ctx.db.get(args.id);
+  },
+});
+
+// Delete a business by ID
+export const deleteById = mutation({
+  args: { id: v.id("businesses") },
+  handler: async (ctx, args) => {
+    await ctx.db.delete(args.id);
+    return { success: true };
+  },
+});
+
+// Add a new business
+export const add = mutation({
+  args: { 
+    business: v.object({
+      name: v.string(),
+      address: v.string(),
+      phoneNumber: v.optional(v.string()),
+      website: v.optional(v.string()),
+      categoryId: v.id("categories"),
+      rating: v.optional(v.number()),
+      hours: v.optional(v.array(v.string())),
+      latitude: v.number(),
+      longitude: v.number(),
+      placeId: v.string(),
+      description: v.optional(v.string()),
+      lastUpdated: v.number(),
+    }) 
+  },
+  handler: async (ctx, args) => {
+    const id = await ctx.db.insert("businesses", args.business);
+    return { id, success: true };
   },
 }); 

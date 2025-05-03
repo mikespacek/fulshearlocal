@@ -16,7 +16,10 @@ import type {
 import type * as businesses from "../businesses.js";
 import type * as categories from "../categories.js";
 import type * as cleanDatabase from "../cleanDatabase.js";
+import type * as cleanupMockBusinesses from "../cleanupMockBusinesses.js";
+import type * as completeReset from "../completeReset.js";
 import type * as fetchGooglePlaces from "../fetchGooglePlaces.js";
+import type * as importGooglePlaces from "../importGooglePlaces.js";
 import type * as realBusinesses from "../realBusinesses.js";
 import type * as realBusinessesWithDescriptions from "../realBusinessesWithDescriptions.js";
 import type * as refreshData from "../refreshData.js";
@@ -37,7 +40,10 @@ declare const fullApi: ApiFromModules<{
   businesses: typeof businesses;
   categories: typeof categories;
   cleanDatabase: typeof cleanDatabase;
+  cleanupMockBusinesses: typeof cleanupMockBusinesses;
+  completeReset: typeof completeReset;
   fetchGooglePlaces: typeof fetchGooglePlaces;
+  importGooglePlaces: typeof importGooglePlaces;
   realBusinesses: typeof realBusinesses;
   realBusinessesWithDescriptions: typeof realBusinessesWithDescriptions;
   refreshData: typeof refreshData;
