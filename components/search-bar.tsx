@@ -24,14 +24,14 @@ export function SearchBar({ onSearch, placeholder = "Search businesses..." }: Se
   }, [searchTerm, onSearch]);
 
   return (
-    <div className="relative w-full max-w-md mx-auto">
-      <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-500 z-10" />
+    <div className="relative w-full max-w-full sm:max-w-md mx-auto">
+      <Search className="absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 h-4 sm:h-5 w-4 sm:w-5 text-gray-500 z-10" />
       <Input
         type="text"
         placeholder={placeholder}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="w-full pl-10 pr-4 h-12 bg-white text-black shadow-lg rounded-full border-none"
+        className="w-full pl-8 sm:pl-10 pr-3 sm:pr-4 h-10 sm:h-12 bg-white text-black shadow-lg rounded-full border-none text-xs sm:text-sm"
       />
     </div>
   );

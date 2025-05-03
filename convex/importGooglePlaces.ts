@@ -18,6 +18,7 @@ interface BusinessData {
   placeId: string;
   description?: string;
   lastUpdated: number;
+  photos?: string[];
 }
 
 interface ImportResults {
@@ -207,7 +208,7 @@ export const importFulshearBusinesses = action({
             }
             
             // Get detailed place information
-            const detailsUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${place.place_id}&fields=name,formatted_address,formatted_phone_number,website,rating,opening_hours,geometry,place_id,types&key=${googleApiKey}`;
+            const detailsUrl = `https://maps.googleapis.com/maps/api/place/details/json?place_id=${place.place_id}&fields=name,formatted_address,formatted_phone_number,website,rating,opening_hours,geometry,place_id,types,photos&key=${googleApiKey}`;
             
             const detailsResponse = await fetch(detailsUrl);
             const detailsData = await detailsResponse.json();
@@ -236,7 +237,41 @@ export const importFulshearBusinesses = action({
               hours = placeDetails.opening_hours.weekday_text;
             }
             
-            // Create business object
+            // Process photos - get photo references and convert to photo URLs
+            let photos: string[] = [];
+            if (placeDetails.photos && placeDetails.photos.length > 0) {
+              try {
+                // Limit to maximum 10 photos per business to increase chances of getting good photos
+                const photoReferences = placeDetails.photos.slice(0, 10).map((photo: any) => photo.photo_reference);
+                
+                console.log(`Processing ${photoReferences.length} photos for ${placeDetails.name}`);
+                
+                // Convert photo references to URLs, ensuring the first photo is the business profile image
+                photos = photoReferences.map((ref: string) => 
+                  `https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=${ref}&key=${googleApiKey}`
+                );
+
+                // If the business has a profile_photo_reference property, prioritize it as the first photo
+                if (placeDetails.profile_photo_reference) {
+                  const profilePhotoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=${placeDetails.profile_photo_reference}&key=${googleApiKey}`;
+                  
+                  // Add profile photo at the beginning
+                  photos.unshift(profilePhotoUrl);
+                  
+                  // Remove duplicates while preserving order
+                  photos = [...new Set(photos)].slice(0, 10);
+                }
+                
+                console.log(`Added ${photos.length} photos for ${placeDetails.name}`);
+              } catch (photoError) {
+                console.error(`Error processing photos for ${placeDetails.name}:`, photoError);
+                // Continue with other data even if photo processing fails
+              }
+            } else {
+              console.log(`No photos available for ${placeDetails.name}`);
+            }
+            
+            // Create business object with photos
             const business = {
               name: placeDetails.name,
               address: placeDetails.formatted_address,
@@ -248,6 +283,7 @@ export const importFulshearBusinesses = action({
               latitude: placeDetails.geometry.location.lat,
               longitude: placeDetails.geometry.location.lng,
               placeId: placeDetails.place_id,
+              photos: photos.length > 0 ? photos : undefined,
               description: `${placeDetails.name} is a ${categoryName.toLowerCase()} business located in Fulshear, TX. ${
                 placeDetails.rating ? `It has a rating of ${placeDetails.rating} stars.` : ""
               }`,

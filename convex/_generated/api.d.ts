@@ -13,6 +13,7 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as addMissingBusinesses from "../addMissingBusinesses.js";
 import type * as businesses from "../businesses.js";
 import type * as categories from "../categories.js";
 import type * as cleanDatabase from "../cleanDatabase.js";
@@ -23,8 +24,10 @@ import type * as importGooglePlaces from "../importGooglePlaces.js";
 import type * as realBusinesses from "../realBusinesses.js";
 import type * as realBusinessesWithDescriptions from "../realBusinessesWithDescriptions.js";
 import type * as refreshData from "../refreshData.js";
+import type * as removeUnnecessaryCategories from "../removeUnnecessaryCategories.js";
 import type * as seed from "../seed.js";
 import type * as updateBusinessCategories from "../updateBusinessCategories.js";
+import type * as updateBusinessPhotos from "../updateBusinessPhotos.js";
 import type * as updateCategories from "../updateCategories.js";
 import type * as updateCategoryImages from "../updateCategoryImages.js";
 import type * as utils_googlePlaces from "../utils/googlePlaces.js";
@@ -38,6 +41,7 @@ import type * as utils_googlePlaces from "../utils/googlePlaces.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
+  addMissingBusinesses: typeof addMissingBusinesses;
   businesses: typeof businesses;
   categories: typeof categories;
   cleanDatabase: typeof cleanDatabase;
@@ -48,8 +52,10 @@ declare const fullApi: ApiFromModules<{
   realBusinesses: typeof realBusinesses;
   realBusinessesWithDescriptions: typeof realBusinessesWithDescriptions;
   refreshData: typeof refreshData;
+  removeUnnecessaryCategories: typeof removeUnnecessaryCategories;
   seed: typeof seed;
   updateBusinessCategories: typeof updateBusinessCategories;
+  updateBusinessPhotos: typeof updateBusinessPhotos;
   updateCategories: typeof updateCategories;
   updateCategoryImages: typeof updateCategoryImages;
   "utils/googlePlaces": typeof utils_googlePlaces;

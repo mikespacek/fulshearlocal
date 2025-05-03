@@ -8,6 +8,13 @@ export const getAll = query({
   },
 });
 
+// List all businesses (alias for getAll, used by import script)
+export const list = query({
+  handler: async (ctx) => {
+    return await ctx.db.query("businesses").collect();
+  },
+});
+
 // Get businesses by category
 export const getByCategory = query({
   args: { categoryId: v.union(v.id("categories"), v.null()) },
@@ -68,6 +75,7 @@ export const add = mutation({
       latitude: v.number(),
       longitude: v.number(),
       placeId: v.string(),
+      photos: v.optional(v.array(v.string())),
       description: v.optional(v.string()),
       lastUpdated: v.number(),
     }) 
@@ -75,5 +83,47 @@ export const add = mutation({
   handler: async (ctx, args) => {
     const id = await ctx.db.insert("businesses", args.business);
     return { id, success: true };
+  },
+});
+
+// Update an existing business
+export const update = mutation({
+  args: {
+    id: v.id("businesses"),
+    updates: v.object({
+      name: v.optional(v.string()),
+      address: v.optional(v.string()),
+      phoneNumber: v.optional(v.string()),
+      website: v.optional(v.string()),
+      categoryId: v.optional(v.id("categories")),
+      rating: v.optional(v.number()),
+      hours: v.optional(v.array(v.string())),
+      latitude: v.optional(v.number()),
+      longitude: v.optional(v.number()),
+      photos: v.optional(v.array(v.string())),
+      description: v.optional(v.string()),
+      lastUpdated: v.optional(v.number()),
+    })
+  },
+  handler: async (ctx, args) => {
+    // Check if business exists
+    const business = await ctx.db.get(args.id);
+    if (!business) {
+      return { 
+        success: false, 
+        message: "Business not found" 
+      };
+    }
+    
+    // Apply updates
+    await ctx.db.patch(args.id, {
+      ...args.updates,
+      lastUpdated: args.updates.lastUpdated || Date.now(),
+    });
+    
+    return { 
+      success: true, 
+      message: "Business updated successfully" 
+    };
   },
 }); 

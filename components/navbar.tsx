@@ -9,6 +9,26 @@ import { useState } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [email, setEmail] = useState("");
+  const [subscribing, setSubscribing] = useState(false);
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubscribing(true);
+    
+    // Simulate API call to subscribe
+    setTimeout(() => {
+      setSubscribing(false);
+      setSubscribed(true);
+      setEmail("");
+      
+      // Reset after 3 seconds to allow subscribing again
+      setTimeout(() => {
+        setSubscribed(false);
+      }, 3000);
+    }, 1000);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background shadow-sm">
@@ -44,44 +64,65 @@ export function Navbar() {
                 priority
               />
             </div>
-            <nav className="flex flex-col px-6 py-8">
-              <Link
-                href="/"
-                className="text-lg font-medium py-2 hover:text-blue-600 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/categories"
-                className="text-lg font-medium py-2 hover:text-blue-600 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Categories
-              </Link>
-              <Link
-                href="/map"
-                className="text-lg font-medium py-2 hover:text-blue-600 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Map
-              </Link>
-            </nav>
+            <div className="flex flex-col px-6 py-8">
+              {subscribed ? (
+                <div className="flex items-center text-center space-x-2 bg-gray-100 rounded-lg p-4">
+                  <p className="text-sm text-gray-700">
+                    Thanks for subscribing! You&apos;ll receive our next update.
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
+                  <h3 className="text-lg font-medium mb-2">Subscribe to updates</h3>
+                  <input 
+                    type="email" 
+                    placeholder="Your email address" 
+                    className="px-4 py-2.5 rounded-md text-sm text-gray-700 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300"
+                    aria-label="Email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                  <button 
+                    type="submit" 
+                    className="px-6 py-2.5 bg-black hover:bg-gray-900 text-white rounded-md text-sm font-medium transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                    disabled={subscribing}
+                  >
+                    {subscribing ? "Subscribing..." : "Subscribe"}
+                  </button>
+                </form>
+              )}
+            </div>
           </SheetContent>
         </Sheet>
 
-        {/* Desktop menu */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link href="/" className="text-sm font-medium hover:text-blue-600 transition-colors">
-            Home
-          </Link>
-          <Link href="/categories" className="text-sm font-medium hover:text-blue-600 transition-colors">
-            Categories
-          </Link>
-          <Link href="/map" className="text-sm font-medium hover:text-blue-600 transition-colors">
-            Map
-          </Link>
-        </nav>
+        {/* Desktop subscribe button */}
+        <div className="hidden md:block">
+          {subscribed ? (
+            <div className="text-sm text-green-700 font-medium">
+              Thanks for subscribing!
+            </div>
+          ) : (
+            <form onSubmit={handleSubscribe} className="flex items-center gap-2">
+              <input 
+                type="email" 
+                placeholder="Your email address" 
+                className="px-3 py-1.5 rounded-md text-sm text-gray-700 w-56 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300"
+                aria-label="Email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <Button 
+                type="submit" 
+                className="bg-black hover:bg-gray-900 text-white"
+                disabled={subscribing}
+              >
+                {subscribing ? "Subscribing..." : "Subscribe"}
+              </Button>
+            </form>
+          )}
+        </div>
       </div>
     </header>
   );

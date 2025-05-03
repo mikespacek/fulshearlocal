@@ -3,9 +3,23 @@
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
+import { 
+  Utensils, 
+  ShoppingBag, 
+  Stethoscope, 
+  Sparkles, 
+  DollarSign, 
+  Home, 
+  Car, 
+  Briefcase, 
+  GraduationCap, 
+  Church, 
+  Dumbbell, 
+  Film,
+  Wrench,
+  Users
+} from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface Category {
   _id: Id<"categories">;
@@ -19,16 +33,160 @@ interface Category {
 interface CategoryFilterProps {
   selectedCategory: Id<"categories"> | null;
   onCategorySelect: (categoryId: Id<"categories"> | null) => void;
+  linkToCategory?: boolean;
 }
 
-export function CategoryFilter({ selectedCategory, onCategorySelect }: CategoryFilterProps) {
+// Define interface for category style
+interface CategoryStyle {
+  icon: React.ComponentType<any>;
+  color: string;
+  hoverColor: string;
+  textColor: string;
+  description: string;
+  infoStat: string;
+}
+
+// Define category icons and colors
+const categoryStyles: Record<string, CategoryStyle> = {
+  "Restaurants": { 
+    icon: Utensils, 
+    color: "bg-red-400",
+    hoverColor: "hover:bg-red-500",
+    textColor: "text-white",
+    description: "Discover local dining options from casual to upscale",
+    infoStat: "25+ options"
+  },
+  "Shopping": { 
+    icon: ShoppingBag, 
+    color: "bg-emerald-400",
+    hoverColor: "hover:bg-emerald-500", 
+    textColor: "text-white",
+    description: "Browse local stores and boutiques for all your needs",
+    infoStat: "Local favorites"
+  },
+  "Medical": { 
+    icon: Stethoscope, 
+    color: "bg-teal-700",
+    hoverColor: "hover:bg-teal-800", 
+    textColor: "text-white",
+    description: "Find trusted healthcare providers and medical services",
+    infoStat: "Health experts"
+  },
+  "Beauty": { 
+    icon: Sparkles, 
+    color: "bg-orange-300",
+    hoverColor: "hover:bg-orange-400", 
+    textColor: "text-white",
+    description: "Pamper yourself with local beauty and wellness services",
+    infoStat: "Salons & Spas"
+  },
+  "Financial": { 
+    icon: DollarSign, 
+    color: "bg-indigo-800",
+    hoverColor: "hover:bg-indigo-900", 
+    textColor: "text-white",
+    description: "Connect with local financial advisors, banks, and services",
+    infoStat: "Financial experts"
+  },
+  "Real Estate": { 
+    icon: Home, 
+    color: "bg-purple-500",
+    hoverColor: "hover:bg-purple-600", 
+    textColor: "text-white",
+    description: "Explore real estate options with local agents and services",
+    infoStat: "Property listings"
+  },
+  "Automotive": { 
+    icon: Car, 
+    color: "bg-yellow-400",
+    hoverColor: "hover:bg-yellow-500", 
+    textColor: "text-white",
+    description: "Find reliable auto services, repairs, and dealerships",
+    infoStat: "Auto services"
+  },
+  "Professional": { 
+    icon: Briefcase, 
+    color: "bg-teal-500",
+    hoverColor: "hover:bg-teal-600", 
+    textColor: "text-white",
+    description: "Connect with local professionals and business services",
+    infoStat: "Trusted pros"
+  },
+  "Education": { 
+    icon: GraduationCap, 
+    color: "bg-blue-600",
+    hoverColor: "hover:bg-blue-700", 
+    textColor: "text-white",
+    description: "Discover schools and educational resources",
+    infoStat: "Schools & tutors"
+  },
+  "Religious": { 
+    icon: Church, 
+    color: "bg-gray-600",
+    hoverColor: "hover:bg-gray-700", 
+    textColor: "text-white",
+    description: "Find places of worship and religious organizations",
+    infoStat: "Faith communities"
+  },
+  "Fitness": { 
+    icon: Dumbbell, 
+    color: "bg-green-500",
+    hoverColor: "hover:bg-green-600", 
+    textColor: "text-white",
+    description: "Stay active with local gyms, sports, and fitness services",
+    infoStat: "Gyms & trainers"
+  },
+  "Entertainment": { 
+    icon: Film, 
+    color: "bg-pink-500",
+    hoverColor: "hover:bg-pink-600", 
+    textColor: "text-white",
+    description: "Find fun things to do in the area",
+    infoStat: "Fun & activities"
+  },
+  "Home Services": { 
+    icon: Wrench, 
+    color: "bg-blue-700",
+    hoverColor: "hover:bg-blue-800", 
+    textColor: "text-white",
+    description: "Find contractors, repair services, and other home needs",
+    infoStat: "Home experts"
+  },
+  // Default fallback
+  "default": { 
+    icon: Users, 
+    color: "bg-gray-400",
+    hoverColor: "hover:bg-gray-500", 
+    textColor: "text-white",
+    description: "Browse local businesses",
+    infoStat: "Local businesses"
+  }
+};
+
+export function CategoryFilter({ 
+  selectedCategory, 
+  onCategorySelect,
+  linkToCategory = true
+}: CategoryFilterProps) {
   const categories = useQuery(api.categories.getAll) as Category[] | undefined;
+  const businesses = useQuery(api.businesses.getAll);
+  const router = useRouter();
+
+  // Count businesses in each category
+  const categoryCount = new Map<string, number>();
+  
+  if (businesses) {
+    businesses.forEach(business => {
+      const categoryId = business.categoryId as string;
+      categoryCount.set(categoryId, (categoryCount.get(categoryId) || 0) + 1);
+    });
+  }
 
   if (!categories) {
     return (
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-          <div key={i} className="h-32 rounded-lg bg-gray-100 animate-pulse" />
+      <div className="flex gap-3 overflow-x-auto pb-2 hide-scrollbar">
+        {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div key={i} className="h-10 w-32 flex-shrink-0 rounded-full bg-gray-100 animate-pulse"></div>
         ))}
       </div>
     );
@@ -47,50 +205,55 @@ export function CategoryFilter({ selectedCategory, onCategorySelect }: CategoryF
     return a.name.localeCompare(b.name);
   });
 
+  // Handler for category card click
+  const handleCategoryClick = (category: Category) => {
+    if (linkToCategory) {
+      // Navigate to the category page
+      router.push(`/categories/${category._id}`);
+    } else {
+      // Use the traditional filter behavior
+      onCategorySelect(category._id);
+    }
+  };
+
+  // Get style for a category
+  const getCategoryStyle = (categoryName: string): CategoryStyle => {
+    return categoryStyles[categoryName] || categoryStyles.default;
+  };
+
   return (
-    <div>
-      <div className="flex justify-start mb-4">
-        <Button
-          variant={selectedCategory === null ? "default" : "outline"}
+    <div className="flex flex-col">
+      <div className="flex gap-3 overflow-x-auto pb-2 hide-scrollbar">
+        <button
           onClick={() => onCategorySelect(null)}
-          className="rounded-full px-5"
-          size="sm"
+          className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0 transition-colors ${
+            selectedCategory === null 
+              ? "bg-blue-600 text-white" 
+              : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+          }`}
         >
-          View All Categories
-        </Button>
-      </div>
-      
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-        {sortedCategories.map((category: Category) => (
-          <Card 
-            key={category._id}
-            className={`cursor-pointer transition-all hover:scale-105 ${
-              selectedCategory === category._id ? "ring-2 ring-primary" : ""
-            }`}
-            onClick={() => onCategorySelect(category._id)}
-          >
-            <div className="relative h-24 w-full overflow-hidden rounded-t-lg">
-              {category.imageUrl ? (
-                <Image
-                  src={category.imageUrl}
-                  alt={category.name}
-                  fill
-                  className="object-cover"
-                />
-              ) : (
-                <div className="h-24 w-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-400 text-lg">{category.icon || "📷"}</span>
-                </div>
-              )}
-            </div>
-            <CardContent className="p-3">
-              <h3 className="font-medium text-sm text-center">{category.name}</h3>
-              {category.description && (
-                <p className="text-xs text-gray-500 mt-1 line-clamp-2">{category.description}</p>
-              )}
-            </CardContent>
-          </Card>
-        ))}
+          All Categories
+        </button>
+        
+        {sortedCategories.map((category: Category) => {
+          const style = getCategoryStyle(category.name);
+          const IconComponent = style.icon;
+          
+          return (
+            <button 
+              key={category._id}
+              onClick={() => handleCategoryClick(category)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap flex-shrink-0 transition-colors ${
+                selectedCategory === category._id 
+                  ? style.color + " " + style.textColor
+                  : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+              }`}
+            >
+              <IconComponent className="h-4 w-4" />
+              {category.name}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

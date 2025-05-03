@@ -115,6 +115,17 @@ export default function AdminPage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <h1 className="text-3xl font-bold mb-8">Admin Dashboard</h1>
           
+          <div className="flex items-center justify-end mb-4">
+            <Button
+              variant="outline"
+              onClick={() => window.location.href = "/admin/update-categories"}
+              className="flex items-center gap-2"
+            >
+              <RefreshCw className="h-4 w-4" />
+              Update Business Categories
+            </Button>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <Card>
               <CardHeader>

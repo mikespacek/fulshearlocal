@@ -4,85 +4,85 @@ const categoryImages = [
   {
     name: "Restaurants",
     imageUrl: "/category-images/restaurants.jpg",
-    description: "Discover local dining options from casual eateries to fine dining",
+    description: "Fine dining restaurant with elegant table settings",
     order: 1,
   },
   {
     name: "Shopping",
     imageUrl: "/category-images/shopping.jpg",
-    description: "Browse local stores and boutiques for all your shopping needs",
+    description: "Vibrant shopping district with storefronts",
     order: 2,
   },
   {
     name: "Medical & Dental",
     imageUrl: "/category-images/medical.jpg",
-    description: "Find trusted healthcare providers and medical services",
+    description: "Modern medical facility with healthcare professionals",
     order: 3,
   },
   {
     name: "Beauty & Wellness",
     imageUrl: "/category-images/beauty.jpg",
-    description: "Pamper yourself with local beauty and wellness services",
+    description: "Beauty salon with professional styling equipment",
     order: 4,
   },
   {
     name: "Financial Services",
     imageUrl: "/category-images/financial.jpg",
-    description: "Connect with local financial advisors, banks, and services",
+    description: "Financial district with modern office buildings",
     order: 5,
   },
   {
     name: "Real Estate",
     imageUrl: "/category-images/real-estate.jpg",
-    description: "Explore real estate options with local agents and services",
+    description: "Luxury home with contemporary architecture",
     order: 6,
   },
   {
     name: "Automotive",
     imageUrl: "/category-images/automotive.jpg",
-    description: "Find reliable auto services, repairs, and dealerships",
+    description: "Modern car dealership with luxury vehicles",
     order: 7,
   },
   {
     name: "Professional Services",
     imageUrl: "/category-images/professional.jpg",
-    description: "Connect with local professionals and business services",
+    description: "Professional business meeting in a corporate setting",
     order: 8,
   },
   {
     name: "Childcare & Education",
     imageUrl: "/category-images/education.jpg",
-    description: "Discover childcare options and educational institutions",
+    description: "Elementary school classroom with desks and supplies",
     order: 9,
   },
   {
     name: "Religious Organizations",
     imageUrl: "/category-images/religious.jpg",
-    description: "Find places of worship and religious organizations",
+    description: "Beautiful church interior with stained glass",
     order: 10,
   },
   {
     name: "Sports & Fitness",
     imageUrl: "/category-images/fitness.jpg",
-    description: "Stay active with local gyms, sports, and fitness options",
+    description: "Modern gym with fitness equipment and people exercising",
     order: 11,
   },
   {
     name: "Recreation & Entertainment",
     imageUrl: "/category-images/entertainment.jpg",
-    description: "Find fun things to do including entertainment and recreation",
+    description: "Concert venue with colorful stage lights and audience",
     order: 12,
   },
   {
     name: "Home Services",
     imageUrl: "/category-images/home-services.jpg",
-    description: "Find contractors, repair services, and other home maintenance needs",
+    description: "Professional home service provider at work",
     order: 13,
   },
 ];
 
 // Update categories with images and descriptions
-export const updateCategoryImages = mutation({
+export default mutation({
   handler: async (ctx) => {
     const results = {
       updated: 0,
@@ -116,7 +116,7 @@ export const updateCategoryImages = mutation({
     
     return {
       success: true,
-      message: `Updated ${results.updated} categories with images and descriptions`,
+      message: `Updated ${results.updated} categories with unique images and descriptions`,
       results,
     };
   },
