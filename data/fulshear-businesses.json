@@ -1,0 +1,5127 @@
+{
+  "businesses": {
+    "Restaurants": [
+      {
+        "name": "Local Table",
+        "address": "11525 S Fry Rd Suite 101, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 437-5317",
+        "website": "https://eatatlocaltable.com/locations/fulshear/",
+        "categoryName": "Restaurants",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 10:00 AM – 10:00 PM",
+          "Sunday: 10:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.7058135,
+        "longitude": -95.84770669999999,
+        "placeId": "ChIJUZYJ1r0jQYYRn7ocoGDjEV0"
+      },
+      {
+        "name": "Pier 36 Seafood & Oyster Bar",
+        "address": "8502 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8379",
+        "website": "https://pier36seafood.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6909221,
+        "longitude": -95.9004399,
+        "placeId": "ChIJwUvKa8A9QYYRnej-12kbyD4"
+      },
+      {
+        "name": "Fulshear's FieldHouse Pub & Grill",
+        "address": "5810 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 707-8578",
+        "website": "https://fieldhousepubs.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.3,
+        "hours": [
+          "Monday: 4:00 – 11:00 PM",
+          "Tuesday: 4:00 – 11:00 PM",
+          "Wednesday: 4:00 – 11:00 PM",
+          "Thursday: 12:00 PM – 12:00 AM",
+          "Friday: 12:00 PM – 12:00 AM",
+          "Saturday: 12:00 PM – 1:00 AM",
+          "Sunday: 12:00 – 11:00 PM"
+        ],
+        "latitude": 29.70752330000001,
+        "longitude": -95.8473815,
+        "placeId": "ChIJve1f1tcjQYYRJKOSaPqaIC4"
+      },
+      {
+        "name": "Orleans Seafood Kitchen",
+        "address": "6230 FM 1463 Suite 550, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 688-5600",
+        "website": "https://www.orleansseafoodkitchen.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.3,
+        "hours": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 7:30 AM – 10:00 PM",
+          "Sunday: 7:30 AM – 9:00 PM"
+        ],
+        "latitude": 29.7004116,
+        "longitude": -95.84689209999999,
+        "placeId": "ChIJ49hNgpwjQYYRapNTion6vOw"
+      },
+      {
+        "name": "Saltgrass Steak House",
+        "address": "8506 Syms St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 547-8641",
+        "website": "https://www.saltgrass.com/location/saltgrass-fulshear/",
+        "categoryName": "Restaurants",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.690756,
+        "longitude": -95.898248,
+        "placeId": "ChIJS3OJsywjQYYR5A4mzgJYmxE"
+      },
+      {
+        "name": "The Waterside Grill Company",
+        "address": "32611 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1967",
+        "website": "https://www.westonlakes.net/country-club/waterside-grill/",
+        "categoryName": "Restaurants",
+        "rating": 4.6,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 7:00 AM – 9:00 PM",
+          "Saturday: 7:00 AM – 9:00 PM",
+          "Sunday: 7:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.6822951,
+        "longitude": -95.9362797,
+        "placeId": "ChIJuUNl9g09QYYRFAkNxQkCdJs"
+      },
+      {
+        "name": "Hacienda Real Mexican Grill & Cantina",
+        "address": "11605 S Fry Rd #101, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 707-8196",
+        "website": "https://haciendarealtexmex.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 11:00 AM – 9:30 PM",
+          "Tuesday: 11:00 AM – 9:30 PM",
+          "Wednesday: 11:00 AM – 9:30 PM",
+          "Thursday: 11:00 AM – 9:30 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.7059401,
+        "longitude": -95.84938939999999,
+        "placeId": "ChIJb_tcLlMiQYYR3O9a94agwo0"
+      },
+      {
+        "name": "MEZZÉ#1 (Fulshear)",
+        "address": "28432 FM 1093 ste G, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 451-6565",
+        "website": "http://www.mezze1.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.1,
+        "hours": [
+          "Monday: 11:00 AM – 10:00 PM",
+          "Tuesday: 11:00 AM – 10:00 PM",
+          "Wednesday: 11:00 AM – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 11:00 PM",
+          "Saturday: 11:00 AM – 11:00 PM",
+          "Sunday: 11:00 AM – 10:00 PM"
+        ],
+        "latitude": 29.6933203,
+        "longitude": -95.8685861,
+        "placeId": "ChIJJxlGSwAjQYYRGaDL9qdqSUY"
+      },
+      {
+        "name": "La Balance Cafe Mexicana",
+        "address": "8050 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-4060",
+        "website": "http://labalancecafe.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.7,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 7:00 AM – 8:00 PM",
+          "Wednesday: 7:00 AM – 8:00 PM",
+          "Thursday: 7:00 AM – 8:00 PM",
+          "Friday: 7:00 AM – 8:00 PM",
+          "Saturday: 7:00 AM – 8:00 PM",
+          "Sunday: 8:00 AM – 4:00 PM"
+        ],
+        "latitude": 29.6952223,
+        "longitude": -95.9010979,
+        "placeId": "ChIJVVVlAS09QYYRm7xEjm-lNHw"
+      },
+      {
+        "name": "Molina's Cantina",
+        "address": "6300 FM 1463 Suite 500, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 789-6450",
+        "website": "https://www.molinascantina.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.1,
+        "hours": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: 11:00 AM – 9:00 PM",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.7002696,
+        "longitude": -95.84680929999999,
+        "placeId": "ChIJ32HI4VEiQYYRkOLNMh5fb0s"
+      },
+      {
+        "name": "Ñeca's Mexican Restaurant & Cantina - FM 1463",
+        "address": "4020 FM 1463 Suite 110, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 437-2550",
+        "website": "https://necasmexicanrestaurant.com/?utm_source=google",
+        "categoryName": "Restaurants",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 7:00 AM – 9:00 PM",
+          "Tuesday: 7:00 AM – 9:00 PM",
+          "Wednesday: 7:00 AM – 9:00 PM",
+          "Thursday: 7:00 AM – 9:00 PM",
+          "Friday: 7:00 AM – 10:00 PM",
+          "Saturday: 7:00 AM – 10:00 PM",
+          "Sunday: 7:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.7326868,
+        "longitude": -95.8469968,
+        "placeId": "ChIJU6Ylg3wjQYYR_cDB_PAVpoU"
+      },
+      {
+        "name": "Dozier's BBQ & Meat Market",
+        "address": "8222 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8194",
+        "website": "http://www.doziersbbqtx.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.4,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 7:00 PM",
+          "Wednesday: 11:00 AM – 7:00 PM",
+          "Thursday: 11:00 AM – 7:00 PM",
+          "Friday: 11:00 AM – 7:00 PM",
+          "Saturday: 11:00��AM – 7:00 PM",
+          "Sunday: 11:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.6932587,
+        "longitude": -95.9006673,
+        "placeId": "ChIJTR4iVSw9QYYRsHQfBX1FzpI"
+      },
+      {
+        "name": "Asian Wok",
+        "address": "6631 W Cross Creek Bend Ln #100, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8122",
+        "website": "http://www.asianwoktx.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.3,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 10:00 PM",
+          "Wednesday: 11:00 AM – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 10:00 PM"
+        ],
+        "latitude": 29.69352140000001,
+        "longitude": -95.8724288,
+        "placeId": "ChIJXWZ4UfYjQYYRyPf5W0ft_3o"
+      },
+      {
+        "name": "Hat Creek Burger Company",
+        "address": "5820 FM 1463, Fulshear, TX 77494, USA",
+        "phoneNumber": "(346) 707-1770",
+        "website": "https://hatcreekburgers.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 10:00 AM – 9:00 PM",
+          "Tuesday: 10:00 AM – 9:00 PM",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 10:00 AM – 9:00 PM",
+          "Sunday: 10:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.707658,
+        "longitude": -95.84659909999999,
+        "placeId": "ChIJe_SG1b0jQYYR622qQzAlo8Q"
+      },
+      {
+        "name": "Yen",
+        "address": "6630 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 665-3917",
+        "website": "https://www.yenteppanyaki.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.1,
+        "hours": [
+          "Monday: 5:00 – 10:00 PM",
+          "Tuesday: 5:00 – 10:00 PM",
+          "Wednesday: 5:00 – 10:00 PM",
+          "Thursday: 11:00 AM – 10:00 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:30 AM – 10:00 PM",
+          "Sunday: 11:30 AM – 9:30 PM"
+        ],
+        "latitude": 29.6970395,
+        "longitude": -95.84679779999999,
+        "placeId": "ChIJuyF0OVAiQYYRaL59FQEX-J0"
+      },
+      {
+        "name": "Humble Grounds Coffeehouse",
+        "address": "11525 S Fry Rd #110, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 387-6199",
+        "website": "https://humblegroundscoffee.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 6:00 AM – 5:00 PM",
+          "Tuesday: 6:00 AM – 5:00 PM",
+          "Wednesday: 6:00 AM – 5:00 PM",
+          "Thursday: 6:00 AM – 5:00 PM",
+          "Friday: 6:00 AM – 5:00 PM",
+          "Saturday: 7:00 AM – 3:00 PM",
+          "Sunday: 7:00 AM – 3:00 PM"
+        ],
+        "latitude": 29.7058915,
+        "longitude": -95.8483735,
+        "placeId": "ChIJOynSzKwjQYYRyYDuknM3iNQ"
+      },
+      {
+        "name": "Essence House Cafe",
+        "address": "8506 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-0255",
+        "website": "http://theessencehousecafe.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 7:00 AM – 3:00 PM",
+          "Tuesday: 7:00 AM – 3:00 PM",
+          "Wednesday: 7:00 AM – 3:00 PM",
+          "Thursday: 7:00 AM – 3:00 PM",
+          "Friday: 7:00 AM – 3:00 PM",
+          "Saturday: 7:00 AM – 3:00 PM",
+          "Sunday: 7:00 AM – 3:00 PM"
+        ],
+        "latitude": 29.6907997,
+        "longitude": -95.9003525,
+        "placeId": "ChIJcaqP7TI9QYYRX0jQsqxQiWA"
+      },
+      {
+        "name": "L3 Craft Coffee",
+        "address": "28830 FM 1093 Suite 110, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 451-6251",
+        "website": "http://www.l3craftcoffee.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 7:00 AM – 6:00 PM",
+          "Tuesday: 7:00 AM – 6:00 PM",
+          "Wednesday: 7:00 AM – 6:00 PM",
+          "Thursday: 7:00 AM – 6:00 PM",
+          "Friday: 7:00 AM – 6:00 PM",
+          "Saturday: 7:00 AM – 6:00 PM",
+          "Sunday: 9:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.6929015,
+        "longitude": -95.87551250000001,
+        "placeId": "ChIJ4YOeNoEjQYYRHwdmj9ElrGw"
+      },
+      {
+        "name": "Revive Cafe",
+        "address": "6520 FM359 Suite 500, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8120",
+        "website": "http://www.revivecafelife.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 6:30 AM – 7:00 PM",
+          "Tuesday: 6:30 AM – 7:00 PM",
+          "Wednesday: 6:30 AM – 7:00 PM",
+          "Thursday: 6:30 AM – 7:00 PM",
+          "Friday: 6:30 AM – 7:00 PM",
+          "Saturday: 8:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.7090738,
+        "longitude": -95.9182493,
+        "placeId": "ChIJdR1IXwA9QYYReSFeqxwF3DY"
+      },
+      {
+        "name": "Texana Cafe",
+        "address": "7440 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 471-7903",
+        "website": "https://www.texanacafe.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.8,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 8:00 AM – 3:00 PM",
+          "Wednesday: 8:00 AM – 3:00 PM",
+          "Thursday: 8:00 AM – 3:00 PM",
+          "Friday: 8:00 AM – 3:00 PM",
+          "Saturday: 8:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7017171,
+        "longitude": -95.9098605,
+        "placeId": "ChIJieC4n5o9QYYRrFGXtpN3WmY"
+      },
+      {
+        "name": "Black Rock Coffee Bar",
+        "address": "5770 FM 1463, Fulshear, TX 77494, USA",
+        "phoneNumber": "(833) 843-5776",
+        "website": "http://br.coffee/",
+        "categoryName": "Restaurants",
+        "rating": 4.2,
+        "hours": [
+          "Monday: 6:00 AM – 7:00 PM",
+          "Tuesday: 6:00 AM – 7:00 PM",
+          "Wednesday: 6:00 AM – 7:00 PM",
+          "Thursday: 6:00 AM – 7:00 PM",
+          "Friday: 6:00 AM – 7:00 PM",
+          "Saturday: 6:00 AM – 7:00 PM",
+          "Sunday: 6:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.7081298,
+        "longitude": -95.846699,
+        "placeId": "ChIJjwYTBVMjQYYRRVH8ADaHNkY"
+      },
+      {
+        "name": "Coco Crepes & Coffee",
+        "address": "27120 Fulshear Bend Dr Suite 500, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8087",
+        "website": "https://www.cococrepes.com/location/coco-crepes-katy-fulshear",
+        "categoryName": "Restaurants",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 8:00 AM – 9:00 PM",
+          "Tuesday: 8:00 AM – 9:00 PM",
+          "Wednesday: 8:00 AM – 9:00 PM",
+          "Thursday: 8:00 AM – 9:00 PM",
+          "Friday: 8:00 AM – 9:00 PM",
+          "Saturday: 8:00 AM – 9:00 PM",
+          "Sunday: 8:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.7187463,
+        "longitude": -95.8487831,
+        "placeId": "ChIJuYK988gjQYYRF7LkGXcFJb4"
+      },
+      {
+        "name": "First Watch",
+        "address": "27120 Fulshear Bend Dr ste 100, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 866-9080",
+        "website": "http://www.firstwatch.com/locations/fulshear/?utm_source=gbp-listing&utm_medium=organic&utm_campaign=gbp-listing&utm_content=fulshear",
+        "categoryName": "Restaurants",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 7:00 AM – 2:30 PM",
+          "Tuesday: 7:00 AM – 2:30 PM",
+          "Wednesday: 7:00 AM – 2:30 PM",
+          "Thursday: 7:00 AM – 2:30 PM",
+          "Friday: 7:00 AM – 2:30 PM",
+          "Saturday: 7:00 AM – 2:30 PM",
+          "Sunday: 7:00 AM – 2:30 PM"
+        ],
+        "latitude": 29.7184933,
+        "longitude": -95.848835,
+        "placeId": "ChIJVbwrCiMjQYYR7bgdFZPwpBM"
+      },
+      {
+        "name": "Brazos Baking Co.",
+        "address": "5502 Westerdale Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(972) 839-1155",
+        "website": "https://brazosbaking.co/",
+        "categoryName": "Restaurants",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: 8:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ],
+        "latitude": 29.6805956,
+        "longitude": -95.9401041,
+        "placeId": "ChIJeYkzVdc9QYYRaok8Lmc-WV4"
+      },
+      {
+        "name": "Sosa Goods Bakery",
+        "address": "Morning Dove Dr, Fulshear, TX 77423, USA",
+        "phoneNumber": "(281) 736-3072",
+        "website": "https://sosagoodsbakery.wixsite.com/my-site",
+        "categoryName": "Restaurants",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7595171,
+        "longitude": -95.8979447,
+        "placeId": "ChIJ44dULJ8lQYYRuVDBVSxj2G4"
+      },
+      {
+        "name": "Afro Puff Treats",
+        "address": "Crescent Hill Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 849-4233",
+        "website": "http://afropufftreats.com/",
+        "categoryName": "Restaurants",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 4:00 PM",
+          "Tuesday: 8:00 AM – 4:00 PM",
+          "Wednesday: 8:00 AM – 4:00 PM",
+          "Thursday: 8:00 AM – 4:00 PM",
+          "Friday: 8:00 AM – 4:00 PM",
+          "Saturday: 8:00 AM – 4:00 PM",
+          "Sunday: 8:00 AM – 4:00 PM"
+        ],
+        "latitude": 29.7159995,
+        "longitude": -95.9125052,
+        "placeId": "ChIJswRfbMS6hyYRtZtcA8nhfDk"
+      },
+      {
+        "name": "Michelle's Sweet Bites",
+        "address": "30607 Oakview Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Restaurants",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.6793929,
+        "longitude": -95.9019235,
+        "placeId": "ChIJi6J_QiwjQYYReoYh9HjRgnw"
+      },
+      {
+        "name": "Mill & Flour Bakery",
+        "address": "6015 Churchill Spgs Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(512) 645-8066",
+        "website": "https://www.instagram.com/millandflourbakery",
+        "categoryName": "Restaurants",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 8:00 AM – 6:00 PM",
+          "Wednesday: 8:00 AM – 6:00 PM",
+          "Thursday: 8:00 AM – 6:00 PM",
+          "Friday: 8:00 AM – 6:00 PM",
+          "Saturday: 8:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.702703,
+        "longitude": -95.8829964,
+        "placeId": "ChIJpUI6TkEjQYYRcYKo25cIRMs"
+      },
+      {
+        "name": "Snowflake Donuts",
+        "address": "29615 FM 1093 #1, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9226",
+        "website": "",
+        "categoryName": "Restaurants",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 5:00 AM – 12:00 PM",
+          "Tuesday: 5:00 AM – 12:00 PM",
+          "Wednesday: 5:00 AM – 12:00 PM",
+          "Thursday: 5:00 AM – 12:00 PM",
+          "Friday: 5:00 AM – 12:00 PM",
+          "Saturday: 5:00 AM – 12:00 PM",
+          "Sunday: 5:00 AM – 12:00 PM"
+        ],
+        "latitude": 29.6904677,
+        "longitude": -95.8858869,
+        "placeId": "ChIJrZHl3TI9QYYRTwP5GLn-P6E"
+      },
+      {
+        "name": "Chronic Fries - Fulshear, TX",
+        "address": "27120 Fulshear Bend Dr Suite 400, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 517-1234",
+        "website": "https://www.chronicfries.fun/",
+        "categoryName": "Restaurants",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 10:30 AM – 10:30 PM",
+          "Tuesday: 10:30 AM – 10:30 PM",
+          "Wednesday: 10:30 AM – 10:30 PM",
+          "Thursday: 10:30 AM – 10:30 PM",
+          "Friday: 10:30 AM – 11:30 PM",
+          "Saturday: 10:30 AM – 11:30 PM",
+          "Sunday: 10:30 AM – 10:30 PM"
+        ],
+        "latitude": 29.7186462,
+        "longitude": -95.8487687,
+        "placeId": "ChIJXZ1PCcQjQYYRwQDuZBbtt5Y"
+      },
+      {
+        "name": "Culver’s",
+        "address": "6677 Flewellen Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 338-0646",
+        "website": "http://www.culvers.com/restaurants/fulshear-tx-flewellen-way/?utm_source=Google&utm_medium=Maps&utm_campaign=Google+Places",
+        "categoryName": "Restaurants",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 10:00 AM – 10:00 PM",
+          "Tuesday: 10:00 AM – 10:00 PM",
+          "Wednesday: 10:00 AM – 10:00 PM",
+          "Thursday: 10:00 AM – 10:00 PM",
+          "Friday: 10:00 AM – 10:00 PM",
+          "Saturday: 10:00 AM – 10:00 PM",
+          "Sunday: 10:00 AM – 10:00 PM"
+        ],
+        "latitude": 29.6950964,
+        "longitude": -95.84875579999999,
+        "placeId": "ChIJcYhZ9wsjQYYRlpNbBX_W-3o"
+      },
+      {
+        "name": "Absolute Thai Cuisine",
+        "address": "6420 FM 1463 Suite 800, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 451-6280",
+        "website": "https://order.toasttab.com/online/absolute-thai-texas",
+        "categoryName": "Restaurants",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 11:00 AM – 9:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 11:00 AM – 9:00 PM",
+          "Thursday: 11:00 AM – 9:00 PM",
+          "Friday: 11:00 AM – 9:30 PM",
+          "Saturday: 11:00���AM – 9:30 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.6991795,
+        "longitude": -95.8467158,
+        "placeId": "ChIJcZMeFlEjQYYREE_p99uys40"
+      },
+      {
+        "name": "Urban Bird Hot Chicken",
+        "address": "27120 Fulshear Bend Dr Suite 400, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 517-1234",
+        "website": "https://www.urbanbirdhotchicken.com/",
+        "categoryName": "Restaurants",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 10:30 AM – 10:30 PM",
+          "Tuesday: 10:30 AM – 10:30 PM",
+          "Wednesday: 10:30 AM – 10:30 PM",
+          "Thursday: 10:30 AM – 10:30 PM",
+          "Friday: 10:30 AM – 3:00 AM",
+          "Saturday: 10:30 AM – 3:00 AM",
+          "Sunday: 10:30 AM – 10:30 PM"
+        ],
+        "latitude": 29.7186433,
+        "longitude": -95.848779,
+        "placeId": "ChIJ1-zKVMAjQYYREmFqUmIubsw"
+      },
+      {
+        "name": "Victor's Mexican Grille",
+        "address": "8525 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-0040",
+        "website": "https://victorsmexicanrestaurant.com/?y_source=1_MTAwNzQxMjAwNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+        "categoryName": "Restaurants",
+        "rating": 4.1,
+        "hours": [
+          "Monday: 11:00 AM – 9:30 PM",
+          "Tuesday: 11:00 AM – 9:30 PM",
+          "Wednesday: 11:00 AM – 9:30 PM",
+          "Thursday: 11:00 AM – 9:30 PM",
+          "Friday: 11:00 AM – 10:00 PM",
+          "Saturday: 11:00 AM – 10:00 PM",
+          "Sunday: 11:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.6907332,
+        "longitude": -95.8991824,
+        "placeId": "ChIJJxJRwTI9QYYRnjvksyhpBJM"
+      }
+    ],
+    "Shopping": [
+      {
+        "name": "Cross Creek Ranch",
+        "address": "6630-6420 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Shopping",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 9:30 AM – 8:30 PM",
+          "Tuesday: 9:30 AM – 8:30 PM",
+          "Wednesday: 9:30 AM – 8:30 PM",
+          "Thursday: 9:00 AM – 9:00 PM",
+          "Friday: 9:30 AM – 8:30 PM",
+          "Saturday: 9:30 AM – 8:30 PM",
+          "Sunday: 9:30 AM – 8:30 PM"
+        ],
+        "latitude": 29.6979929,
+        "longitude": -95.8466639,
+        "placeId": "ChIJNduBLlAiQYYRg-pfXDyTkUA"
+      },
+      {
+        "name": "The Shops at Cross Creek",
+        "address": "6300 FM 1463, Fulshear, TX 77494, USA",
+        "phoneNumber": "(929) 388-7922",
+        "website": "https://www.phillipsedison.com/property/texas/houston-tx/fulshear/shops-at-cross-creek",
+        "categoryName": "Shopping",
+        "rating": 4.2,
+        "hours": [
+          "Monday: 5:00 AM – 6:00 PM",
+          "Tuesday: 5:00 AM – 6:00 PM",
+          "Wednesday: 5:00 AM – 6:00 PM",
+          "Thursday: 5:00 AM – 6:00 PM",
+          "Friday: 5:00 AM – 6:00 PM",
+          "Saturday: 5:00 AM – 6:00 PM",
+          "Sunday: 5:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.7000651,
+        "longitude": -95.8469645,
+        "placeId": "ChIJA-yS3Q0jQYYRJI6J_iorHNQ"
+      },
+      {
+        "name": "Cobblestone Cottage",
+        "address": "S, 8504 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8347",
+        "website": "https://shopcobblestonecottage.com/",
+        "categoryName": "Shopping",
+        "rating": 4.2,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6908151,
+        "longitude": -95.9003402,
+        "placeId": "ChIJP7Do6TI9QYYRytmML26Oj_I"
+      },
+      {
+        "name": "Cross Creek Commons",
+        "address": "5820 FM 1463, Fulshear, TX 77494, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Shopping",
+        "rating": 4.7,
+        "hours": [],
+        "latitude": 29.7073895,
+        "longitude": -95.84702039999999,
+        "placeId": "ChIJN_5DdI8jQYYRP3qpogfZGJo"
+      },
+      {
+        "name": "Dogwood Lane Goods",
+        "address": "8503 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(214) 533-0899",
+        "website": "https://www.facebook.com/profile.php?id=100064206301606",
+        "categoryName": "Shopping",
+        "rating": 5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69094999999999,
+        "longitude": -95.89990270000001,
+        "placeId": "ChIJBepPVhA9QYYRjgnPFq4rlgc"
+      },
+      {
+        "name": "Drop In Fulshear",
+        "address": "FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 481-4660",
+        "website": "",
+        "categoryName": "Shopping",
+        "rating": 4.8,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.68234529999999,
+        "longitude": -95.950555,
+        "placeId": "ChIJt_w4thw9QYYRVQo1_9_SuSU"
+      },
+      {
+        "name": "Fulshear Ace Hardware",
+        "address": "8411 FM 359 RD S, Bldg, A, 8411A FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-8571",
+        "website": "",
+        "categoryName": "Shopping",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 8:00 AM – 7:00 PM",
+          "Tuesday: 8:00 AM – 7:00 PM",
+          "Wednesday: 8:00 AM – 7:00 PM",
+          "Thursday: 8:00 AM – 7:00 PM",
+          "Friday: 8:00 AM – 7:00 PM",
+          "Saturday: 8:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.6915993,
+        "longitude": -95.8996627,
+        "placeId": "ChIJY990lTI9QYYRwstQ53WJ8R8"
+      },
+      {
+        "name": "Brown Eyed Girl Design by Roxie",
+        "address": "30318 2nd St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 468-7036",
+        "website": "http://browneyedgirldesignbyroxie.com/",
+        "categoryName": "Shopping",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 10:30 AM – 4:00 PM",
+          "Tuesday: 10:30 AM – 4:00 PM",
+          "Wednesday: 10:30 AM – 4:00 PM",
+          "Thursday: 10:30 AM – 5:00 PM",
+          "Friday: 10:30 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: 12:30 – 4:00 PM"
+        ],
+        "latitude": 29.6924712,
+        "longitude": -95.898817,
+        "placeId": "ChIJ9aKfRQc9QYYRbpoXrxmojF0"
+      },
+      {
+        "name": "Timewise",
+        "address": "6750 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 595-0666",
+        "website": "https://find.shell.com/us/fuel/10083257-6750-fm-1463-rd/en_US",
+        "categoryName": "Shopping",
+        "rating": 3.7,
+        "hours": [
+          "Monday: 6:00 AM – 11:30 PM",
+          "Tuesday: 6:00 AM – 11:30 PM",
+          "Wednesday: 6:00 AM – 11:30 PM",
+          "Thursday: 6:00 AM – 11:30 PM",
+          "Friday: 6:00 AM – 11:30 PM",
+          "Saturday: 6:00 AM – 11:30 PM",
+          "Sunday: 6:00 AM – 11:30 PM"
+        ],
+        "latitude": 29.69596630000001,
+        "longitude": -95.8470195,
+        "placeId": "ChIJfe_ZE1AiQYYRUvI0iP8yXRo"
+      },
+      {
+        "name": "Paperback Trade-N-Save",
+        "address": "8030 FM, 359 South Road, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9760",
+        "website": "",
+        "categoryName": "Shopping",
+        "rating": 4.4,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 4:00 PM",
+          "Wednesday: 10:00 AM – 4:00 PM",
+          "Thursday: 10:00 AM – 4:00 PM",
+          "Friday: 10:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6957971,
+        "longitude": -95.90160159999999,
+        "placeId": "ChIJrZHl3TI9QYYR0iaD_ZjTM24"
+      },
+      {
+        "name": "Country Mart",
+        "address": "8526 FM359 SOUTH, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0434",
+        "website": "",
+        "categoryName": "Shopping",
+        "rating": 4,
+        "hours": [
+          "Monday: 6:00 AM – 11:00 PM",
+          "Tuesday: 6:00 AM – 11:00 PM",
+          "Wednesday: 6:00 AM – 11:00 PM",
+          "Thursday: 6:00 AM – 11:00 PM",
+          "Friday: 6:00 AM – 11:00 PM",
+          "Saturday: 6:00 AM – 11:00 PM",
+          "Sunday: 6:00 AM – 11:00 PM"
+        ],
+        "latitude": 29.6903938,
+        "longitude": -95.9004052,
+        "placeId": "ChIJHe8U5jI9QYYRq7ijgyh4onc"
+      },
+      {
+        "name": "Cross Creek Ranch Welcome Center",
+        "address": "6450 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-9882",
+        "website": "https://www.crosscreektexas.com/",
+        "categoryName": "Shopping",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6960767,
+        "longitude": -95.8698854,
+        "placeId": "ChIJf-50bRsjQYYRYnWCP4LYJkk"
+      },
+      {
+        "name": "Fulshear Floral Design",
+        "address": "8525 FM359 Suite 105, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9468",
+        "website": "https://www.fulshearfloraldesign.com/",
+        "categoryName": "Shopping",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 5:30 PM",
+          "Tuesday: 9:00 AM – 5:30 PM",
+          "Wednesday: 9:00 AM – 5:30 PM",
+          "Thursday: 9:00 AM – 5:30 PM",
+          "Friday: 9:00 AM – 5:30 PM",
+          "Saturday: 9:00 AM – 12:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.690831,
+        "longitude": -95.89958899999999,
+        "placeId": "ChIJ3XUOxDI9QYYRkT7Ou12iLe8"
+      },
+      {
+        "name": "The Rustic Brush - Katy",
+        "address": "11605 S Fry Rd #102, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 271-7022",
+        "website": "https://therusticbrush.com/katy",
+        "categoryName": "Shopping",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 12:00 – 9:00 PM",
+          "Tuesday: 12:00 – 9:00 PM",
+          "Wednesday: 12:00 – 9:00 PM",
+          "Thursday: 12:00 – 9:00 PM",
+          "Friday: 12:00 – 9:00 PM",
+          "Saturday: 10:00 AM – 9:00 PM",
+          "Sunday: 1:00 – 4:00 PM"
+        ],
+        "latitude": 29.7058697,
+        "longitude": -95.8492917,
+        "placeId": "ChIJ1TS3M1MiQYYR2uN2dC_3xVY"
+      },
+      {
+        "name": "Cross Creek West",
+        "address": "4803 Garden Crest Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.crosscreekwesttx.com/",
+        "categoryName": "Shopping",
+        "rating": 4.7,
+        "hours": [],
+        "latitude": 29.7181011,
+        "longitude": -95.91740469999999,
+        "placeId": "ChIJdaqWqf49QYYRvTnPDQP0YH4"
+      },
+      {
+        "name": "Fulshear Farmers Market",
+        "address": "9035 Bois D'Arc Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 703-4129",
+        "website": "http://fulshearfarmersmarket.com/",
+        "categoryName": "Shopping",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: Closed",
+          "Saturday: 9:00 AM – 1:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.690244,
+        "longitude": -95.88844700000001,
+        "placeId": "ChIJtR4JiM8iQYYR-W0PL1J9Fr4"
+      },
+      {
+        "name": "ALDI",
+        "address": "5840 FM 1463, Fulshear, TX 77494, USA",
+        "phoneNumber": "(855) 955-2534",
+        "website": "https://stores.aldi.us/tx/fulshear/5840-fm-1463-rd?utm_source=google&utm_medium=local&utm_campaign=brand&utm_content=storepage_webclick",
+        "categoryName": "Shopping",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 8:00 PM",
+          "Tuesday: 9:00 AM – 8:00 PM",
+          "Wednesday: 9:00 AM – 8:00 PM",
+          "Thursday: 9:00 AM – 8:00 PM",
+          "Friday: 9:00 AM – 8:00 PM",
+          "Saturday: 9:00 AM – 8:00 PM",
+          "Sunday: 9:00 AM – 8:00 PM"
+        ],
+        "latitude": 29.70693139999999,
+        "longitude": -95.8472106,
+        "placeId": "ChIJ-VjWSa0jQYYR0aAuco_hbfI"
+      },
+      {
+        "name": "Namak Mirch Grocers - Halal Meats & Grocery",
+        "address": "4020 FM 1463 Suite # 106-107, Fulshear, TX 77494, USA",
+        "phoneNumber": "(832) 437-7530",
+        "website": "https://www.namakmirchgrocers.com/",
+        "categoryName": "Shopping",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 10:00 AM – 9:00 PM",
+          "Tuesday: 10:00 AM – 9:00 PM",
+          "Wednesday: 10:00 AM – 9:00 PM",
+          "Thursday: 10:00 AM – 9:00 PM",
+          "Friday: 10:00 AM – 9:00 PM",
+          "Saturday: 9:00 AM – 9:00 PM",
+          "Sunday: 9:00 AM – 9:00 PM"
+        ],
+        "latitude": 29.7327684,
+        "longitude": -95.8471623,
+        "placeId": "ChIJh5wDLuUjQYYRfA-dw5tfKrY"
+      },
+      {
+        "name": "Tiffany’s Tiny Flower Truck",
+        "address": "29255 FM 1093 #6b, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.tiffanystinyflowertruck.com/",
+        "categoryName": "Shopping",
+        "rating": 5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 3:00 PM",
+          "Wednesday: 11:00 AM – 3:00 PM",
+          "Thursday: 11:00 AM – 3:00 PM",
+          "Friday: 11:00 AM – 3:00 PM",
+          "Saturday: 11:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6900403,
+        "longitude": -95.8807453,
+        "placeId": "ChIJY97PXxEjQYYReNYX5Y1Xzxo"
+      }
+    ],
+    "Medical & Dental": [
+      {
+        "name": "Fulshear Family Medicine",
+        "address": "7629 Tiki Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0018",
+        "website": "https://www.fulshearfamilymed.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 4.3,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.691974,
+        "longitude": -95.88323799999999,
+        "placeId": "ChIJWcvz3TI9QYYRO89Uizo9F7Q"
+      },
+      {
+        "name": "Mary Santiago, MD",
+        "address": "7629 Tiki Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0018",
+        "website": "https://www.fulshearfamilymed.com/provider/mary-santiago-md",
+        "categoryName": "Medical & Dental",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 6:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6922979,
+        "longitude": -95.88384429999999,
+        "placeId": "ChIJf0GuZVUjQYYRJXdtfUKLUi0"
+      },
+      {
+        "name": "JW Family Medicine",
+        "address": "6230 FM 1463 Suite 800, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8485",
+        "website": "https://jwfamilymedicine.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 3.8,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7006816,
+        "longitude": -95.8468856,
+        "placeId": "ChIJoYwWYaYjQYYRFA0qbCdKwmk"
+      },
+      {
+        "name": "Heidi Ann Schultz, MD",
+        "address": "7629 Tiki Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0018",
+        "website": "https://www.fulshearfamilymed.com/?utm_source=gmb_auth",
+        "categoryName": "Medical & Dental",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 6:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6922979,
+        "longitude": -95.88384429999999,
+        "placeId": "ChIJE4E3jl8jQYYRPzxJ8UYDx2o"
+      },
+      {
+        "name": "Ucheoma Longe MD",
+        "address": "6631 W Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 658-5750",
+        "website": "https://memorialhermann.org/doctors/family-medicine-doctors/dr-ucheoma-longe-md-1316247554?utm_campaign=reputation-management&utm_segment=gmb_physician-listing&utm_source=yext&utm_medium=organic-search",
+        "categoryName": "Medical & Dental",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6936186,
+        "longitude": -95.8724419,
+        "placeId": "ChIJoV9M4VrdQIYReIeLU1n8z1M"
+      },
+      {
+        "name": "Patrick Coate, MD",
+        "address": "7629 Tiki Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0018",
+        "website": "https://www.fulshearfamilymed.com/provider/patrick-coate-md",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69197389999999,
+        "longitude": -95.88323799999999,
+        "placeId": "ChIJsanN0vcjQYYROhLCxUmRuvs"
+      },
+      {
+        "name": "Memorial Hermann Medical Group Cross Creek Ranch",
+        "address": "6631 W Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 658-5750",
+        "website": "https://memorialhermann.org/locations/mhmg-cross-creek-ranch?utm_campaign=reputation-management&utm_segment=gmb_location-listing&utm_source=yext&utm_medium=organic-search",
+        "categoryName": "Medical & Dental",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6936186,
+        "longitude": -95.8724419,
+        "placeId": "ChIJR5QFlMEjQYYR2aZ_jgUcai4"
+      },
+      {
+        "name": "Elite Dermatology & Plastic Surgery",
+        "address": "27131 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 612-0050",
+        "website": "https://www.elitedermatology.com/?utm_source=gmb_auth",
+        "categoryName": "Medical & Dental",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 7:30 AM – 5:00 PM",
+          "Tuesday: 7:30 AM – 5:00 PM",
+          "Wednesday: 7:30 AM – 5:00 PM",
+          "Thursday: 7:30 AM – 5:00 PM",
+          "Friday: 7:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7175727,
+        "longitude": -95.8502984,
+        "placeId": "ChIJTdHk07wjQYYRbwlu0cw2jyU"
+      },
+      {
+        "name": "Steeplechase Pediatric Center",
+        "address": "11605 S Fry Rd Ste 108, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 469-4340",
+        "website": "http://steeplechasepedi.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 3.8,
+        "hours": [
+          "Monday: 8:30 AM – 5:30 PM",
+          "Tuesday: 8:30 AM – 5:30 PM",
+          "Wednesday: 8:30 AM – 5:30 PM",
+          "Thursday: 8:30 AM – 5:30 PM",
+          "Friday: 8:30 AM – 5:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7058733,
+        "longitude": -95.84877399999999,
+        "placeId": "ChIJ1TS3M1MiQYYRRcT3ZNtpqHE"
+      },
+      {
+        "name": "Marwa Abd Alla MD",
+        "address": "6631 W Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 658-5750",
+        "website": "https://memorialhermann.org/doctors/family-medicine-doctors/dr-marwa-abd-alla-md-1477947455?utm_campaign=reputation-management&utm_segment=gmb_physician-listing&utm_source=yext&utm_medium=organic-search",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.693661,
+        "longitude": -95.8724381,
+        "placeId": "ChIJAUW6IQojQYYRUQJIDrW46rE"
+      },
+      {
+        "name": "Fulshear Foot and Ankle PLLC",
+        "address": "7609 Tiki Dr Suite D, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 391-1212",
+        "website": "http://www.fulshearfootandankle.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6927509,
+        "longitude": -95.88325499999999,
+        "placeId": "ChIJR-yZr8QiQYYRd4o5jOgi1qg"
+      },
+      {
+        "name": "Texas Children's Pediatrics Fulshear",
+        "address": "6623 W Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 885-6000",
+        "website": "https://www.texaschildrens.org/locations/texas-childrens-pediatrics/fulshear",
+        "categoryName": "Medical & Dental",
+        "rating": 3.9,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6932753,
+        "longitude": -95.8720197,
+        "placeId": "ChIJMb_KYjcjQYYRJtav0gRVNgI"
+      },
+      {
+        "name": "Veritas Health and Wellness",
+        "address": "30417 5th St Suite A, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 437-1327",
+        "website": "https://www.veritashealthandwellness.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.6955677,
+        "longitude": -95.8996627,
+        "placeId": "ChIJ51N29gQnQYYRKF-yC-7r1vQ"
+      },
+      {
+        "name": "Fulshear Dental-Dr. Aekta Fifadara",
+        "address": "7619 Tiki Dr A, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8371",
+        "website": "http://www.iheartfulsheardental.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.692312,
+        "longitude": -95.88330069999999,
+        "placeId": "ChIJmVfF_t4iQYYRdBuB2nk7_Bw"
+      },
+      {
+        "name": "359 Dental & Orthodontics",
+        "address": "8411 Main St Suite E, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 528-1179",
+        "website": "https://359dental.com/?utm_source=google.com&utm_medium=business+profile&utm_campaign=",
+        "categoryName": "Medical & Dental",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6913622,
+        "longitude": -95.8996597,
+        "placeId": "ChIJoWKBMFI9QYYRMkTriwACB88"
+      },
+      {
+        "name": "Miller Dental",
+        "address": "6619 W Cross Creek Bend Ln Ste 400, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 548-5904",
+        "website": "https://millerdentalcc.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 1:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6936874,
+        "longitude": -95.8720321,
+        "placeId": "ChIJtb7uZ7MjQYYRVxnDNRK6LwU"
+      },
+      {
+        "name": "Hometown Dental of Fulshear",
+        "address": "28830 FM 1093 Suite 120, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 789-1553",
+        "website": "https://hometowndentaloffulshear.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.692936,
+        "longitude": -95.8755442,
+        "placeId": "ChIJb2tcaJQjQYYRdKdwIHdf3kw"
+      },
+      {
+        "name": "Smiles of Fulshear & Implant",
+        "address": "6520 FM359 Suite 200, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 789-1455",
+        "website": "https://smilesoffulshear.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 1:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7089781,
+        "longitude": -95.9182343,
+        "placeId": "ChIJv8A9SPU9QYYRPsOzvm4bkR0"
+      },
+      {
+        "name": "Houston Pediatric Dental Specialists - Fulshear",
+        "address": "29818 FM 1093 #200, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8326",
+        "website": "https://www.pediatricdentisthoustontexas.com/fulshear-pediatric-dentists/",
+        "categoryName": "Medical & Dental",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 12:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6915971,
+        "longitude": -95.8899904,
+        "placeId": "ChIJ1TLy3TI9QYYRBcxkUARIh6g"
+      },
+      {
+        "name": "Fulshear Ozempic Clinic",
+        "address": "27123 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://fitmomentumclinic.online/no228/",
+        "categoryName": "Medical & Dental",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 8:00 PM",
+          "Tuesday: 8:00 AM – 8:00 PM",
+          "Wednesday: 8:00 AM – 8:00 PM",
+          "Thursday: 8:00 AM – 8:00 PM",
+          "Friday: 8:00 AM – 8:00 PM",
+          "Saturday: 8:00 AM – 8:00 PM",
+          "Sunday: 8:00 AM – 8:00 PM"
+        ],
+        "latitude": 29.7173636,
+        "longitude": -95.84805229999999,
+        "placeId": "ChIJme8iz5W7do8RAyP3mtiVooc"
+      },
+      {
+        "name": "Mosaic Mental Health and Wellness",
+        "address": "5757 Flewellen Oaks Lane Suite 302, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 987-7828",
+        "website": "http://mosaicmentalhealthtx.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7055316,
+        "longitude": -95.8483703,
+        "placeId": "ChIJl7SgSeEhQYYRb2c9ZLfqL_s"
+      },
+      {
+        "name": "Crownsdel Healthcare Services LLC",
+        "address": "31311 Mallet Cv, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 871-2990",
+        "website": "https://crownsdelhealthcare.com/",
+        "categoryName": "Medical & Dental",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6901889,
+        "longitude": -95.91311259999999,
+        "placeId": "ChIJ3d0P9dE9QYYRXPktPmsNRjE"
+      },
+      {
+        "name": "Integrated Health & Wellness Clinic",
+        "address": "30215 Liatris Bend Ln, Fulshear, TX 77423, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Medical & Dental",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.7546287,
+        "longitude": -95.89205199999999,
+        "placeId": "ChIJfeuHVYYlQYYRonX7OpnQvZk"
+      }
+    ],
+    "Beauty & Wellness": [
+      {
+        "name": "The Salons Of Fulshear",
+        "address": "8503 Wilson St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9332",
+        "website": "",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 9:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69105960000001,
+        "longitude": -95.8987063,
+        "placeId": "ChIJq9bk0jI9QYYRA3jn7P6O-Hk"
+      },
+      {
+        "name": "Hair Alchemy",
+        "address": "6230 FM 1463 Suite 700, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8029",
+        "website": "https://www.truehairalchemy.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 10:00 AM – 7:00 PM",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7008994,
+        "longitude": -95.8468369,
+        "placeId": "ChIJaUdu8gklQYYRqER_OixS0Ns"
+      },
+      {
+        "name": "Dreamcuts and Styles Hair Salon",
+        "address": "S Creek Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 310-6159",
+        "website": "https://www.dreamcutsandstyles.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 7:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6795581,
+        "longitude": -95.9003139,
+        "placeId": "ChIJS5QWCI_fQIYRBwOBWLqF-vQ"
+      },
+      {
+        "name": "Lavella Nails Spa",
+        "address": "28830 FM 1093 #140, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 451-6089",
+        "website": "https://lavellanailsspa.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.6929867,
+        "longitude": -95.8748258,
+        "placeId": "ChIJQe8xE_wjQYYRsBKbM9b_L2g"
+      },
+      {
+        "name": "Fulshear Nails N Spa",
+        "address": "29615 FM 1093 Ste 9, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8215",
+        "website": "http://fulshearnailsnspa.net/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.6,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 6:30 PM",
+          "Sunday: 11:30 AM – 6:00 PM"
+        ],
+        "latitude": 29.69013679999999,
+        "longitude": -95.8858858,
+        "placeId": "ChIJb7NIFi8jQYYR5DiVaJXfTP8"
+      },
+      {
+        "name": "Salon 1093",
+        "address": "29810 FM 1093 suite i, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8189",
+        "website": "http://salon1093.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.6,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6918243,
+        "longitude": -95.88955759999999,
+        "placeId": "ChIJ81OVwc8iQYYROB8q7X1sn7o"
+      },
+      {
+        "name": "Floreo Nail Spa",
+        "address": "27123 Fulshear Bend Dr d 400, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 849-3388",
+        "website": "https://floreonailspafulshear.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.7174166,
+        "longitude": -95.84821529999999,
+        "placeId": "ChIJde7DSq4jQYYRlqvQQPfmQCI"
+      },
+      {
+        "name": "Maldives Spa Nails Cross Creek Ranch",
+        "address": "28432 FM 1093 B, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 849-7784",
+        "website": "https://www.maldivesnailscrosscreek.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 11:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.6935796,
+        "longitude": -95.8692533,
+        "placeId": "ChIJWcbMygkjQYYRtlBC2PQWBlY"
+      },
+      {
+        "name": "Lumin LASH",
+        "address": "6630 FM 1463 suite 700, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 707-8607",
+        "website": "http://www.luminlash.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6975001,
+        "longitude": -95.8468409,
+        "placeId": "ChIJ3WbdXGEjQYYRWMA4JcPQRc4"
+      },
+      {
+        "name": "Venetian Nail Spa",
+        "address": "27120 Fulshear Bend Dr Suite 600, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 200-9999",
+        "website": "https://venetiansalon.com/cross-creek-ranch",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:30 AM – 7:30 PM",
+          "Tuesday: 9:30 AM – 7:30 PM",
+          "Wednesday: 9:30 AM – 7:30 PM",
+          "Thursday: 9:30 AM – 7:30 PM",
+          "Friday: 9:30 AM – 7:30 PM",
+          "Saturday: 9:30 AM – 7:30 PM",
+          "Sunday: 11:00 AM – 5:30 PM"
+        ],
+        "latitude": 29.7188031,
+        "longitude": -95.8487368,
+        "placeId": "ChIJpXAvRGYjQYYRHCCIBzqj21M"
+      },
+      {
+        "name": "Natural Wonder Nails & Spa",
+        "address": "6631 W Cross Creek Bend Ln #400, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 707-8387",
+        "website": "",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.6938126,
+        "longitude": -95.8725266,
+        "placeId": "ChIJlbBJCechQYYRsPBGfHiRby4"
+      },
+      {
+        "name": "ALLURE NAIL SPATIQUE",
+        "address": "5810 FM 1463 #160, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 394-9132",
+        "website": "https://allurenailspatique.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.3,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM��– 7:00 PM",
+          "Sunday: 11:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.70780019999999,
+        "longitude": -95.8473463,
+        "placeId": "ChIJUbwWV60jQYYRmNPJMXaFyuI"
+      },
+      {
+        "name": "LAVO natural nails",
+        "address": "11525 S Fry Rd #104, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8636",
+        "website": "http://www.lavonails.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.705908,
+        "longitude": -95.847904,
+        "placeId": "ChIJqdTTzKwjQYYRRP654ogYSxQ"
+      },
+      {
+        "name": "Chic Nail Lounge",
+        "address": "6630 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 394-9640",
+        "website": "https://m.facebook.com/ChicNailLoungeFulshear/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 11:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.69716709999999,
+        "longitude": -95.8467756,
+        "placeId": "ChIJPbY_AFAiQYYRQWwd2DWAlKU"
+      },
+      {
+        "name": "Kut N Up",
+        "address": "8509 Syms St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 217-3445",
+        "website": "",
+        "categoryName": "Beauty & Wellness",
+        "rating": 5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 2:00 – 8:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: Closed",
+          "Friday: 11:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6909869,
+        "longitude": -95.89759989999999,
+        "placeId": "ChIJJ2nqRs0iQYYRtpn5ILstqDQ"
+      },
+      {
+        "name": "Serene Head Spa & Wellness",
+        "address": "28840 FM 1093 Suite 140, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 560-3499",
+        "website": "",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.6929369,
+        "longitude": -95.8758144,
+        "placeId": "ChIJ9-MAK2YjQYYRlqx4vnZRGeQ"
+      },
+      {
+        "name": "Evergreen Spa",
+        "address": "US, S8030 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8476",
+        "website": "https://evergreenspa888.com/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 9:30 AM – 8:00 PM",
+          "Tuesday: 9:30 AM – 8:00 PM",
+          "Wednesday: 9:30 AM – 8:00 PM",
+          "Thursday: 9:30 AM – 8:00 PM",
+          "Friday: 9:30 AM – 8:00 PM",
+          "Saturday: 9:30 AM – 8:00 PM",
+          "Sunday: 9:30 AM – 8:00 PM"
+        ],
+        "latitude": 29.6957971,
+        "longitude": -95.90160159999999,
+        "placeId": "ChIJc4QkjVE9QYYRD27_FzH_0D0"
+      },
+      {
+        "name": "Wellness Spa Fulshear",
+        "address": "30417 5th St Suite C, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 395-2830",
+        "website": "https://wellnessspakaty.com/%E2%9C%BF-book-a-service",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 9:00 AM – 8:00 PM",
+          "Tuesday: 9:00 AM – 8:00 PM",
+          "Wednesday: 9:00 AM – 8:00 PM",
+          "Thursday: 9:00 AM – 8:00 PM",
+          "Friday: 9:00 AM – 8:00 PM",
+          "Saturday: 9:00 AM – 8:00 PM",
+          "Sunday: 9:00 AM – 8:00 PM"
+        ],
+        "latitude": 29.6955677,
+        "longitude": -95.8996627,
+        "placeId": "ChIJ6_551uk9QYYRUJ1_Zfd9Sgc"
+      },
+      {
+        "name": "Hand and Stone Massage and Facial Spa",
+        "address": "6230 FM 1463 Suite 65, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 310-5330",
+        "website": "https://handandstone.com/locations/fulshear/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 9:00 AM – 9:00 PM",
+          "Tuesday: 9:00 AM – 9:00 PM",
+          "Wednesday: 9:00 AM – 9:00 PM",
+          "Thursday: 9:00 AM – 9:00 PM",
+          "Friday: 9:00 AM – 9:00 PM",
+          "Saturday: 9:00 AM – 8:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.7006454,
+        "longitude": -95.84695579999999,
+        "placeId": "ChIJn2rgvh8jQYYRm7ABJaYXWH4"
+      },
+      {
+        "name": "Massage Heights Cross Creek",
+        "address": "27120 Fulshear Bend Dr Ste 800, Katy, TX 77494, USA",
+        "phoneNumber": "(832) 981-5668",
+        "website": "https://www.massageheights.com/cross-creek/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 9:00 PM",
+          "Tuesday: 9:00 AM – 9:00 PM",
+          "Wednesday: 9:00 AM – 9:00 PM",
+          "Thursday: 9:00 AM – 9:00 PM",
+          "Friday: 9:00 AM – 9:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.7188401,
+        "longitude": -95.8487237,
+        "placeId": "ChIJufmql4IjQYYRM9cr888F678"
+      },
+      {
+        "name": "Ls_Lash beauty studio (Lilianggi Sulbarán)",
+        "address": "6030 Texas Heritage Pkwy Apart 4107, Fulshear, TX 77441, USA",
+        "phoneNumber": "(469) 915-1018",
+        "website": "https://lsbeautystudio.netlify.app/",
+        "categoryName": "Beauty & Wellness",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 8:00 PM",
+          "Tuesday: 8:00 AM – 8:00 PM",
+          "Wednesday: 8:00 AM – 8:00 PM",
+          "Thursday: 8:00 AM – 8:00 PM",
+          "Friday: 8:00 AM – 8:00 PM",
+          "Saturday: 8:00 AM – 8:00 PM",
+          "Sunday: 8:30 AM – 8:00 PM"
+        ],
+        "latitude": 29.7022393,
+        "longitude": -95.8816585,
+        "placeId": "ChIJLcH2vsAjQYYRwD2RTAC4D1c"
+      },
+      {
+        "name": "Skin Care by Monik",
+        "address": "6615 W Cross Creek Bend Ln Suite #200, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 707-8543",
+        "website": "https://www.skincarebymonik.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=12876477518200825386",
+        "categoryName": "Beauty & Wellness",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6941269,
+        "longitude": -95.87184649999999,
+        "placeId": "ChIJSW4Jds0lQYYRwMl6f-2TKVY"
+      }
+    ],
+    "Financial Services": [
+      {
+        "name": "First Financial Bank",
+        "address": "29818 FM 1093 #100, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0221",
+        "website": "https://www.ffin.com/?utm_source=gmb&utm_medium=yext",
+        "categoryName": "Financial Services",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 9:00 AM – 4:00 PM",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6915068,
+        "longitude": -95.8900511,
+        "placeId": "ChIJWcvz3TI9QYYRotc2KHGlD5A"
+      },
+      {
+        "name": "Wallis Bank",
+        "address": "30506 1st St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 935-3720",
+        "website": "https://www.wallisbank.com/",
+        "categoryName": "Financial Services",
+        "rating": 3.8,
+        "hours": [
+          "Monday: 9:00 AM – 4:00 PM",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 5:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.691324,
+        "longitude": -95.9005775,
+        "placeId": "ChIJeU_J7DI9QYYR4L209JuZ8no"
+      },
+      {
+        "name": "Brazos Valley Schools Credit Union",
+        "address": "6646 Argonne Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 391-2149",
+        "website": "https://www.bvscu.org/",
+        "categoryName": "Financial Services",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:30 PM",
+          "Saturday: 8:30 AM – 12:30 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6930587,
+        "longitude": -95.8739166,
+        "placeId": "ChIJh8_SCG0jQYYRkA-7gNkqZWg"
+      },
+      {
+        "name": "Smart Financial Credit Union",
+        "address": "6727 FM, 1463 Fulshear Katy Rd, Katy, TX 77494, USA",
+        "phoneNumber": "(713) 850-1600",
+        "website": "https://www.smartcu.org/?utm_source=GBP&utm_medium=GBPLocations",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 2:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6956012,
+        "longitude": -95.8453447,
+        "placeId": "ChIJh-qETCMjQYYRNQKQkHQwAks"
+      },
+      {
+        "name": "Edward Jones - Financial Advisor: Mark A Hippler",
+        "address": "8525 FM359 Suite 200, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9746",
+        "website": "https://www.edwardjones.com/us-en/financial-advisor/mark-hippler?y_source=1_OTYyNjQxLTcxNS1sb2NhdGlvbi53ZWJzaXRl",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:30 AM – 4:30 PM",
+          "Tuesday: 8:30 AM – 4:30 PM",
+          "Wednesday: 8:30 AM – 4:30 PM",
+          "Thursday: 8:30 AM – 4:30 PM",
+          "Friday: 8:30 AM – 4:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.690829,
+        "longitude": -95.8997842,
+        "placeId": "ChIJJxJRwTI9QYYRySSktBTQ-Mc"
+      },
+      {
+        "name": "Edward Jones - Financial Advisor: Aaron Kilpatrick",
+        "address": "29810 FM 1093 Suite C, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 789-1139",
+        "website": "https://www.edwardjones.com/us-en/financial-advisor/aaron-kilpatrick?y_source=1_OTgwODY1Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6914807,
+        "longitude": -95.8896762,
+        "placeId": "ChIJb986oWAnQYYRGDRCluVkIAo"
+      },
+      {
+        "name": "Edward Jones - Financial Advisor: Matt Steger",
+        "address": "5757 Flewellen Oaks Lane Ste 703, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 829-1428",
+        "website": "https://www.edwardjones.com/us-en/financial-advisor/matt-steger?y_source=1_OTY2MTE4LTcxNS1sb2NhdGlvbi53ZWJzaXRl",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7055559,
+        "longitude": -95.8486601,
+        "placeId": "ChIJZ_OZej8nQYYRX3XtIN4N858"
+      },
+      {
+        "name": "Amity Financial Achievements",
+        "address": "5407 Mesquite Ridge St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 239-5812",
+        "website": "http://www.amityfinancialachievements.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6849383,
+        "longitude": -95.90139529999999,
+        "placeId": "ChIJuSN95aI9QYYR5oAmwYLTNcY"
+      },
+      {
+        "name": "Sandefur CPA, P.C.",
+        "address": "30502 2nd St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-0911",
+        "website": "http://www.sandefurcpa.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.2,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6922421,
+        "longitude": -95.9004642,
+        "placeId": "ChIJ2b5FnDI9QYYRLCNKzbFLFdI"
+      },
+      {
+        "name": "Fulshear Insurance",
+        "address": "30415 5th St Suite E, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9067",
+        "website": "https://www.fulshearinsurance.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.695452,
+        "longitude": -95.8996779,
+        "placeId": "ChIJgYBVwM8iQYYRHOOU2MRTEc4"
+      },
+      {
+        "name": "West Houston Insurance Agency",
+        "address": "30810 S Creek Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 582-3741",
+        "website": "http://westhoustoninsurance.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 7:00 AM – 8:00 PM",
+          "Tuesday: 7:00 AM – 8:00 PM",
+          "Wednesday: 7:00 AM – 8:00 PM",
+          "Thursday: 7:00 AM – 8:00 PM",
+          "Friday: 7:00 AM – 8:00 PM",
+          "Saturday: 7:00 AM – 8:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6823376,
+        "longitude": -95.9056046,
+        "placeId": "ChIJMdsyHw09QYYR7mkUINoNXjA"
+      },
+      {
+        "name": "Jay Moyer - State Farm Insurance Agent",
+        "address": "5757 Flewellen Oaks Lane Ste 401, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 829-2886",
+        "website": "http://www.moyer4less.com/?cmpid=t5t9_blm_0001",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7055019,
+        "longitude": -95.8486466,
+        "placeId": "ChIJVVVVVZXZQIYRwoS_7zjORHM"
+      },
+      {
+        "name": "Stieber Insurance Group, LLC",
+        "address": "29810 FM 1093 STE A, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 341-7141",
+        "website": "https://www.stieberinsurance.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6915053,
+        "longitude": -95.88959779999999,
+        "placeId": "ChIJ81OVwc8iQYYRjBkMexcTsac"
+      },
+      {
+        "name": "Allstate Insurance Agent: Cole Insurance Group",
+        "address": "5757 Flewellen Oaks Lane Ste. 2301, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 910-2886",
+        "website": "https://agents.allstate.com/cole-insurance-group-fulshear-tx.html",
+        "categoryName": "Financial Services",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 8:30 AM – 5:30 PM",
+          "Tuesday: 8:30 AM – 5:30 PM",
+          "Wednesday: 8:30 AM – 5:30 PM",
+          "Thursday: 8:30 AM – 5:30 PM",
+          "Friday: 8:30 AM – 5:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7054434,
+        "longitude": -95.84873689999999,
+        "placeId": "ChIJ5wc8_KrCQIYR2R8LRNBP6qc"
+      },
+      {
+        "name": "Jeff Gilbert - State Farm Insurance Agent",
+        "address": "8045 FM359 Ste 111, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-4201",
+        "website": "https://www.jeffgilbertsfinsurance.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 9:00 AM – 12:00 PM, 1:00 – 5:00 PM",
+          "Tuesday: 9:00 AM – 12:00 PM, 1:00 – 5:00 PM",
+          "Wednesday: 9:00 AM – 12:00 PM, 1:00 – 5:00 PM",
+          "Thursday: 9:00 AM – 12:00 PM, 1:00 – 5:00 PM",
+          "Friday: 9:00 AM – 12:00 PM, 1:00 – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69595,
+        "longitude": -95.90062999999999,
+        "placeId": "ChIJDxf8nKQhQYYR3AOH7DzIq0s"
+      },
+      {
+        "name": "CLM Insurance Agency",
+        "address": "5757 Flewellen Oaks Lane #702, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 734-5017",
+        "website": "https://www.clminsuranceagency.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 4:00 PM",
+          "Tuesday: 9:00 AM – 4:00 PM",
+          "Wednesday: 9:00 AM – 4:00 PM",
+          "Thursday: 9:00 AM – 4:00 PM",
+          "Friday: 9:00 AM – 12:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7053493,
+        "longitude": -95.8485888,
+        "placeId": "ChIJc3WrKLQjQYYRobRfbnZg0A8"
+      },
+      {
+        "name": "Todd Shipp - State Farm Insurance Agent",
+        "address": "30634 Front St Ste B, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 464-4255",
+        "website": "http://www.toddshipp.com/?cmpid=qwnd_blm_0001",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 4:45 PM",
+          "Tuesday: 9:00 AM – 4:45 PM",
+          "Wednesday: 9:00 AM – 4:45 PM",
+          "Thursday: 9:00 AM – 4:45 PM",
+          "Friday: 9:00 AM – 4:45 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6898442,
+        "longitude": -95.9021173,
+        "placeId": "ChIJo5ga22PEQIYRbmHm2MHDyNs"
+      },
+      {
+        "name": "Thrive Insurance Group",
+        "address": "8045 FM359 Suite 202, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 640-3733",
+        "website": "http://www.thriveinsurancetexas.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6960449,
+        "longitude": -95.9005909,
+        "placeId": "ChIJV2E-pBkjQYYRg7NvWJW6TWA"
+      },
+      {
+        "name": "HealthMarkets Insurance - Kyle Brown",
+        "address": "4007 Addison Ranch Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 300-8715",
+        "website": "https://www.healthmarkets.com/local-health-insurance-agent/kbrown/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 6:00��PM",
+          "Saturday: 10:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.724749,
+        "longitude": -95.84960249999999,
+        "placeId": "ChIJYyrThEEjQYYRdBOU8g3XOAo"
+      },
+      {
+        "name": "Dr.SeguroUSA",
+        "address": "5106 a prairie Terrace Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(321) 317-9591",
+        "website": "",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7301625,
+        "longitude": -95.86874209999999,
+        "placeId": "ChIJn5bIvF4jQYYRawljJEMUmTs"
+      },
+      {
+        "name": "Rundlof Insurance Group",
+        "address": "5757 Flewellen Oaks Lane #701, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 384-8182",
+        "website": "http://www.katymedicare.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 6:00 PM",
+          "Tuesday: 8:00 AM – 6:00 PM",
+          "Wednesday: 8:00 AM – 6:00 PM",
+          "Thursday: 8:00 AM – 6:00 PM",
+          "Friday: 8:00 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7052945,
+        "longitude": -95.84948849999999,
+        "placeId": "ChIJV3M8mjQhQYYRKJGtVwBc3Xs"
+      },
+      {
+        "name": "Paul Lytle: Allstate Insurance",
+        "address": "8030 FM 359 Rd S, suite d, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 266-0153",
+        "website": "https://agents.allstate.com/paul-lytle-fulshear-tx.html?utm_source=GMB&utm_medium=Website",
+        "categoryName": "Financial Services",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 8:30 AM – 5:30 PM",
+          "Tuesday: 8:30 AM – 5:30 PM",
+          "Wednesday: 8:30 AM – 5:30 PM",
+          "Thursday: 8:30 AM – 5:30 PM",
+          "Friday: 8:30 AM – 5:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6957971,
+        "longitude": -95.90160159999999,
+        "placeId": "ChIJm_E4EC09QYYRALpH9Ty2BQk"
+      },
+      {
+        "name": "Monarch Title of Texas LLC",
+        "address": "6615 W Cross Creek Bend Ln Suite 100, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 404-2795",
+        "website": "http://monarchtitleoftexas.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.694011,
+        "longitude": -95.8718399,
+        "placeId": "ChIJ2fDJ0VIiQYYR6BU9rWVHQEA"
+      },
+      {
+        "name": "Paramount Tax & Bookkeeping Fulshear",
+        "address": "8045 FM359 Suite 207, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 239-1944",
+        "website": "https://paramount.tax/fulshear",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6960449,
+        "longitude": -95.9005909,
+        "placeId": "ChIJNxyH0iM9QYYR4zpgmY3CUPo"
+      },
+      {
+        "name": "TaxNotch LLC",
+        "address": "11525 S Fry Rd Ste 103, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 520-8799",
+        "website": "https://taxnotch.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 5:30 PM",
+          "Tuesday: 10:00 AM – 5:30 PM",
+          "Wednesday: 10:00 AM – 5:30 PM",
+          "Thursday: 10:00 AM – 5:30 PM",
+          "Friday: 10:00 AM – 5:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7057936,
+        "longitude": -95.8479538,
+        "placeId": "ChIJA4ayVksjQYYR-DH4K6RQDSU"
+      },
+      {
+        "name": "Avila and Smith Associates",
+        "address": "31847 Wellington Pass, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 674-3795",
+        "website": "https://avilaandsmithassociates.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 7:30 PM",
+          "Tuesday: 9:00 AM – 7:30 PM",
+          "Wednesday: 9:00 AM – 7:30 PM",
+          "Thursday: 9:00 AM – 7:30 PM",
+          "Friday: 9:00 AM – 7:30 PM",
+          "Saturday: 9:00 AM – 7:30 PM",
+          "Sunday: 9:00 AM – 4:00 PM"
+        ],
+        "latitude": 29.6897275,
+        "longitude": -95.92093229999999,
+        "placeId": "ChIJv8IPzzE9QYYRu2HwVy_T968"
+      },
+      {
+        "name": "Abacus Taxes and Business Solutions, LLC",
+        "address": "5757 Flewellen Oaks Lane Building 5 Unit 501, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 933-1031",
+        "website": "http://www.abacustaxestx.com/",
+        "categoryName": "Financial Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 5:00 PM",
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.70547699999999,
+        "longitude": -95.8495483,
+        "placeId": "ChIJpx32LHQjQYYRVu0Qat5QNHg"
+      },
+      {
+        "name": "Sessions Hearon & Associates PLLC",
+        "address": "29810 FM 1093 SUITE D, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 345-9311",
+        "website": "http://www.sessions-cpa.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6915053,
+        "longitude": -95.88959779999999,
+        "placeId": "ChIJvTh-jYrnQIYRL7aHeNtyUH8"
+      },
+      {
+        "name": "Avila and Smith Associates",
+        "address": "31847 Wellington Pass, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 674-3795",
+        "website": "https://avilaandsmithassociates.com/",
+        "categoryName": "Financial Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 9:00 AM – 7:30 PM",
+          "Tuesday: 9:00 AM – 7:30 PM",
+          "Wednesday: 9:00 AM – 7:30 PM",
+          "Thursday: 9:00 AM – 7:30 PM",
+          "Friday: 9:00 AM – 7:30 PM",
+          "Saturday: 9:00 AM – 7:30 PM",
+          "Sunday: 9:00 AM – 4:00 PM"
+        ],
+        "latitude": 29.6897404,
+        "longitude": -95.9209632,
+        "placeId": "ChIJwwX3-gt0qgIRbNCkeWoJPxc"
+      }
+    ],
+    "Real Estate": [
+      {
+        "name": "Terra Point Realty",
+        "address": "30302 2nd St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 766-1697",
+        "website": "https://terrapointrealty.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6925024,
+        "longitude": -95.89811569999999,
+        "placeId": "ChIJeWhMTZkjQYYRwHvurWzMWr8"
+      },
+      {
+        "name": "Katy-Fulshear Real Estate: Johnny Quarles",
+        "address": "29818 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 361-8055",
+        "website": "http://katy-fulshear-realestate.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.6914197,
+        "longitude": -95.8899814,
+        "placeId": "ChIJWcvz3TI9QYYReNRdnPvmrx0"
+      },
+      {
+        "name": "Roller Realty",
+        "address": "8310 Wilson St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-0222",
+        "website": "https://www.rollerrealty.net/",
+        "categoryName": "Real Estate",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 3:00 PM",
+          "Sunday: 11:00 AM – 3:00 PM"
+        ],
+        "latitude": 29.6926296,
+        "longitude": -95.899312,
+        "placeId": "ChIJ___rVy09QYYRogpdnlNzjAs"
+      },
+      {
+        "name": "Mosswood Properties, LLC (Information Center)",
+        "address": "5646 Weston Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9939",
+        "website": "https://mosswoodproperties.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 9:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6835211,
+        "longitude": -95.9351319,
+        "placeId": "ChIJy6fybAw9QYYRaqmwpiZ-X6o"
+      },
+      {
+        "name": "KLD Premier Realty",
+        "address": "30417 5th St Suite B, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 465-7557",
+        "website": "https://kldpremierrealty.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.6952945,
+        "longitude": -95.8997138,
+        "placeId": "ChIJnWOcUnw9QYYR5dG31zVpFnE"
+      },
+      {
+        "name": "Realty 1 Partners",
+        "address": "6510 FM359 #100, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 944-9660",
+        "website": "http://www.realty1partners.com/",
+        "categoryName": "Real Estate",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 12:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7096314,
+        "longitude": -95.91853239999999,
+        "placeId": "ChIJ06MgRzoiQYYRhdLOkev_000"
+      },
+      {
+        "name": "Blue Bird Real Estate & Blue Bird Approach",
+        "address": "32311 Rogers Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1100",
+        "website": "https://www.bluebirdapproach.com/",
+        "categoryName": "Real Estate",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: 8:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7048321,
+        "longitude": -95.9262418,
+        "placeId": "ChIJT_X-OOI8QYYRH-GxBuBMECU"
+      },
+      {
+        "name": "Real Property Management Luxury",
+        "address": "29810 FM 1093 Suite E, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 275-3115",
+        "website": "https://www.rpmluxury.com/?cid=LSTL_RPM000203&utm_source=gmb&utm_campaign=local&utm_medium=organic",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6915053,
+        "longitude": -95.88959779999999,
+        "placeId": "ChIJVY6lwYMjQYYReDF9yznkNO0"
+      },
+      {
+        "name": "Rely On The Rileys - Real Estate & Lending",
+        "address": "11525 S Fry Rd STE 106, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 660-1634",
+        "website": "https://www.relyontherileys.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.705837,
+        "longitude": -95.84810399999999,
+        "placeId": "ChIJ5wnNj9AjQYYRtfNblyDast8"
+      },
+      {
+        "name": "Fulbrook on Fulshear Creek",
+        "address": "5005 Lodge Lake Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-3076",
+        "website": "https://www.fulbrookhomes.com/master-planned-community",
+        "categoryName": "Real Estate",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 11:00 AM – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ],
+        "latitude": 29.6798652,
+        "longitude": -95.8945644,
+        "placeId": "ChIJ-TFFjsoiQYYRUrCDOjGJ7dI"
+      },
+      {
+        "name": "Greater Houston REP, Inc",
+        "address": "5757 Flewellen Oaks Lane #104, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 913-5505",
+        "website": "http://greaterhoustonrep.com/",
+        "categoryName": "Real Estate",
+        "rating": 4.3,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7054842,
+        "longitude": -95.8477022,
+        "placeId": "ChIJU0VGlpeVXhQRSA09mChU6QQ"
+      },
+      {
+        "name": "C. Gordon Realty Team brokered by eXp, Realty - Pamela Allen & Christin Price",
+        "address": "8610 Pool Hill Rd Box 1105, Fulshear, TX 77441, USA",
+        "phoneNumber": "(877) 583-2689",
+        "website": "https://pamelaallen.exprealty.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 7:00 PM",
+          "Tuesday: 9:00 AM – 7:00 PM",
+          "Wednesday: 9:00 AM – 7:00 PM",
+          "Thursday: 9:00 AM – 7:00 PM",
+          "Friday: 9:00 AM – 7:00 PM",
+          "Saturday: 9:00 AM – 7:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6861124,
+        "longitude": -95.944717,
+        "placeId": "ChIJLfZZ6O49QYYR2QlgkjoUaK0"
+      },
+      {
+        "name": "Broadstone Cross Creek Ranch",
+        "address": "6030 Texas Heritage Pkwy, Fulshear, TX 77441, USA",
+        "phoneNumber": "(833) 749-2097",
+        "website": "https://broadstonecrosscreekranch.com/?utm_source=gmb&utm_medium=organic",
+        "categoryName": "Real Estate",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ],
+        "latitude": 29.70366229999999,
+        "longitude": -95.8803605,
+        "placeId": "ChIJ5arfYjwjQYYRcAvw8salSLY"
+      },
+      {
+        "name": "Prestige Properties Texas",
+        "address": "5757 Flewellen Oaks Lane #204, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 960-9833",
+        "website": "http://www.prestigepropertiestx1.com/",
+        "categoryName": "Real Estate",
+        "rating": 3,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 12:00 – 5:00 PM",
+          "Sunday: 12:00 – 5:00 PM"
+        ],
+        "latitude": 29.7053493,
+        "longitude": -95.8485888,
+        "placeId": "ChIJiS6o1ckfQYYRJOP1fCM4stU"
+      },
+      {
+        "name": "KPM Management",
+        "address": "5757 Flewellen Oaks Lane #404, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 685-3090",
+        "website": "http://www.kpmcommunities.com/",
+        "categoryName": "Real Estate",
+        "rating": 3.2,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7053493,
+        "longitude": -95.8485888,
+        "placeId": "ChIJiQgZp4kjQYYRgqS_j26uhP4"
+      },
+      {
+        "name": "Parklane Fulshear Apartments",
+        "address": "27222 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 803-3333",
+        "website": "https://www.parklanefulshear.com/",
+        "categoryName": "Real Estate",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.71884779999999,
+        "longitude": -95.8506213,
+        "placeId": "ChIJoV7U5aUjQYYRgPH40dWITUU"
+      },
+      {
+        "name": "Camber Ridge at Cross Creek Ranch Apartments",
+        "address": "5900 Texas Heritage Pkwy, Fulshear, TX 77441, USA",
+        "phoneNumber": "(903) 201-1184",
+        "website": "https://camberridgeapartments.com/?id=TX4CBGOO",
+        "categoryName": "Real Estate",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ],
+        "latitude": 29.7051481,
+        "longitude": -95.8806654,
+        "placeId": "ChIJ-4G_JO0jQYYRZcy8PpXkARk"
+      },
+      {
+        "name": "The Argonne Apartments",
+        "address": "6636 Argonne Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 655-6636",
+        "website": "https://www.argonnecrosscreekranch.com/",
+        "categoryName": "Real Estate",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6947479,
+        "longitude": -95.873515,
+        "placeId": "ChIJt7bX_HcjQYYRLY98Hc1Lyws"
+      },
+      {
+        "name": "Alders Cross Creek",
+        "address": "6525 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 656-6656",
+        "website": "https://alderscrosscreek.com/?switch_cls[id]=95345&utm_source=gmb&utm_medium=organic",
+        "categoryName": "Real Estate",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 1:00 – 5:00 PM"
+        ],
+        "latitude": 29.6948547,
+        "longitude": -95.870018,
+        "placeId": "ChIJe5rVtX8jQYYRA11YujKfTk4"
+      }
+    ],
+    "Automotive": [
+      {
+        "name": "Valvoline Instant Oil Change",
+        "address": "5330 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 789-1151",
+        "website": "https://store.vioc.com/tx/fulshear/oil-change-070060.html?utm_source=google&utm_medium=local&utm_campaign=localsearch",
+        "categoryName": "Automotive",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 8:00 AM – 7:00 PM",
+          "Tuesday: 8:00 AM – 7:00 PM",
+          "Wednesday: 8:00 AM – 7:00 PM",
+          "Thursday: 8:00 AM – 7:00 PM",
+          "Friday: 8:00 AM – 7:00 PM",
+          "Saturday: 8:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 4:00 PM"
+        ],
+        "latitude": 29.71597419999999,
+        "longitude": -95.84671379999999,
+        "placeId": "ChIJ-XReVYMjQYYRD4fI0IWP52A"
+      },
+      {
+        "name": "Bravous Motor Way",
+        "address": "Fulshear, TX 77441, USA",
+        "phoneNumber": "(929) 702-8884",
+        "website": "https://bravousmw.com/",
+        "categoryName": "Automotive",
+        "rating": 5,
+        "hours": [
+          "Monday: 7:00 AM – 11:30 PM",
+          "Tuesday: 7:00 AM – 11:30 PM",
+          "Wednesday: 7:00 AM – 11:30 PM",
+          "Thursday: 7:00 AM – 11:30 PM",
+          "Friday: 7:00 AM – 11:30 PM",
+          "Saturday: 7:00 AM – 11:30 PM",
+          "Sunday: 7:30 AM – 11:00 PM"
+        ],
+        "latitude": 29.69283339999999,
+        "longitude": -95.90030879999999,
+        "placeId": "ChIJpQHrBR89QYYRFaNAwJ8NewY"
+      },
+      {
+        "name": "Jeff's Custom Car Care",
+        "address": "33412 Reynolds Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 361-1813",
+        "website": "",
+        "categoryName": "Automotive",
+        "rating": 4.6,
+        "hours": [],
+        "latitude": 29.68584250000001,
+        "longitude": -95.94818680000002,
+        "placeId": "ChIJOx_5aKQ9QYYR6_dPH6ZzcC0"
+      }
+    ],
+    "Professional Services": [
+      {
+        "name": "Wadler Perches & Kerlick",
+        "address": "29818 FM 1093 Suite 206, Fulshear, TX 77441, USA",
+        "phoneNumber": "(800) 929-1725",
+        "website": "https://wpk-law.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69157359999999,
+        "longitude": -95.89009279999999,
+        "placeId": "ChIJ4-8y5Cw9QYYR4etUyslyddo"
+      },
+      {
+        "name": "Owen Gu Law Group P.C.",
+        "address": "5757 Flewellen Oaks Lane Suite 301, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://owenlawpc.com/",
+        "categoryName": "Professional Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.70544739999999,
+        "longitude": -95.847624,
+        "placeId": "ChIJ7cpyLhshQYYRyVP-j-4g6mk"
+      },
+      {
+        "name": "Rachel L. Rust, Attorney at Law",
+        "address": "29818 FM 1093 Suite 206, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 271-4830",
+        "website": "https://txlawlady.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 2:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69157359999999,
+        "longitude": -95.89009279999999,
+        "placeId": "ChIJeX3QrSMjQYYRUe6qGZCnpsc"
+      },
+      {
+        "name": "Vfal",
+        "address": "27222 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(915) 205-2404",
+        "website": "",
+        "categoryName": "Professional Services",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.7188682,
+        "longitude": -95.85070379999999,
+        "placeId": "ChIJoV7U5aUjQYYRDBLi96wIgq4"
+      },
+      {
+        "name": "Spic and Span House/office Cleaning & Window Washing Services",
+        "address": "29126 Brooks Valley Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 564-5656",
+        "website": "https://spicandspanfulshear.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.9,
+        "hours": [],
+        "latitude": 29.708447,
+        "longitude": -95.8792253,
+        "placeId": "ChIJZbHFO6k9QYYR2jGU-5huPEk"
+      },
+      {
+        "name": "Caroline OnTheGo Fulshear Notary Services",
+        "address": "5810 FM 1463, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 380-4031",
+        "website": "https://carolineonthegofulshearnotary.com/",
+        "categoryName": "Professional Services",
+        "rating": 5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.7077995,
+        "longitude": -95.8474591,
+        "placeId": "ChIJhYOY6hYjQYYRz77ns3mNx58"
+      },
+      {
+        "name": "Cross Creek Ranch Notary Public",
+        "address": "28023 Castle Park Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(510) 676-6475",
+        "website": "",
+        "categoryName": "Professional Services",
+        "rating": 5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.7276712,
+        "longitude": -95.85653819999999,
+        "placeId": "ChIJH97NHPAjQYYRk-LqUs9r9Fc"
+      },
+      {
+        "name": "U.S. Marine Technical Services LLC",
+        "address": "8055 Main St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(337) 258-3717",
+        "website": "https://usmtsllc.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 6:00 AM – 5:00 PM",
+          "Tuesday: 6:00 AM – 5:00 PM",
+          "Wednesday: 6:00 AM – 5:00 PM",
+          "Thursday: 6:00 AM – 5:00 PM",
+          "Friday: 6:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: 9:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.6954632,
+        "longitude": -95.90046919999999,
+        "placeId": "ChIJYerMwKkicC8RlfDdagYhWIY"
+      },
+      {
+        "name": "Austex Plumbing",
+        "address": "30318 2nd St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 612-8466",
+        "website": "",
+        "categoryName": "Professional Services",
+        "rating": 3.4,
+        "hours": [],
+        "latitude": 29.692471,
+        "longitude": -95.898817,
+        "placeId": "ChIJaYllfRjDQIYRYKpJM-aur2s"
+      },
+      {
+        "name": "TTC Consulting Services",
+        "address": "3415 Cres Vista Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(833) 882-7787",
+        "website": "https://ttcconsultingservices.com/contact-us",
+        "categoryName": "Professional Services",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.7317243,
+        "longitude": -95.8665278,
+        "placeId": "ChIJP_NRfHIjQYYRx2GZmAU3OA8"
+      },
+      {
+        "name": "UPC Global",
+        "address": "5757 Flewellen Oaks Lane Suite 201, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 644-0302",
+        "website": "http://upcoglobal.com/",
+        "categoryName": "Professional Services",
+        "rating": 4,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7055365,
+        "longitude": -95.84891619999999,
+        "placeId": "ChIJk-_fyGInQYYRFdfDGPRixv8"
+      },
+      {
+        "name": "Frontier Title Fulshear",
+        "address": "8030 FM359 G, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 603-1171",
+        "website": "http://www.frontiertitletexas.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 8:30 AM – 5:00 PM",
+          "Tuesday: 8:30 AM – 5:00 PM",
+          "Wednesday: 8:30 AM – 5:00 PM",
+          "Thursday: 8:30 AM – 5:00 PM",
+          "Friday: 8:30 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6958961,
+        "longitude": -95.90156549999999,
+        "placeId": "ChIJfRf3Viw9QYYRFBYJKa33Xas"
+      },
+      {
+        "name": "Gentle Guidance Counseling",
+        "address": "8045 FM359 Suite 209, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-7832",
+        "website": "https://www.gentleguidancecounseling.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 11:00 AM – 4:00 PM",
+          "Wednesday: 11:00 AM – 4:00 PM",
+          "Thursday: 11:00 AM – 4:00 PM",
+          "Friday: 11:00 AM – 4:00 PM",
+          "Saturday: 10:00 AM – 1:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6960449,
+        "longitude": -95.9005909,
+        "placeId": "ChIJQ4Gb9yU9QYYRp55Jrm-UFL0"
+      },
+      {
+        "name": "InFocus Title, LLC",
+        "address": "5757 Flewellen Oaks Lane #702, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 707-8558",
+        "website": "http://infocustitle.com/",
+        "categoryName": "Professional Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7053542,
+        "longitude": -95.84955049999999,
+        "placeId": "ChIJoyf2gPojQYYRWVg42RCH7cw"
+      },
+      {
+        "name": "Greater Houston Sharpening @ Fulshear ACE Hardware",
+        "address": "8411A FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-8571",
+        "website": "https://greaterhoustonsharpening.com/locations/greater-houston-sharpening-at-fulshear-ace-hardware/?utm_source=GMBlisting-Uberall",
+        "categoryName": "Professional Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 7:00 PM",
+          "Tuesday: 8:00 AM – 7:00 PM",
+          "Wednesday: 8:00 AM – 7:00 PM",
+          "Thursday: 8:00 AM – 7:00 PM",
+          "Friday: 8:00 AM – 7:00 PM",
+          "Saturday: 8:00 AM – 7:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
+        ],
+        "latitude": 29.691616,
+        "longitude": -95.8997442,
+        "placeId": "ChIJKR_SgiA9QYYRtCGI_Iq_xNg"
+      },
+      {
+        "name": "Level Up Education Consultancy",
+        "address": "Cross Creek West, Fulshear, TX 77441, USA",
+        "phoneNumber": "(678) 338-5850",
+        "website": "https://levelupeducator.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:00 AM – 4:00 PM",
+          "Tuesday: 8:00 AM – 4:00 PM",
+          "Wednesday: 8:00 AM – 4:00 PM",
+          "Thursday: 8:00 AM – 4:00 PM",
+          "Friday: 8:00 AM – 4:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6911759,
+        "longitude": -95.93040390000002,
+        "placeId": "ChIJDbwSCC09QYYRB80e9kNNIyg"
+      },
+      {
+        "name": "SBS Corp",
+        "address": "5757 Flewellen Oaks Lane Suite 704, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 477-6467",
+        "website": "http://www.mysbscorp.com/",
+        "categoryName": "Professional Services",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 6:00 PM",
+          "Tuesday: 9:00 AM – 6:00 PM",
+          "Wednesday: 9:00 AM – 6:00 PM",
+          "Thursday: 9:00 AM – 6:00 PM",
+          "Friday: 9:00 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7055365,
+        "longitude": -95.84891619999999,
+        "placeId": "ChIJt5r4fSHSQIYRBCdG1qPcp9w"
+      }
+    ],
+    "Childcare & Education": [
+      {
+        "name": "Fulshear High School",
+        "address": "9302 Charger Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-5000",
+        "website": "http://www.lcisd.org/campuses/fulshearhs/home",
+        "categoryName": "Childcare & Education",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 7:00 AM – 4:00 PM",
+          "Tuesday: 7:45 AM – 4:15 PM",
+          "Wednesday: 7:45 AM – 4:15 PM",
+          "Thursday: 7:45 AM – 4:15 PM",
+          "Friday: 7:45 AM – 4:15 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69752179999999,
+        "longitude": -95.88668570000002,
+        "placeId": "ChIJ7y3BicUiQYYRkQ_foAVmItg"
+      },
+      {
+        "name": "Amy Campbell Elementary",
+        "address": "3701 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 234-4500",
+        "website": "https://www.katyisd.org/ACE",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.72692279999999,
+        "longitude": -95.866205,
+        "placeId": "ChIJA1hEt74jQYYRANoKBZdfjYk"
+      },
+      {
+        "name": "James Randolph Elementary School",
+        "address": "5303 Flewellen Oaks Lane, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 234-3800",
+        "website": "https://www.katyisd.org/JRE",
+        "categoryName": "Childcare & Education",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.7107156,
+        "longitude": -95.84786969999999,
+        "placeId": "ChIJ4xLWvq0jQYYRsYUdoZXuGt4"
+      },
+      {
+        "name": "Huggins Elementary School",
+        "address": "1 Huggins Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-1600",
+        "website": "",
+        "categoryName": "Childcare & Education",
+        "rating": 4.8,
+        "hours": [],
+        "latitude": 29.6987239,
+        "longitude": -95.89320509999999,
+        "placeId": "ChIJEaoM6dMiQYYRwkygQE90nzg"
+      },
+      {
+        "name": "Fletcher Morgan, Jr. Elementary School",
+        "address": "32727 School Hl Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-6200",
+        "website": "https://www.lcisd.org/campuses/morgan",
+        "categoryName": "Childcare & Education",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 7:15 AM – 2:40 PM",
+          "Tuesday: 7:15 AM – 2:40 PM",
+          "Wednesday: 7:15 AM – 2:40 PM",
+          "Thursday: 7:15 AM – 2:40 PM",
+          "Friday: 7:15 AM – 2:40 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6856125,
+        "longitude": -95.9385626,
+        "placeId": "ChIJO2FyL5o9QYYRh83DLVIV7Lk"
+      },
+      {
+        "name": "Dean Leaman Junior High School",
+        "address": "9320 Charger Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-5200",
+        "website": "https://www.lcisd.org/campuses/leamanjh/",
+        "categoryName": "Childcare & Education",
+        "rating": 3.3,
+        "hours": [
+          "Monday: 9:05 AM – 4:30 PM",
+          "Tuesday: 9:05 AM – 4:30 PM",
+          "Wednesday: 9:05 AM – 4:30 PM",
+          "Thursday: 9:05 AM – 4:30 PM",
+          "Friday: 9:05 AM – 4:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7002481,
+        "longitude": -95.88638189999999,
+        "placeId": "ChIJSSlGltkiQYYRPQQdB0C8RQs"
+      },
+      {
+        "name": "Jordan High School",
+        "address": "27500 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 234-9000",
+        "website": "http://www.katyisd.org/campus/jhs",
+        "categoryName": "Childcare & Education",
+        "rating": 3.3,
+        "hours": [
+          "Monday: 7:00 AM – 3:00 PM",
+          "Tuesday: 7:00 AM – 3:00 PM",
+          "Wednesday: 7:00 AM – 3:00 PM",
+          "Thursday: 7:00 AM – 3:00 PM",
+          "Friday: 7:00 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7206186,
+        "longitude": -95.8545092,
+        "placeId": "ChIJLRWu-kUjQYYRSmLQ6najL1Y"
+      },
+      {
+        "name": "Centerra Ranch Montessori - Fulshear",
+        "address": "7310 Fulshear Katy Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-4072",
+        "website": "https://centerraranchmontessori.com/fulshear-tx/?utm_source=google&utm_medium=gmb&utm_campaign=gmb",
+        "categoryName": "Childcare & Education",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 6:30 AM – 6:00 PM",
+          "Tuesday: 6:30 AM – 6:00 PM",
+          "Wednesday: 6:30 AM – 6:00 PM",
+          "Thursday: 6:30 AM – 6:00 PM",
+          "Friday: 6:30 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6978141,
+        "longitude": -95.8919258,
+        "placeId": "ChIJ67sKZPMjQYYR_DJCLOsKxwM"
+      },
+      {
+        "name": "Paideia Classical School Fulshear",
+        "address": "31802 Rogers Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 884-5990",
+        "website": "https://www.pcsfulshear.com/",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.709048,
+        "longitude": -95.923958,
+        "placeId": "ChIJBfPuExc9QYYRHQRnWoUCPsI"
+      },
+      {
+        "name": "The Goddard School of Fulshear",
+        "address": "5511 Lake Hill Farm Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 743-0002",
+        "website": "https://www.goddardschool.com/schools/tx/fulshear/fulshear?utm_source=google&utm_medium=business_listings&utm_campaign=school&utm_content=main_button",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: 6:30 AM – 6:30 PM",
+          "Tuesday: 6:30 AM – 6:30 PM",
+          "Wednesday: 6:30 AM – 6:30 PM",
+          "Thursday: 6:30 AM – 6:30 PM",
+          "Friday: 6:30 AM – 6:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6887,
+        "longitude": -95.90249999999999,
+        "placeId": "ChIJmcjvxGE9QYYRoi4I0N6CSic"
+      },
+      {
+        "name": "James W.Roberts Middle School",
+        "address": "9230 Charger Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-5300",
+        "website": "https://www.lcisd.org/campuses/roberts/home",
+        "categoryName": "Childcare & Education",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6948558,
+        "longitude": -95.8871595,
+        "placeId": "ChIJE0Bk7BYjQYYRB3j90O7P818"
+      },
+      {
+        "name": "Fulshear Early Learning Center",
+        "address": "30610 2nd St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-0100",
+        "website": "http://firstfulshearearlylearningcenter.com/",
+        "categoryName": "Childcare & Education",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 7:00 AM – 6:00 PM",
+          "Tuesday: 7:00 AM – 6:00 PM",
+          "Wednesday: 7:00 AM – 6:00 PM",
+          "Thursday: 7:00 AM – 6:00 PM",
+          "Friday: 7:00 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6920266,
+        "longitude": -95.9021343,
+        "placeId": "ChIJX2uPfTI9QYYRkdpTLDIjjo8"
+      },
+      {
+        "name": "LCISD - Fulshear Transportation",
+        "address": "29422 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-0551",
+        "website": "http://www.lcisd.org/departments/transportation",
+        "categoryName": "Childcare & Education",
+        "rating": 2.9,
+        "hours": [],
+        "latitude": 29.6933561,
+        "longitude": -95.88428119999999,
+        "placeId": "ChIJV9sSNdsiQYYRoq3RIKxV4d8"
+      },
+      {
+        "name": "Randle Elementary School",
+        "address": "5902 Sycamore Ranch Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 223-7000",
+        "website": "https://www.lcisd.org/campuses/randle-elementary/home",
+        "categoryName": "Childcare & Education",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.70392139999999,
+        "longitude": -95.8862114,
+        "placeId": "ChIJOcOwXAAjQYYR5nfTqWbr3c4"
+      },
+      {
+        "name": "Childrens Lighthouse of Katy - Cross Creek Ranch",
+        "address": "5740 FM 1463, Fulshear, TX 77494, USA",
+        "phoneNumber": "(281) 984-5733",
+        "website": "http://childrenslighthouse.com/crosscreekranch",
+        "categoryName": "Childcare & Education",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 6:30 AM – 6:00 PM",
+          "Tuesday: 6:30 AM – 6:00 PM",
+          "Wednesday: 6:30 AM – 6:00 PM",
+          "Thursday: 6:30 AM – 6:00 PM",
+          "Friday: 6:30 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.70949,
+        "longitude": -95.8468562,
+        "placeId": "ChIJVRypi948QYYR1a-aYh3Gu_I"
+      },
+      {
+        "name": "Children of America Fulshear",
+        "address": "27107 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 527-0800",
+        "website": "https://www.childrenofamerica.com/locations-fulshear.cfm",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: 6:00 AM – 6:30 PM",
+          "Tuesday: 6:00 AM – 6:30 PM",
+          "Wednesday: 6:00 AM – 6:30 PM",
+          "Thursday: 6:00 AM – 6:30 PM",
+          "Friday: 6:00 AM – 6:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7163026,
+        "longitude": -95.8475045,
+        "placeId": "ChIJnQP0TVMjQYYR1Kc87nEUBME"
+      },
+      {
+        "name": "Ivy Kids of Cross Creek",
+        "address": "6407 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 942-4155",
+        "website": "https://www.ivykids.com/listing/ivy-kids-of-cross-creek/",
+        "categoryName": "Childcare & Education",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 6:00 AM – 6:30 PM",
+          "Tuesday: 6:00 AM – 6:30 PM",
+          "Wednesday: 6:00 AM – 6:30 PM",
+          "Thursday: 6:00 AM – 6:30 PM",
+          "Friday: 6:00 AM – 6:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.695259,
+        "longitude": -95.8683013,
+        "placeId": "ChIJFQu1HdcjQYYR5o7EhxU3Ax8"
+      },
+      {
+        "name": "Foundations Preschool",
+        "address": "3522 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.foundationspreschool-fulshear.com/",
+        "categoryName": "Childcare & Education",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 6:00 AM – 6:30 PM",
+          "Tuesday: 6:00 AM – 6:30 PM",
+          "Wednesday: 6:00 AM – 6:30 PM",
+          "Thursday: 6:00 AM – 6:30 PM",
+          "Friday: 6:00 AM – 6:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7246405,
+        "longitude": -95.86844769999999,
+        "placeId": "ChIJu3DwhT8jQYYRrIPtT0SS6D8"
+      },
+      {
+        "name": "Little Innovators Preschool",
+        "address": "7700 Wallis St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 819-0225",
+        "website": "http://www.littleinnovatorstx.com/",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: 7:30 AM – 6:00 PM",
+          "Tuesday: 7:30 AM – 6:00 PM",
+          "Wednesday: 7:30 AM – 6:00 PM",
+          "Thursday: 7:30 AM – 6:00 PM",
+          "Friday: 7:30 AM – 6:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6987209,
+        "longitude": -95.9060861,
+        "placeId": "ChIJCbQUC9k9QYYRTd8jpN8shok"
+      },
+      {
+        "name": "Sylvan Learning of Fulshear",
+        "address": "6619 W Cross Creek Bend Ln #100, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 685-4046",
+        "website": "https://www.sylvanlearning.com/locations/us/tx/fulshear-tutoring/fulshear?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=8344",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: 12:00 – 7:00 PM",
+          "Tuesday: 12:00 – 7:00 PM",
+          "Wednesday: 12:00 – 7:00 PM",
+          "Thursday: 12:00 – 7:00 PM",
+          "Friday: Closed",
+          "Saturday: 9:00 AM – 1:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6936073,
+        "longitude": -95.8719182,
+        "placeId": "ChIJ7yMOfiMjQYYRhGHvLXt6fNc"
+      },
+      {
+        "name": "SpiderSmart Fulshear",
+        "address": "5757 Flewellen Oaks Lane Suite 202, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 745-3066",
+        "website": "http://www.spidersmart.com/",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [
+          "Monday: 4:00 – 8:00 PM",
+          "Tuesday: 4:00 – 8:30 PM",
+          "Wednesday: 4:00 – 8:00 PM",
+          "Thursday: 4:00 – 8:00 PM",
+          "Friday: 4:30 – 8:30 PM",
+          "Saturday: 9:00 AM – 5:30 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.70544739999999,
+        "longitude": -95.847624,
+        "placeId": "ChIJiU6eAwshQYYRLkshpR-bTzQ"
+      },
+      {
+        "name": "Jordan High School Performing Arts Center",
+        "address": "4226 Brannon Branch Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Childcare & Education",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.7218354,
+        "longitude": -95.85362649999999,
+        "placeId": "ChIJNztNGUcjQYYRJIp_0isPYGE"
+      }
+    ],
+    "Religious Organizations": [
+      {
+        "name": "St. Faustina Catholic Church",
+        "address": "28102 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 773-3500",
+        "website": "http://www.saintfaustinachurch.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 12:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6942491,
+        "longitude": -95.86375969999999,
+        "placeId": "ChIJrfQjsvAiQYYRaV9bnC7bS10"
+      },
+      {
+        "name": "Thrive Church",
+        "address": "29255 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 789-3989",
+        "website": "http://thrivechurch.cc/",
+        "categoryName": "Religious Organizations",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 3:00 PM",
+          "Tuesday: 9:00 AM – 3:00 PM",
+          "Wednesday: 9:00 AM – 3:00 PM",
+          "Thursday: 9:00 AM – 3:00 PM",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: 9:00 AM – 1:00 PM"
+        ],
+        "latitude": 29.690123,
+        "longitude": -95.8794207,
+        "placeId": "ChIJ454-YMEiQYYRbpb3xIjz0R0"
+      },
+      {
+        "name": "River Bend Baptist Church",
+        "address": "27600 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-2279",
+        "website": "http://riverbendbc.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 4.8,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: 8:00 AM – 3:00 PM"
+        ],
+        "latitude": 29.6948752,
+        "longitude": -95.8604107,
+        "placeId": "ChIJH-qO3vkiQYYRw-q7dFCNi6Y"
+      },
+      {
+        "name": "Fulshear Methodist Church",
+        "address": "8201 Harris St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1416",
+        "website": "http://www.firstfulshear.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 12:00 PM",
+          "Saturday: Closed",
+          "Sunday: 8:30 AM – 12:00 PM"
+        ],
+        "latitude": 29.6924703,
+        "longitude": -95.9017571,
+        "placeId": "ChIJy2dt9TI9QYYR_eYPGmyKEz0"
+      },
+      {
+        "name": "Fulshear Church of Christ",
+        "address": "9241 Charger Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 712-1492",
+        "website": "https://www.fulshearcoc.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 4,
+        "hours": [
+          "Monday: 10:00 AM – 2:00 PM",
+          "Tuesday: 10:00 AM – 2:00 PM",
+          "Wednesday: 10:00 AM – 2:00 PM, 6:30 – 8:30 PM",
+          "Thursday: 10:00 AM – 2:00 PM",
+          "Friday: 10:00 AM – 1:00 PM",
+          "Saturday: Closed",
+          "Sunday: 8:30 – 11:15 AM, 4:30 – 6:15 PM"
+        ],
+        "latitude": 29.6953326,
+        "longitude": -95.888465,
+        "placeId": "ChIJ47MgTNYiQYYRV5X-FAroqLs"
+      },
+      {
+        "name": "WordServe Church",
+        "address": "First Methodist Campus, 8201 Harris St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1416",
+        "website": "http://www.wordserve.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.6921503,
+        "longitude": -95.9018547,
+        "placeId": "ChIJ81OVwc8iQYYRvQ5a-jAGfH8"
+      },
+      {
+        "name": "Greater Zachery MB Church",
+        "address": "7818 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Religious Organizations",
+        "rating": 4.9,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 7:00 – 8:00 PM",
+          "Thursday: Closed",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: 9:00 AM – 12:00 PM"
+        ],
+        "latitude": 29.6977384,
+        "longitude": -95.9035602,
+        "placeId": "ChIJhT2Q_Sw9QYYRXWGPQTU3Sjc"
+      },
+      {
+        "name": "Newlands Church Fulshear",
+        "address": "27500 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 280-3636",
+        "website": "http://www.newlandschurch.com/fulshear",
+        "categoryName": "Religious Organizations",
+        "rating": 5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: Closed",
+          "Thursday: Closed",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: 9:30 AM – 12:30 PM"
+        ],
+        "latitude": 29.7208898,
+        "longitude": -95.8531544,
+        "placeId": "ChIJXdNbhdkjQYYR81X5Y2tHLEQ"
+      },
+      {
+        "name": "Saint Pauls Church",
+        "address": "Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Religious Organizations",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.6610691,
+        "longitude": -95.9624554,
+        "placeId": "ChIJ4-GAVvM9QYYR8z-zsWYgS8c"
+      },
+      {
+        "name": "Family Hope",
+        "address": "5757 Flewellen Oaks Lane #303, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 332-5163",
+        "website": "http://familyhopefulshear.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 5,
+        "hours": [
+          "Monday: 9:00 AM – 2:00 PM",
+          "Tuesday: 9:00 AM – 2:00 PM",
+          "Wednesday: 9:00 AM – 2:00 PM",
+          "Thursday: 9:00 AM – 2:00 PM",
+          "Friday: Closed",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.70528839999999,
+        "longitude": -95.8488472,
+        "placeId": "ChIJ6XHwkuUjQYYRConBsdhcjkw"
+      },
+      {
+        "name": "EPIC Ministries, Inc.",
+        "address": "28003 Barberry Banks Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 232-6922",
+        "website": "http://www.epicministries.org/",
+        "categoryName": "Religious Organizations",
+        "rating": 5,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 9:30 AM – 3:30 PM",
+          "Wednesday: 9:30 AM – 3:30 PM",
+          "Thursday: 9:30 AM – 3:30 PM",
+          "Friday: 9:30 AM – 3:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.697824,
+        "longitude": -95.86142,
+        "placeId": "ChIJ85pWe_kiQYYRHWQItXv2OlE"
+      },
+      {
+        "name": "Zion Chapel Missionary Baptist Church",
+        "address": "33023 Rogers Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-0208",
+        "website": "",
+        "categoryName": "Religious Organizations",
+        "rating": 4.9,
+        "hours": [],
+        "latitude": 29.70686199999999,
+        "longitude": -95.9405523,
+        "placeId": "ChIJ2TixXv88QYYRmPuJNsIDBKY"
+      },
+      {
+        "name": "Waypoint Church",
+        "address": "25335 Fulshear-Gaston Rd, Richmond, TX 77406, USA",
+        "phoneNumber": "(832) 759-5136",
+        "website": "http://www.mywaypointchurch.com/",
+        "categoryName": "Religious Organizations",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 1:00 PM",
+          "Saturday: Closed",
+          "Sunday: 9:15 AM – 12:00 PM"
+        ],
+        "latitude": 29.6851115,
+        "longitude": -95.8173546,
+        "placeId": "ChIJ5xRXa2ojQYYRta7bOTiWXlA"
+      }
+    ],
+    "Sports & Fitness": [
+      {
+        "name": "Arco Fit Gym & Wellness",
+        "address": "6527 Skyline Dr Building C, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 553-2726",
+        "website": "https://www.arcofitgym.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 4:00 AM – 11:00 PM",
+          "Tuesday: 4:00 AM – 11:00 PM",
+          "Wednesday: 4:00 AM – 11:00 PM",
+          "Thursday: 4:00 AM – 11:00 PM",
+          "Friday: 4:00 AM – 9:00 PM",
+          "Saturday: 7:00 AM – 8:00 PM",
+          "Sunday: 8:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.6941455,
+        "longitude": -95.86685589999999,
+        "placeId": "ChIJ4ckPhuIjQYYR9ZjWE6rbDfo"
+      },
+      {
+        "name": "Cross Creek Ranch Fitness Center",
+        "address": "6450 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-9882",
+        "website": "https://www.crosscreektexas.com/fitness-center",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 4:00 AM – 10:00 PM",
+          "Tuesday: 4:00 AM – 10:00 PM",
+          "Wednesday: 4:00 AM – 10:00 PM",
+          "Thursday: 4:00 AM – 10:00 PM",
+          "Friday: 4:00 AM – 9:00 PM",
+          "Saturday: 4:00 AM – 7:00 PM",
+          "Sunday: 4:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.6963958,
+        "longitude": -95.8698883,
+        "placeId": "ChIJh7zFatEjQYYRpjLpoGG95_Q"
+      },
+      {
+        "name": "Iron Antler Fitness of Fulshear",
+        "address": "29255 FM 1093 #10A, Fulshear, TX 77441, USA",
+        "phoneNumber": "(432) 661-5401",
+        "website": "http://www.ironantlerfulshear.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 5:00 – 10:30 AM, 4:30 – 6:30 PM",
+          "Tuesday: 5:00 – 10:30 AM, 4:30 – 7:15 PM",
+          "Wednesday: 5:00 – 10:30 AM, 4:30 – 6:30 PM",
+          "Thursday: 5:00 – 10:30 AM, 4:30 – 7:15 PM",
+          "Friday: 5:00 – 10:30 AM, 4:30 – 6:30 PM",
+          "Saturday: 9:00 – 10:30 AM",
+          "Sunday: 1:00 – 3:00 PM"
+        ],
+        "latitude": 29.68958160000001,
+        "longitude": -95.87982559999999,
+        "placeId": "ChIJRXho6ZEjQYYRs_K1DGumE5Y"
+      },
+      {
+        "name": "Blue Eagle Fitness & Nutrition",
+        "address": "30415 5th St Ste C, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 396-3498",
+        "website": "http://blueeaglefitness.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 5:00 AM – 7:30 PM",
+          "Tuesday: 5:00 AM – 7:30 PM",
+          "Wednesday: 5:00 AM – 7:30 PM",
+          "Thursday: 5:00 AM – 7:30 PM",
+          "Friday: 5:00 AM – 6:30 PM",
+          "Saturday: 9:00 – 10:00 AM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.695452,
+        "longitude": -95.8996779,
+        "placeId": "ChIJo1xvJi09QYYRT8Ye9gJpGmE"
+      },
+      {
+        "name": "The Summit Fitness Studio",
+        "address": "8030 FM359 a, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 771-1199",
+        "website": "http://www.thesummitfulshear.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 5:00 AM – 7:30 PM",
+          "Tuesday: 5:00 AM – 7:30 PM",
+          "Wednesday: 5:00 AM – 7:30 PM",
+          "Thursday: 5:00 AM – 7:30 PM",
+          "Friday: 5:00 AM – 7:30 PM",
+          "Saturday: 6:00 AM – 12:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6958592,
+        "longitude": -95.9015079,
+        "placeId": "ChIJ1VA-EC09QYYRlZNkBObuW8c"
+      },
+      {
+        "name": "F45 Training Fulshear",
+        "address": "6615 W Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 375-3180",
+        "website": "https://www.f45training.com/fulshear",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 5:00 AM – 7:00 PM",
+          "Tuesday: 5:00 AM – 7:00 PM",
+          "Wednesday: 5:00 AM – 7:00 PM",
+          "Thursday: 5:00 AM – 7:00 PM",
+          "Friday: 5:00 AM – 6:00 PM",
+          "Saturday: 7:30 – 10:00 AM",
+          "Sunday: 8:00 – 10:00 AM"
+        ],
+        "latitude": 29.694265,
+        "longitude": -95.8718232,
+        "placeId": "ChIJAcEbUHkjQYYRC3dgzmLQLBk"
+      },
+      {
+        "name": "The Landing Fitness Center",
+        "address": "2800 Turning Creek Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "http://www.mycrosscreektexas.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 4:00 AM – 10:00 PM",
+          "Tuesday: 4:00 AM – 10:00 PM",
+          "Wednesday: 4:00 AM – 10:00 PM",
+          "Thursday: 4:00 AM – 10:00 PM",
+          "Friday: 4:00 AM – 9:00 PM",
+          "Saturday: 4:00 AM – 7:00 PM",
+          "Sunday: 4:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.705873,
+        "longitude": -95.88604699999999,
+        "placeId": "ChIJhb5BFgAjQYYRmBUdS1H6Rbk"
+      },
+      {
+        "name": "9Round Kickboxing Fitness",
+        "address": "29711 Kingsland Blvd #600, Fulshear, TX 77423, USA",
+        "phoneNumber": "(832) 608-1088",
+        "website": "https://www.9round.com/KatyTXKingslandBlvd",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.7681726,
+        "longitude": -95.8817006,
+        "placeId": "ChIJrf08VTclQYYRK1EW07Y10qo"
+      },
+      {
+        "name": "Alpha Elite Training LLC",
+        "address": "6610 FM359 S Rd Ste #900, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-4103",
+        "website": "http://alphaelitetraining.net/",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 5:00 AM – 8:00 PM",
+          "Tuesday: 5:00 AM – 8:00 PM",
+          "Wednesday: 5:00 AM – 8:00 PM",
+          "Thursday: 5:00 AM – 8:00 PM",
+          "Friday: 5:00 AM – 8:00 PM",
+          "Saturday: 5:00 AM – 7:00 PM",
+          "Sunday: 5:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.7089459,
+        "longitude": -95.91826739999999,
+        "placeId": "ChIJTTfvByY9QYYRkIIhdDeJITQ"
+      },
+      {
+        "name": "Geobody Sense Fitness",
+        "address": "32520 Gordon Side Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 234-4226",
+        "website": "",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 8:00 AM – 8:00 PM",
+          "Tuesday: 8:00 AM – 8:00 PM",
+          "Wednesday: 8:00 AM – 8:00 PM",
+          "Thursday: 8:00 AM – 8:00 PM",
+          "Friday: 8:00 AM – 8:00 PM",
+          "Saturday: 8:00 AM – 9:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.71093279999999,
+        "longitude": -95.93280449999999,
+        "placeId": "ChIJKZmq_dw9QYYR1NtJY5fCoa4"
+      },
+      {
+        "name": "The Waterhole Fitness Center",
+        "address": "31427 Cross Crk W Blvd, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "http://mycrosscreektexas.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 4:00 AM –��10:00 PM",
+          "Tuesday: 4:00 AM – 10:00 PM",
+          "Wednesday: 4:00 AM – 10:00 PM",
+          "Thursday: 4:00 AM – 10:00 PM",
+          "Friday: 4:00 AM – 9:00 PM",
+          "Saturday: 4:00 AM – 7:00 PM",
+          "Sunday: 4:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.7167855,
+        "longitude": -95.91667079999999,
+        "placeId": "ChIJiVJOGQA9QYYRxLttI0IAZAk"
+      },
+      {
+        "name": "Katy Sports and Fitness",
+        "address": "29255 FM 1093 Building 14C, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 222-9140",
+        "website": "http://www.katysportsandfitness.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 3:00 – 8:00 PM",
+          "Tuesday: 3:00 – 8:00 PM",
+          "Wednesday: 3:00 – 8:00 PM",
+          "Thursday: 3:00 – 8:00 PM",
+          "Friday: 3:00 – 8:00 PM",
+          "Saturday: 10:00 AM – 3:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6891437,
+        "longitude": -95.879767,
+        "placeId": "ChIJVVVVkTciQYYRaS0Da0T7LP4"
+      },
+      {
+        "name": "Cross Creek Ranch Adventure Island Pool",
+        "address": "6450 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-9882",
+        "website": "http://www.crosscreektexas.com/waterparks",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 10:00 AM – 8:00 PM",
+          "Tuesday: 10:00 AM – 8:00 PM",
+          "Wednesday: Closed",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00 AM – 8:00 PM",
+          "Sunday: 10:00 AM – 8:00 PM"
+        ],
+        "latitude": 29.696801,
+        "longitude": -95.87016460000001,
+        "placeId": "ChIJSRwnU-QiQYYR78nKbrca1SU"
+      },
+      {
+        "name": "THE BUNKER ICEHOUSE",
+        "address": "8040 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 800-2337",
+        "website": "",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.8,
+        "hours": [
+          "Monday: 2:00 PM – 12:00 AM",
+          "Tuesday: 2:00 PM – 12:00 AM",
+          "Wednesday: 2:00 PM – 12:00 AM",
+          "Thursday: 2:00 PM – 12:00 AM",
+          "Friday: 2:00 PM – 12:00 AM",
+          "Saturday: 2:00 PM – 12:00 AM",
+          "Sunday: 2:00 PM – 12:00 AM"
+        ],
+        "latitude": 29.6953767,
+        "longitude": -95.90130979999999,
+        "placeId": "ChIJTR4iVSw9QYYRnYQYMwcAP_Y"
+      },
+      {
+        "name": "Instinct Athletics",
+        "address": "6610 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 609-3007",
+        "website": "https://www.instinctathletics.net/contact",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.7087815,
+        "longitude": -95.9189681,
+        "placeId": "ChIJResPCd48QYYRWhCNfHMnJcI"
+      },
+      {
+        "name": "Dynamo Dash Youth Soccer Club - Fulshear",
+        "address": "27600 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.6948725,
+        "longitude": -95.8604027,
+        "placeId": "ChIJcfWv9rojQYYRX6XgTI7g0Kc"
+      },
+      {
+        "name": "Brazos River Sportsman’s Club",
+        "address": "3525 Bowser Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 543-1667",
+        "website": "http://brazosriversportsmansclub.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 9:00 AM – 5:00 PM",
+          "Tuesday: 9:00 AM – 5:00 PM",
+          "Wednesday: 9:00 AM – 5:00 PM",
+          "Thursday: 9:00 AM – 5:00 PM",
+          "Friday: 9:00 AM – 5:00 PM",
+          "Saturday: 8:30 AM – 5:00 PM",
+          "Sunday: 8:30 AM – 5:00 PM"
+        ],
+        "latitude": 29.6524239,
+        "longitude": -95.9441279,
+        "placeId": "ChIJC-rEs9QXQYYR0wo5g6g-bmY"
+      },
+      {
+        "name": "Apex Baseball",
+        "address": "6510 FM359 Suite 600, Fulshear, TX 77441, USA",
+        "phoneNumber": "(956) 285-7379",
+        "website": "https://www.apexbaseballtx.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 3:00 – 9:00 PM",
+          "Tuesday: 3:00 – 9:00 PM",
+          "Wednesday: 3:00 – 9:00 PM",
+          "Thursday: 3:00 – 9:00 PM",
+          "Friday: 3:00 – 9:00 PM",
+          "Saturday: 9:00 AM – 2:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7093518,
+        "longitude": -95.91904439999999,
+        "placeId": "ChIJuQYsfjxo8WcR91tO1A2Rmmo"
+      },
+      {
+        "name": "Fulshear Athletic Booster Club",
+        "address": "9302 Charger Way, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.fulshear-athletics.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.6974433,
+        "longitude": -95.8866264,
+        "placeId": "ChIJK0McqzQjQYYRhf6oWU3FNZk"
+      },
+      {
+        "name": "Alloy Personal Training Cross Creek, TX",
+        "address": "5810 FM 1463 #170, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 553-0087",
+        "website": "https://alloypersonaltraining.com/location/cross-creek-tx/",
+        "categoryName": "Sports & Fitness",
+        "rating": 5,
+        "hours": [
+          "Monday: 6:00 AM – 8:00 PM",
+          "Tuesday: 6:00 AM – 8:00 PM",
+          "Wednesday: 6:00 AM – 8:00 PM",
+          "Thursday: 6:00 AM – 8:00 PM",
+          "Friday: 6:00 AM – 7:00 PM",
+          "Saturday: 7:00 AM – 12:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7077995,
+        "longitude": -95.8474591,
+        "placeId": "ChIJcVfB1bojQYYRmN1meuMmMEU"
+      },
+      {
+        "name": "iWellness Life",
+        "address": "33303 Winsford St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 530-7311",
+        "website": "https://iwellnesslife.com/",
+        "categoryName": "Sports & Fitness",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.6661308,
+        "longitude": -95.9408472,
+        "placeId": "ChIJ-axMLyvbQIYR3BC46c8rRhk"
+      }
+    ],
+    "Recreation & Entertainment": [
+      {
+        "name": "Greenthread Park",
+        "address": "3212 Creek Falls Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-9882",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 10:00 AM – 8:00 PM",
+          "Tuesday: Closed",
+          "Wednesday: 10:00 AM – 8:00 PM",
+          "Thursday: 10:00 AM – 8:00 PM",
+          "Friday: 10:00 AM – 8:00 PM",
+          "Saturday: 10:00���AM – 8:00 PM",
+          "Sunday: 10:00 AM – 8:00 PM"
+        ],
+        "latitude": 29.7266116,
+        "longitude": -95.86483009999999,
+        "placeId": "ChIJd8l_QpIjQYYR_OhpDJrcwV0"
+      },
+      {
+        "name": "Flewellen Creek Park",
+        "address": "6011 Flewellen Oaks Lane, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1796",
+        "website": "http://www.crosscreektexas.com/flewellen-creek",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 7:00 AM – 7:00 PM",
+          "Tuesday: 7:00 AM – 7:00 PM",
+          "Wednesday: 7:00 AM – 7:00 PM",
+          "Thursday: 7:00 AM – 7:00 PM",
+          "Friday: 7:00 AM – 7:00 PM",
+          "Saturday: 7:00 AM – 7:00 PM",
+          "Sunday: 7:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.69838480000001,
+        "longitude": -95.8557958,
+        "placeId": "ChIJe2KlJFYiQYYRAJiMLXlOI2o"
+      },
+      {
+        "name": "Fulshear Bend Pocket Park",
+        "address": "Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 294-5918",
+        "website": "https://www.fulsheartexas.gov/about-us/departments-h-z/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.71871659999999,
+        "longitude": -95.8574996,
+        "placeId": "ChIJZ2EIDwgjQYYRBR3Va7dFJSk"
+      },
+      {
+        "name": "Pine Park",
+        "address": "4344 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.fulsheartexas.gov/about-us/departments-h-z/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.71868370000001,
+        "longitude": -95.857507,
+        "placeId": "ChIJcSjmyM8jQYYRBwewA2KJr3E"
+      },
+      {
+        "name": "Arbor Park",
+        "address": "Morgans Spur Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-9882",
+        "website": "https://www.crosscreektexas.com/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.4,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.7048757,
+        "longitude": -95.8615983,
+        "placeId": "ChIJI2rsC_4iQYYR0bD_DtILreg"
+      },
+      {
+        "name": "Camp Flewellen",
+        "address": "4623 Morgans Spur Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.9,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.71655489999999,
+        "longitude": -95.8709411,
+        "placeId": "ChIJC2g93zMjQYYR2GOe-gViZ7U"
+      },
+      {
+        "name": "Bonterra at Cross Creek Ranch Clubhouse",
+        "address": "5439 Golden Manor Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 232-1877",
+        "website": "http://living.taylormorrison.com/bonterra-at-cross-creek-ranch",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 8:00 AM – 9:00 PM",
+          "Tuesday: 8:00 AM – 9:00 PM",
+          "Wednesday: 8:00 AM – 9:00 PM",
+          "Thursday: 8:00 AM – 9:00 PM",
+          "Friday: 8:00 AM – 9:00 PM",
+          "Saturday: 8:00 AM – 9:00 PM",
+          "Sunday: 9:00 AM – 6:00 PM"
+        ],
+        "latitude": 29.7116572,
+        "longitude": -95.8744373,
+        "placeId": "ChIJ9eUo6hgjQYYRXLFJcODLrrY"
+      },
+      {
+        "name": "Cross Creek Ranch Butterfly Garden",
+        "address": "6310 Flewellen Falls Lane, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1796",
+        "website": "https://www.crosscreektexas.com/lakes-and-trails",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.4,
+        "hours": [
+          "Monday: 7:00 AM – 7:30 PM",
+          "Tuesday: 7:00 AM – 7:30 PM",
+          "Wednesday: 7:00 AM – 7:30 PM",
+          "Thursday: 7:00 AM – 7:30 PM",
+          "Friday: 7:00 AM – 7:30 PM",
+          "Saturday: 7:00 AM – 7:30 PM",
+          "Sunday: 7:00 AM – 7:30 PM"
+        ],
+        "latitude": 29.6981736,
+        "longitude": -95.854725,
+        "placeId": "ChIJZ963c8MjQYYR5SvV-M8fhqM"
+      },
+      {
+        "name": "Irene Stern Community Center",
+        "address": "6920 Fulshear Katy Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9400",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.3,
+        "hours": [],
+        "latitude": 29.7025583,
+        "longitude": -95.89101389999999,
+        "placeId": "ChIJicKX79YiQYYRG7AgTTyEfuk"
+      },
+      {
+        "name": "Polishing Pond at Cross Creek Ranch",
+        "address": "Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 344-9882",
+        "website": "https://www.crosscreektexas.com/directions/polishing-pond-boardwalk",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.7,
+        "hours": [],
+        "latitude": 29.6988667,
+        "longitude": -95.87563589999999,
+        "placeId": "ChIJZWB-qA8jQYYRCHjCQ03ZziE"
+      },
+      {
+        "name": "Primrose Park",
+        "address": "7603 Patterson Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.fulsheartexas.gov/about-us/departments-h-z/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 3.8,
+        "hours": [],
+        "latitude": 29.7006259,
+        "longitude": -95.89787919999999,
+        "placeId": "ChIJDbK4YZojQYYRMwJyktFV8uw"
+      },
+      {
+        "name": "Addison ranch park",
+        "address": "4006 Addison Ranch Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 5,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.7242031,
+        "longitude": -95.8499002,
+        "placeId": "ChIJ2bRp2aojQYYRP2V_xQVp3Vc"
+      },
+      {
+        "name": "Hollis Event Space",
+        "address": "6610 FM359 #500, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 520-6685",
+        "website": "http://holliseventco.com/",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.7,
+        "hours": [
+          "Monday: 9:00 AM – 3:00 PM",
+          "Tuesday: 9:00 AM – 3:00 PM",
+          "Wednesday: 9:00 AM – 3:00 PM",
+          "Thursday: 9:00 AM – 3:00 PM",
+          "Friday: 9:00 AM – 3:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7087815,
+        "longitude": -95.9189681,
+        "placeId": "ChIJ4yTSO5o9QYYRQ_HBNvsmjl8"
+      },
+      {
+        "name": "The Growler Spot",
+        "address": "29615 FM 1093, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 600-5866",
+        "website": "http://thegrowlerspot.com/",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.9,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: 3:00 – 10:00 PM",
+          "Wednesday: 3:00 – 10:00 PM",
+          "Thursday: 3:00 – 10:00 PM",
+          "Friday: 3:00 – 11:00 PM",
+          "Saturday: 12:00 – 11:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6902077,
+        "longitude": -95.8858046,
+        "placeId": "ChIJeSH34MIiQYYRb_dmllMt4I0"
+      },
+      {
+        "name": "Freedom Fun USA",
+        "address": "32501 Gordon Side Rd Unit I, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 424-4386",
+        "website": "https://www.freedomfunusa.com/location/katy-texas",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 9:00 PM",
+          "Tuesday: 8:00 AM – 9:00 PM",
+          "Wednesday: 8:00 AM – 9:00 PM",
+          "Thursday: 8:00 AM – 9:00 PM",
+          "Friday: 8:00 AM – 9:00 PM",
+          "Saturday: 8:00 AM – 9:00 PM",
+          "Sunday: 1:00 – 9:00 PM"
+        ],
+        "latitude": 29.7093065,
+        "longitude": -95.93246409999999,
+        "placeId": "ChIJgzqdYNafQIYR161m0zj7cvw"
+      },
+      {
+        "name": "The Shed at Jordan Ranch",
+        "address": "30757 Jordan Crossing Blvd, Fulshear, TX 77423, USA",
+        "phoneNumber": "(281) 574-2181",
+        "website": "http://www.jordanranchtexas.com/",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.7,
+        "hours": [],
+        "latitude": 29.75448459999999,
+        "longitude": -95.8988376,
+        "placeId": "ChIJxS7ktVQ7QYYRM48s3PfByPw"
+      },
+      {
+        "name": "Vino Veritas",
+        "address": "30634 Front St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-8013",
+        "website": "http://vinoveritastx.com/",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.9,
+        "hours": [
+          "Monday: Closed",
+          "Tuesday: Closed",
+          "Wednesday: 4:00 – 10:00 PM",
+          "Thursday: 2:00 – 11:00 PM",
+          "Friday: 2:00 – 11:00 PM",
+          "Saturday: 2:00 – 11:00 PM",
+          "Sunday: 11:00 AM – 3:00 PM"
+        ],
+        "latitude": 29.6898442,
+        "longitude": -95.9021173,
+        "placeId": "ChIJNydarKA9QYYR1bDLMly4iFM"
+      },
+      {
+        "name": "Cross Creek Pocket Park",
+        "address": "Liberty Heights Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.3,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.7148203,
+        "longitude": -95.8514405,
+        "placeId": "ChIJd2kfKqkjQYYR6ZHnfDP0eaQ"
+      },
+      {
+        "name": "Cross Creek Park",
+        "address": "6115 Silver Thistle Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.7002777,
+        "longitude": -95.8622046,
+        "placeId": "ChIJaVEukw8jQYYRhS7ejdHeXKc"
+      },
+      {
+        "name": "Thistle Ridge Park",
+        "address": "Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1796",
+        "website": "https://www.fulsheartexas.gov/about-us/departments-h-z/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.7,
+        "hours": [],
+        "latitude": 29.7014961,
+        "longitude": -95.8582335,
+        "placeId": "ChIJifRpB5EjQYYR789EqUhBxxg"
+      },
+      {
+        "name": "Jade Springs Park",
+        "address": "Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4,
+        "hours": [],
+        "latitude": 29.7189804,
+        "longitude": -95.8696411,
+        "placeId": "ChIJJxtRvVojQYYRNV8K6s9PCNI"
+      },
+      {
+        "name": "Abe & Lizzie Daily Park",
+        "address": "0079-00-000-1141, 901, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 346-1796",
+        "website": "https://www.fulsheartexas.gov/about-us/departments-h-z/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 3.7,
+        "hours": [],
+        "latitude": 29.660754,
+        "longitude": -95.96526200000001,
+        "placeId": "ChIJYcoG8YY9QYYRnfWh1vPoIUs"
+      },
+      {
+        "name": "Cross Creek Ranch Canine Commons",
+        "address": "5727 Flewellen Oaks Lane, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "https://www.crosscreektexas.com/",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.6,
+        "hours": [
+          "Monday: 6:00 AM – 8:30 PM",
+          "Tuesday: 6:00 AM – 8:30 PM",
+          "Wednesday: 6:00 AM – 8:30 PM",
+          "Thursday: 6:00 AM – 8:30 PM",
+          "Friday: 6:00 AM – 8:30 PM",
+          "Saturday: 6:00 AM – 8:30 PM",
+          "Sunday: 6:00 AM – 8:30 PM"
+        ],
+        "latitude": 29.7041759,
+        "longitude": -95.84979589999999,
+        "placeId": "ChIJkc-ZElMiQYYRHXCiRVwLaXk"
+      },
+      {
+        "name": "Cross creek ranch park",
+        "address": "6450 Cross Creek Bend Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.6976,
+        "longitude": -95.8701586,
+        "placeId": "ChIJNUjvBgAjQYYRqA9pnITmGaY"
+      },
+      {
+        "name": "Riverwood Park",
+        "address": "32702 Westminster Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.6,
+        "hours": [],
+        "latitude": 29.65266,
+        "longitude": -95.9331332,
+        "placeId": "ChIJOdsLgfwXQYYREDoNG5_uvq8"
+      },
+      {
+        "name": "Cross Creek Hidden Glade Park",
+        "address": "3200 Cross Creek Bend Ln, Fulshear, TX 77042, USA",
+        "phoneNumber": "",
+        "website": "",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4,
+        "hours": [],
+        "latitude": 29.7038,
+        "longitude": -95.85462799999999,
+        "placeId": "ChIJ0VizYQAjQYYRUZDoxXVof7A"
+      },
+      {
+        "name": "Eagle Landing Park",
+        "address": "P3GJ+C9, Fulshear, TX 77423, USA",
+        "phoneNumber": "",
+        "website": "https://www.fulsheartexas.gov/about-us/departments-h-z/parks-and-recreation",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.72600499999999,
+        "longitude": -95.919006,
+        "placeId": "ChIJjTpCXgA9QYYRR8ijuHeH97M"
+      },
+      {
+        "name": "Jordan Theatre Company",
+        "address": "27500 Fulshear Bend Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 234-8239",
+        "website": "https://www.jtctheatre.org/contact.html",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 5,
+        "hours": [],
+        "latitude": 29.7185408,
+        "longitude": -95.8508829,
+        "placeId": "ChIJ1RhW46UjQYYRAbYDW2am8IM"
+      },
+      {
+        "name": "Cinemark",
+        "address": "8525 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 371-6008",
+        "website": "https://www.cinemark.com/",
+        "categoryName": "Recreation & Entertainment",
+        "rating": 4.5,
+        "hours": [],
+        "latitude": 29.69082359999999,
+        "longitude": -95.89975489999999,
+        "placeId": "ChIJ_1V8pArYQIYRxBJPsDtP_OU"
+      }
+    ],
+    "Home Services": [
+      {
+        "name": "Jay Electric, Fulshear",
+        "address": "29046 Hauter Wy, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 868-3775",
+        "website": "https://www.jayelectricservices.com/",
+        "categoryName": "Home Services",
+        "rating": 3.8,
+        "hours": [
+          "Monday: 7:30 AM – 5:00 PM",
+          "Tuesday: 7:30 AM – 5:00 PM",
+          "Wednesday: 7:30 AM – 5:00 PM",
+          "Thursday: 7:30 AM – 5:00 PM",
+          "Friday: 7:30 AM – 5:00 PM",
+          "Saturday: 8:00 AM – 4:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7245133,
+        "longitude": -95.8753284,
+        "placeId": "ChIJ02gPyoUjQYYR6BrMAZl0M1A"
+      },
+      {
+        "name": "Wix Construction",
+        "address": "32251 Waterford Crest Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 499-1990",
+        "website": "",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 6:00 AM – 6:00 PM",
+          "Tuesday: 6:00 AM – 6:00 PM",
+          "Wednesday: 6:00 AM – 6:00 PM",
+          "Thursday: 6:00 AM – 6:00 PM",
+          "Friday: 6:00 AM – 6:00 PM",
+          "Saturday: 8:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6827249,
+        "longitude": -95.92879429999999,
+        "placeId": "ChIJH2oY0709QYYRYJS86xYAi-s"
+      },
+      {
+        "name": "Great Measures Remodeling & Repair",
+        "address": "5141 Bowser Rd, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 800-2751",
+        "website": "http://www.great-measures.com/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 7:00 AM – 7:00 PM",
+          "Tuesday: 7:00 AM – 7:00 PM",
+          "Wednesday: 7:00 AM – 7:00 PM",
+          "Thursday: 7:00 AM – 7:00 PM",
+          "Friday: 7:00 AM – 7:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6761279,
+        "longitude": -95.9447071,
+        "placeId": "ChIJ9zDC61w9QYYRGvDeQ9yKIa4"
+      },
+      {
+        "name": "Hurtado Construction",
+        "address": "5629 FM359, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 533-9498",
+        "website": "https://www.hurtadoconstruction.com/",
+        "categoryName": "Home Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 7:00 AM – 5:30 PM",
+          "Tuesday: 7:00 AM – 5:30 PM",
+          "Wednesday: 7:00 AM – 5:30 PM",
+          "Thursday: 7:00 AM – 5:30 PM",
+          "Friday: 7:00 AM – 5:30 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7214088,
+        "longitude": -95.9223785,
+        "placeId": "ChIJ2VvkaIA9QYYRNyKrEF96XLg"
+      },
+      {
+        "name": "Hudson Bay Construction Inc",
+        "address": "4826 Legend Creek Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 495-1997",
+        "website": "https://hudsonbayroof.com/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 7:00 AM – 7:00 PM",
+          "Tuesday: 7:00 AM – 7:00 PM",
+          "Wednesday: 7:00 AM – 7:00 PM",
+          "Thursday: 7:00 AM – 7:00 PM",
+          "Friday: 7:00 AM – 7:00 PM",
+          "Saturday: 7:00 AM – 7:00 PM",
+          "Sunday: 7:00 AM – 7:00 PM"
+        ],
+        "latitude": 29.6775076,
+        "longitude": -95.8940526,
+        "placeId": "ChIJZ_YbvUEjQYYR0nAkJMH9tb4"
+      },
+      {
+        "name": "Sitterle Homes - Fulshear Lakes Gardens",
+        "address": "32411 Ebony Jewelwing Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 664-7483",
+        "website": "https://sitterlehomes.com/communities/fulshear-lakes-gardens/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6974724,
+        "longitude": -95.9347026,
+        "placeId": "ChIJ9S3Skb09QYYRoXpDeuekEeQ"
+      },
+      {
+        "name": "Fairmont Custom Homes, LLC",
+        "address": "30525 1st St Ste C, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 539-0048",
+        "website": "https://www.fairmontcustomhomes.com/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: 8:00 AM – 12:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.69081909999999,
+        "longitude": -95.9009828,
+        "placeId": "ChIJBYMwymsjQYYR28BWFXGGuKk"
+      },
+      {
+        "name": "Partners in Building",
+        "address": "8410 Wds Holw Trl, Fulshear, TX 77441, USA",
+        "phoneNumber": "(512) 968-8411",
+        "website": "https://www.partnersinbuilding.com/find-your-home/greater-houston/fulshear-run/plans-and-lots",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 7:00 PM",
+          "Tuesday: 10:00 AM – 7:00 PM",
+          "Wednesday: 10:00 AM – 7:00 PM",
+          "Thursday: 10:00 AM – 7:00 PM",
+          "Friday: 10:00 AM – 7:00 PM",
+          "Saturday: 10:00 AM – 7:00 PM",
+          "Sunday: 12:00 – 7:00 PM"
+        ],
+        "latitude": 29.6815999,
+        "longitude": -95.8872056,
+        "placeId": "ChIJeYAycs09QYYRYNE1js1MSgA"
+      },
+      {
+        "name": "Makena Custom Builders",
+        "address": "3806 Westerdale Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(713) 614-9675",
+        "website": "http://makenacustombuilders.com/",
+        "categoryName": "Home Services",
+        "rating": 4.4,
+        "hours": [
+          "Monday: Open 24 hours",
+          "Tuesday: Open 24 hours",
+          "Wednesday: Open 24 hours",
+          "Thursday: Open 24 hours",
+          "Friday: Open 24 hours",
+          "Saturday: Open 24 hours",
+          "Sunday: Open 24 hours"
+        ],
+        "latitude": 29.655754,
+        "longitude": -95.9340065,
+        "placeId": "ChIJEZ6CJNYXQYYRLY-q7B3K6RM"
+      },
+      {
+        "name": "Westin Homes - Fulshear Lakes",
+        "address": "8411 Shyleaf Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 994-7967",
+        "website": "https://www.westin-homes.com/communities/houston/fulshear-lakes",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6876863,
+        "longitude": -95.9322237,
+        "placeId": "ChIJjVxzpLI9QYYRX5kLaD09P6Q"
+      },
+      {
+        "name": "Europa Builders Inc.",
+        "address": "28211 Sundown Shores Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 729-5482",
+        "website": "http://www.europabuilders.com/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: 9:00 AM – 5:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.6991905,
+        "longitude": -95.865247,
+        "placeId": "ChIJHUieqvPDQIYRmj7-eSR0XIw"
+      },
+      {
+        "name": "Century Communities Fulshear Lakes",
+        "address": "8427 Shyleaf Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 878-5099",
+        "website": "https://www.angliahomeslp.com/new-homes/texas/west-houston/fulshear/fulshear-lakes",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 12:00 – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6878038,
+        "longitude": -95.93292629999999,
+        "placeId": "ChIJ3RXdk449QYYRGaiiEQQYtF4"
+      },
+      {
+        "name": "Chesmar Homes in Fulshear Lakes",
+        "address": "8407 Shyleaf Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 753-5581",
+        "website": "https://chesmar.com/communities/fulshear-lakes/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 12:00 – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6880722,
+        "longitude": -95.93198640000001,
+        "placeId": "ChIJ2S-pjD49QYYRpc2nU18lAtg"
+      },
+      {
+        "name": "Sitterle Homes - Fulshear Lakes 70's",
+        "address": "32510 Bluet Lk Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 664-7483",
+        "website": "https://sitterlehomes.com/communities/fulshear-lakes-70s/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 10:00 AM – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.6951969,
+        "longitude": -95.9344907,
+        "placeId": "ChIJASUE4jA9QYYR2PdlJzCOWiU"
+      },
+      {
+        "name": "Pecan Ridge - Premier Collection",
+        "address": "7522 Sunset Rdg Ln, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 362-1300",
+        "website": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Pecan-Ridge/Premier-Collection?utm_source=Yext&utm_medium=Local+Listings&utm_campaign=Yext+Community+Local+Listings&utm_content=Community+Link&y_source=1_OTI5NjA1OTAtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+        "categoryName": "Home Services",
+        "rating": 4.5,
+        "hours": [
+          "Monday: 10:00 AM – 6:00 PM",
+          "Tuesday: 10:00 AM – 6:00 PM",
+          "Wednesday: 2:00 – 6:00 PM",
+          "Thursday: 10:00 AM – 6:00 PM",
+          "Friday: 10:00 AM – 6:00 PM",
+          "Saturday: 10:00 AM – 6:00 PM",
+          "Sunday: 12:00 – 6:00 PM"
+        ],
+        "latitude": 29.7025516,
+        "longitude": -95.9246721,
+        "placeId": "ChIJYeC49Ws9QYYRzjFyY1WkOCQ"
+      },
+      {
+        "name": "Handyman Goite Home Services LLC",
+        "address": "3526 Big Hickory Ct, Fulshear, TX 77441, USA",
+        "phoneNumber": "(346) 457-8995",
+        "website": "https://goitehomeservices.com/",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 6:00 PM",
+          "Tuesday: 8:00 AM – 6:00 PM",
+          "Wednesday: 8:00 AM – 6:00 PM",
+          "Thursday: 8:00 AM – 6:00 PM",
+          "Friday: 8:00 AM – 6:00���PM",
+          "Saturday: 8:00 AM – 6:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.73078199999999,
+        "longitude": -95.85476779999999,
+        "placeId": "ChIJI45FiTXBSSIRsyshA1P3bts"
+      },
+      {
+        "name": "Ace Handyman Services Fort Bend County",
+        "address": "6111-A N Mallard Dr, Fulshear, TX 77441, USA",
+        "phoneNumber": "(281) 764-9768",
+        "website": "https://www.acehandymanservices.com/offices/fort-bend-county/city/fulshear_services",
+        "categoryName": "Home Services",
+        "rating": 4.9,
+        "hours": [
+          "Monday: 8:00 AM – 5:00 PM",
+          "Tuesday: 8:00 AM – 5:00 PM",
+          "Wednesday: 8:00 AM – 5:00 PM",
+          "Thursday: 8:00 AM – 5:00 PM",
+          "Friday: 8:00 AM – 5:00 PM",
+          "Saturday: Closed",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.7158366,
+        "longitude": -95.9087596,
+        "placeId": "ChIJwwEESwk9QYYRq_xtydIKG0M"
+      },
+      {
+        "name": "Fulshear Home Repair",
+        "address": "5850 Dawning Sun St, Fulshear, TX 77441, USA",
+        "phoneNumber": "(832) 745-0771",
+        "website": "",
+        "categoryName": "Home Services",
+        "rating": 5,
+        "hours": [
+          "Monday: 8:00 AM – 7:00 PM",
+          "Tuesday: 8:00 AM – 7:00 PM",
+          "Wednesday: 8:00 AM – 7:00 PM",
+          "Thursday: 8:00 AM – 7:00 PM",
+          "Friday: 8:00 AM – 12:00 AM",
+          "Saturday: 12:00 – 7:00 AM, 8:00 AM – 1:00 PM",
+          "Sunday: Closed"
+        ],
+        "latitude": 29.71696399999999,
+        "longitude": -95.9252657,
+        "placeId": "ChIJ_7CrGVE9QYYR_al8MjGWwZs"
+      }
+    ]
+  },
+  "metadata": {
+    "generatedAt": "2025-05-03T22:10:22.869Z",
+    "totalCategories": 13,
+    "totalBusinesses": 269
+  }
+}

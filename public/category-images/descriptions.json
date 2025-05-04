@@ -1,0 +1,16 @@
+{
+  "restaurants": "Fine dining restaurant with elegant table settings",
+  "shopping": "Vibrant shopping district with storefronts",
+  "medical": "Modern medical facility with healthcare professionals",
+  "beauty": "Beauty salon with professional styling equipment",
+  "financial": "Financial district with modern office buildings",
+  "real-estate": "Luxury home with contemporary architecture",
+  "automotive": "Modern car dealership with luxury vehicles",
+  "professional": "Professional business meeting in a corporate setting",
+  "education": "Elementary school classroom with desks and supplies",
+  "religious": "Beautiful church interior with stained glass",
+  "fitness": "Modern gym with fitness equipment and people exercising",
+  "entertainment": "Concert venue with colorful stage lights and audience",
+  "home-services": "Professional home service provider at work",
+  "default": "Downtown Fulshear shopping district"
+}
