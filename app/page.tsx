@@ -171,10 +171,12 @@ export default function Home() {
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
                       <div className="relative h-full w-full">
-                        <img
+                        <Image
                           src={categoryImage}
                           alt={category.name}
-                          className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          fill
+                          sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-20 text-white">

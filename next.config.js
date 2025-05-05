@@ -14,7 +14,21 @@ const nextConfig = {
       'lh3.googleusercontent.com',
       'maps.googleapis.com',
     ],
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'maps.googleapis.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
+    ],
+    unoptimized: false,
   },
   // Fix for Vercel deployment with Convex
   webpack: (config) => {
