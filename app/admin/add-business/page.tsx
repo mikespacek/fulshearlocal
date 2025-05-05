@@ -14,6 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { Id } from "@/convex/_generated/dataModel";
+import { useAuth } from "../auth-provider";
 
 // Define the type for a new business
 interface NewBusiness {
@@ -30,6 +31,7 @@ interface NewBusiness {
 }
 
 export default function AddBusinessPage() {
+  const { isAuthenticated } = useAuth();
   // Initialize business state
   const [business, setBusiness] = useState<NewBusiness>({
     name: "",

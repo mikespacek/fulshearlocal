@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, AlertCircle } from "lucide-react";
+import { useAuth } from "../auth-provider";
 
 // Define result type
 interface UpdateResult {
@@ -17,6 +18,7 @@ interface UpdateResult {
 }
 
 export default function UpdateCategoriesPage() {
+  const { isAuthenticated } = useAuth();
   const [adminKey, setAdminKey] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [result, setResult] = useState<UpdateResult | null>(null);

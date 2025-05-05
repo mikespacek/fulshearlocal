@@ -12,6 +12,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
+import { useAuth } from "./auth-provider";
 
 // Define the type for the import result
 interface ImportResult {
@@ -28,6 +29,7 @@ interface ImportResult {
 }
 
 export default function AdminPage() {
+  const { isAuthenticated } = useAuth();
   const [googleApiKey, setGoogleApiKey] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ImportResult | null>(null);
@@ -308,14 +310,6 @@ export default function AdminPage() {
           </Card>
         </div>
       </main>
-      
-      <footer className="border-t py-8">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Fulshear Local Admin. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 } 
