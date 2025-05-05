@@ -13,6 +13,9 @@ import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
 import DirectCategoryImage from "@/components/direct-category-image";
 import { MapPin, Star, TrendingUp, Clock, Award, ArrowRight, CheckCircle, Search, Loader2 } from "lucide-react";
+import { Footer } from "@/components/footer";
+import { WebsiteStructuredData } from "@/components/StructuredData";
+import { subscribeToNewsletter } from '@/lib/newsletter';
 
 interface Business {
   _id: Id<"businesses">;
@@ -153,16 +156,29 @@ export default function Home() {
     
     setSubscribing(true);
     
-    // Here you would typically call an API to save the email
-    // For now, we'll just simulate a successful subscription
-    setTimeout(() => {
-      setSubscribed(true);
+    try {
+      const result = await subscribeToNewsletter(email);
+      if (result.success) {
+        setSubscribed(true);
+        setEmail(''); // Clear the email input
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      alert('Failed to subscribe. Please try again later.');
+    } finally {
       setSubscribing(false);
-    }, 1000);
+    }
   };
 
   return (
     <div className="min-h-screen flex flex-col">
+      <WebsiteStructuredData
+        name="Fulshear Local Business Directory"
+        url="https://fulshearlocal.com"
+        description="Comprehensive business directory for Fulshear, Texas. Find local restaurants, shops, services and more in Fulshear, TX."
+      />
       <Navbar />
       
       {/* Hero Section with Enhanced Background */}
@@ -406,31 +422,7 @@ export default function Home() {
         </div>
       </main>
       
-      <footer className="border-t py-8 sm:py-10 md:py-12 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="flex flex-col items-center text-center">
-            <h3 className="font-bold text-base sm:text-lg mb-3">Fulshear Local</h3>
-            <p className="text-xs sm:text-sm text-gray-600 mb-4 max-w-md">
-              Connecting the Fulshear community with local businesses and services.
-            </p>
-            <a 
-              href="mailto:hello@fulshearlocal.com" 
-              className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 transition-colors mb-6"
-            >
-              hello@fulshearlocal.com
-            </a>
-            
-            <div className="border-t w-full max-w-xl pt-6 flex flex-col sm:flex-row justify-center items-center">
-              <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-0">
-                © {new Date().getFullYear()} Fulshear Local. All rights reserved.
-              </p>
-              <p className="text-xs sm:text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-300">
-                Made with <span role="img" aria-label="love">❤️</span> by <span className="font-black">CALLIE BRAND</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

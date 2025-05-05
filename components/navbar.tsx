@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import { subscribeToNewsletter } from '@/lib/newsletter';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,19 +16,29 @@ export function Navbar() {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!email || !email.includes('@')) return;
+    
     setSubscribing(true);
     
-    // Simulate API call to subscribe
-    setTimeout(() => {
+    try {
+      const result = await subscribeToNewsletter(email);
+      if (result.success) {
+        setSubscribed(true);
+        setEmail(''); // Clear the email input
+        
+        // Reset after 3 seconds to allow subscribing again
+        setTimeout(() => {
+          setSubscribed(false);
+        }, 3000);
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      alert('Failed to subscribe. Please try again later.');
+    } finally {
       setSubscribing(false);
-      setSubscribed(true);
-      setEmail("");
-      
-      // Reset after 3 seconds to allow subscribing again
-      setTimeout(() => {
-        setSubscribed(false);
-      }, 3000);
-    }, 1000);
+    }
   };
 
   return (
