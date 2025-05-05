@@ -176,7 +176,7 @@ export default function Home() {
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 mb-6 sm:mb-8 max-w-3xl mx-auto">
               Discover and support amazing local businesses in our community
             </p>
-            <div className="w-full max-w-xs sm:max-w-sm md:max-w-lg mx-auto bg-white/10 p-1 rounded-xl backdrop-blur-sm">
+            <div className="w-full max-w-xs sm:max-w-sm md:max-w-lg mx-auto bg-white/10 p-1 rounded-full backdrop-blur-sm">
               <div className="flex">
                 <div className="flex-grow">
                   <SearchBar 
@@ -189,7 +189,7 @@ export default function Home() {
                 <button
                   onClick={executeSearch}
                   disabled={isSearching}
-                  className="ml-2 bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 rounded-full text-sm font-medium h-10 sm:h-12 transition-colors flex-shrink-0 flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="ml-2 bg-black hover:bg-gray-900 text-white px-4 sm:px-6 rounded-full text-sm font-medium h-10 sm:h-12 transition-colors flex-shrink-0 flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSearching ? (
                     <span className="flex items-center">
