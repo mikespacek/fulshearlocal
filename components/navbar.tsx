@@ -47,7 +47,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <Image 
-              src="/FL - Logo.svg" 
+              src="/fl-logo.svg" 
               alt="Fulshear Local Logo" 
               width={120} 
               height={40}
@@ -70,7 +70,7 @@ export function Navbar() {
             <div className="px-6 py-4 border-b">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 <Image 
-                  src="/FL - Logo.svg" 
+                  src="/fl-logo.svg" 
                   alt="Fulshear Local Logo" 
                   width={100} 
                   height={35}
