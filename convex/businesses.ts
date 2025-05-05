@@ -35,11 +35,18 @@ export const getByCategory = query({
 export const search = query({
   args: { searchTerm: v.string() },
   handler: async (ctx, args) => {
-    const searchTerm = args.searchTerm.toLowerCase();
-    // Get all businesses and filter by name
+    // If search term is empty, return all businesses
+    if (!args.searchTerm.trim()) {
+      return await ctx.db.query("businesses").collect();
+    }
+    
+    const searchTerm = args.searchTerm.toLowerCase().trim();
+    // Get all businesses and filter by name, address, or description
     const businesses = await ctx.db.query("businesses").collect();
     return businesses.filter((business) =>
-      business.name.toLowerCase().includes(searchTerm)
+      business.name.toLowerCase().includes(searchTerm) ||
+      (business.address && business.address.toLowerCase().includes(searchTerm)) ||
+      (business.description && business.description.toLowerCase().includes(searchTerm))
     );
   },
 });

@@ -1,7 +1,7 @@
 "use client";
 
 // Force refresh: timestamp 2024-09-05-12:00
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Id } from "@/convex/_generated/dataModel";
@@ -12,7 +12,7 @@ import { BusinessCard } from "@/components/business-card";
 import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
 import DirectCategoryImage from "@/components/direct-category-image";
-import { MapPin, Star, TrendingUp, Clock, Award, ArrowRight, CheckCircle } from "lucide-react";
+import { MapPin, Star, TrendingUp, Clock, Award, ArrowRight, CheckCircle, Search, Loader2 } from "lucide-react";
 
 interface Business {
   _id: Id<"businesses">;
@@ -50,13 +50,17 @@ const APPROVED_CATEGORIES = [
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [hasSearched, setHasSearched] = useState(false); // Track if a search has been performed
   const [selectedCategory, setSelectedCategory] = useState<Id<"categories"> | null>(null);
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [subscribing, setSubscribing] = useState(false);
-
+  const searchResultsRef = useRef<HTMLDivElement>(null);
+  const [isSearching, setIsSearching] = useState(false);
+  
   // Always fetch these queries unconditionally
-  const searchResults = useQuery(api.businesses.search, { searchTerm });
+  const searchResults = useQuery(api.businesses.search, { searchTerm: searchQuery });
   const allBusinesses = useQuery(api.businesses.getAll);
   
   // Use null when no category is selected
@@ -66,7 +70,7 @@ export default function Home() {
   
   // Determine which businesses to show based on filters
   let businesses: Business[] | undefined;
-  if (searchTerm && searchResults) {
+  if (searchQuery && searchResults) {
     businesses = searchResults;
   } else if (selectedCategory && categoryResults) {
     businesses = categoryResults;
@@ -107,6 +111,41 @@ export default function Home() {
     ? [...businesses].sort((a, b) => (b.rating || 0) - (a.rating || 0)).slice(0, 3)
     : undefined;
 
+  // Effect to scroll to search results when they appear
+  useEffect(() => {
+    if (hasSearched && searchResultsRef.current) {
+      // Add a small delay to ensure the results are rendered
+      const timer = setTimeout(() => {
+        searchResultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [hasSearched, searchQuery, searchResults]);
+
+  // Handle search input changes
+  const handleSearchInputChange = (term: string) => {
+    setSearchTerm(term);
+  };
+  
+  // Handle search execution
+  const executeSearch = () => {
+    setIsSearching(true);
+    setHasSearched(true); // Mark that a search has been executed
+    
+    if (searchTerm.trim()) {
+      // If there's a search term, set it as the query
+      setSearchQuery(searchTerm.trim());
+    } else {
+      // If search is empty, show all businesses by clearing the query
+      setSearchQuery("");
+    }
+    
+    // Small delay to show the searching state
+    setTimeout(() => {
+      setIsSearching(false);
+    }, 500);
+  };
+
   // Handle newsletter subscription
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -138,10 +177,30 @@ export default function Home() {
               Discover and support amazing local businesses in our community
             </p>
             <div className="w-full max-w-xs sm:max-w-sm md:max-w-lg mx-auto bg-white/10 p-1 rounded-xl backdrop-blur-sm">
-              <SearchBar 
-                onSearch={setSearchTerm} 
-                placeholder="Search for restaurants, shops, services..." 
-              />
+              <div className="flex">
+                <div className="flex-grow">
+                  <SearchBar 
+                    onSearch={handleSearchInputChange}
+                    placeholder="Search for restaurants, shops, services..." 
+                    isSearching={isSearching}
+                    skipAutoSearch={true}
+                  />
+                </div>
+                <button
+                  onClick={executeSearch}
+                  disabled={isSearching}
+                  className="ml-2 bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 rounded-full text-sm font-medium h-10 sm:h-12 transition-colors flex-shrink-0 flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSearching ? (
+                    <span className="flex items-center">
+                      <Loader2 className="h-4 w-4 mr-1 animate-spin" />
+                      Searching...
+                    </span>
+                  ) : (
+                    <span>Search</span>
+                  )}
+                </button>
+              </div>
             </div>
 
             {/* Quick Stats */}
@@ -165,96 +224,146 @@ export default function Home() {
       
       <main className="flex-1 py-8 sm:py-10 md:py-12">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          {/* Categories Section */}
-          <section className="mb-12 sm:mb-16">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6">
-              <h2 className="text-2xl sm:text-3xl font-bold">Explore Categories</h2>
-            </div>
-            
-            {!categories ? (
-              // Loading state for categories
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
-                {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={i} className="aspect-square rounded-xl bg-gray-100 animate-pulse relative overflow-hidden shadow-sm"></div>
-                ))}
-              </div>
-            ) : (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
-                {categories.slice(0, 12).map((category) => {
-                  // Use real photographs for each category (from category-images folder)
-                  const categoryDescription = category.description || `Find local ${category.name} in Fulshear`;
-                  
-                  return (
-                    <Link 
-                      href={`/categories/${category._id}`}
-                      key={category._id}
-                      className="group aspect-square rounded-xl overflow-hidden shadow-sm relative transition-all duration-300 hover:shadow-md"
-                    >
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
-                      <div className="relative h-full w-full">
-                        <DirectCategoryImage
-                          category={category.name}
-                          className="group-hover:scale-105 transition-transform duration-500"
-                          fill
-                        />
-                      </div>
-                      <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-20 text-white">
-                        <h3 className="font-bold text-sm sm:text-base mb-1">{category.name}</h3>
-                        <p className="text-xs text-gray-200 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          {categoryDescription}
-                        </p>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            )}
-          </section>
-          
-          {/* Featured Section */}
-          {!searchTerm && !selectedCategory && topRatedBusinesses && topRatedBusinesses.length > 0 && (
-            <section className="mb-10 sm:mb-12 md:mb-16">
-              <div className="mb-5 sm:mb-8">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-2">Top Rated in Fulshear</h2>
-                <p className="text-sm sm:text-base text-gray-600">Highly rated businesses in our community</p>
+          {/* Search Results Section - Only show if a search was executed */}
+          {hasSearched ? (
+            <section ref={searchResultsRef} className="mb-12 sm:mb-16 scroll-mt-16">
+              <div className="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+                  {searchQuery ? `Search Results: "${searchQuery}"` : "All Businesses"}
+                </h2>
+                <p className="text-gray-600 mt-1">
+                  {businesses ? 
+                    `Found ${businesses.length} ${businesses.length === 1 ? 'business' : 'businesses'}` :
+                    'Searching...'}
+                </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-                {topRatedBusinesses.map((business) => (
-                  <div key={business._id} className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
-                    <div className="bg-blue-50 p-3 sm:p-4 flex justify-between items-center">
-                      <div className="flex items-center">
-                        <Award className="h-5 sm:h-6 w-5 sm:w-6 text-blue-600 mr-2" />
-                        <h3 className="font-semibold text-sm sm:text-base">{business.name}</h3>
-                      </div>
-                      <div className="flex items-center bg-yellow-400 px-2 py-1 rounded text-white">
-                        <Star className="h-3.5 sm:h-4 w-3.5 sm:w-4 fill-current mr-1" />
-                        <span className="text-xs sm:text-sm font-bold">{business.rating?.toFixed(1) || "N/A"}</span>
-                      </div>
-                    </div>
-                    <div className="p-3 sm:p-4">
-                      <div className="flex items-start mb-2">
-                        <MapPin className="h-4 w-4 text-gray-500 mt-0.5 mr-2 flex-shrink-0" />
-                        <span className="text-xs sm:text-sm text-gray-700">{business.address}</span>
-                      </div>
-                      <p className="text-xs sm:text-sm text-blue-600 font-medium mb-3">
-                        {categoryMap.get(business.categoryId) || "Unknown"}
-                      </p>
-                      <Link 
-                        href={`/business/${business._id}`}
-                        className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center"
-                      >
-                        View Details
-                        <ArrowRight className="h-3 sm:h-3.5 w-3 sm:w-3.5 ml-1" />
-                      </Link>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {/* Search results content */}
+              {!businesses ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <BusinessCardSkeleton key={i} />
+                  ))}
+                </div>
+              ) : businesses.length === 0 ? (
+                <div className="bg-gray-50 rounded-xl p-8 text-center">
+                  <h3 className="text-xl font-medium mb-2">No businesses found</h3>
+                  <p className="text-gray-600">
+                    {searchQuery ? 'Try a different search term' : 'No businesses available at this time'}
+                  </p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {businesses.map((business) => (
+                    <BusinessCard
+                      key={business._id}
+                      id={business._id}
+                      name={business.name}
+                      address={business.address}
+                      rating={business.rating}
+                      phoneNumber={business.phoneNumber}
+                      website={business.website}
+                      category={categoryMap.get(business.categoryId) || "Unknown"}
+                    />
+                  ))}
+                </div>
+              )}
             </section>
+          ) : (
+            <>
+              {/* Only show categories if no search has been performed */}
+              <section className="mb-12 sm:mb-16">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-6">
+                  <h2 className="text-2xl sm:text-3xl font-bold">Explore Categories</h2>
+                </div>
+                
+                {/* Categories content */}
+                {!categories ? (
+                  // Loading state for categories
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
+                    {Array.from({ length: 6 }).map((_, i) => (
+                      <div key={i} className="aspect-square rounded-xl bg-gray-100 animate-pulse relative overflow-hidden shadow-sm"></div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
+                    {categories.slice(0, 12).map((category) => {
+                      // Use real photographs for each category (from category-images folder)
+                      const categoryDescription = category.description || `Find local ${category.name} in Fulshear`;
+                      
+                      return (
+                        <Link 
+                          href={`/categories/${category._id}`}
+                          key={category._id}
+                          className="group aspect-square rounded-xl overflow-hidden shadow-sm relative transition-all duration-300 hover:shadow-md"
+                        >
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                          <div className="relative h-full w-full">
+                            <DirectCategoryImage
+                              category={category.name}
+                              className="group-hover:scale-105 transition-transform duration-500"
+                              fill
+                            />
+                          </div>
+                          <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-20 text-white">
+                            <h3 className="font-bold text-sm sm:text-base mb-1">{category.name}</h3>
+                            <p className="text-xs text-gray-200 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                              {categoryDescription}
+                            </p>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
+              </section>
+              
+              {/* Featured Section - Only show on homepage */}
+              {!selectedCategory && topRatedBusinesses && topRatedBusinesses.length > 0 && (
+                <section className="mb-10 sm:mb-12 md:mb-16">
+                  <div className="mb-5 sm:mb-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-2">Top Rated in Fulshear</h2>
+                    <p className="text-sm sm:text-base text-gray-600">Highly rated businesses in our community</p>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                    {topRatedBusinesses.map((business) => (
+                      <div key={business._id} className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                        <div className="bg-blue-50 p-3 sm:p-4 flex justify-between items-center">
+                          <div className="flex items-center">
+                            <Award className="h-5 sm:h-6 w-5 sm:w-6 text-blue-600 mr-2" />
+                            <h3 className="font-semibold text-sm sm:text-base">{business.name}</h3>
+                          </div>
+                          <div className="flex items-center bg-yellow-400 px-2 py-1 rounded text-white">
+                            <Star className="h-3.5 sm:h-4 w-3.5 sm:w-4 fill-current mr-1" />
+                            <span className="text-xs sm:text-sm font-bold">{business.rating?.toFixed(1) || "N/A"}</span>
+                          </div>
+                        </div>
+                        <div className="p-3 sm:p-4">
+                          <div className="flex items-start mb-2">
+                            <MapPin className="h-4 w-4 text-gray-500 mt-0.5 mr-2 flex-shrink-0" />
+                            <span className="text-xs sm:text-sm text-gray-700">{business.address}</span>
+                          </div>
+                          <p className="text-xs sm:text-sm text-blue-600 font-medium mb-3">
+                            {categoryMap.get(business.categoryId) || "Unknown"}
+                          </p>
+                          <Link 
+                            href={`/business/${business._id}`}
+                            className="text-xs sm:text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center"
+                          >
+                            View Details
+                            <ArrowRight className="h-3 sm:h-3.5 w-3 sm:w-3.5 ml-1" />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </>
           )}
-
-          {/* Community Callout */}
+          
+          {/* Community Callout - Show on all pages */}
           <section className="mb-10 sm:mb-12 md:mb-16 bg-gradient-to-r from-gray-900 to-black rounded-xl overflow-hidden text-white">
             <div className="p-6 sm:p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-6 md:mb-0 md:mr-8">
