@@ -8,7 +8,9 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
     <AuthProvider>
       <AdminProtectedRoute>
-        {children}
+        <div className="bg-gray-50 min-h-screen">
+          {children}
+        </div>
       </AdminProtectedRoute>
     </AuthProvider>
   );
