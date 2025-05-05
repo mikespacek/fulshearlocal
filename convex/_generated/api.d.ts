@@ -21,6 +21,7 @@ import type * as cleanupDuplicateCategories from "../cleanupDuplicateCategories.
 import type * as cleanupMockBusinesses from "../cleanupMockBusinesses.js";
 import type * as completeReset from "../completeReset.js";
 import type * as fetchGooglePlaces from "../fetchGooglePlaces.js";
+import type * as fixImageUrls from "../fixImageUrls.js";
 import type * as importGooglePlaces from "../importGooglePlaces.js";
 import type * as realBusinesses from "../realBusinesses.js";
 import type * as realBusinessesWithDescriptions from "../realBusinessesWithDescriptions.js";
@@ -51,6 +52,7 @@ declare const fullApi: ApiFromModules<{
   cleanupMockBusinesses: typeof cleanupMockBusinesses;
   completeReset: typeof completeReset;
   fetchGooglePlaces: typeof fetchGooglePlaces;
+  fixImageUrls: typeof fixImageUrls;
   importGooglePlaces: typeof importGooglePlaces;
   realBusinesses: typeof realBusinesses;
   realBusinessesWithDescriptions: typeof realBusinessesWithDescriptions;

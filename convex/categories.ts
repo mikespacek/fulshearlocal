@@ -42,4 +42,47 @@ export const deleteById = mutation({
       message: "Category deleted successfully" 
     };
   },
+});
+
+// New function to update image URLs in categories to absolute paths
+export const updateImageUrls = mutation({
+  handler: async (ctx) => {
+    const baseUrl = "https://fulshearlocal.vercel.app";
+    const results = {
+      updated: 0,
+      skipped: 0,
+      total: 0
+    };
+    
+    // Get all categories
+    const categories = await ctx.db.query("categories").collect();
+    results.total = categories.length;
+    
+    // Process each category
+    for (const category of categories) {
+      const currentUrl = category.imageUrl;
+      
+      // Only update relative URLs
+      if (currentUrl && currentUrl.startsWith('/category-images/')) {
+        const absoluteUrl = `${baseUrl}${currentUrl}`;
+        
+        // Update the category
+        await ctx.db.patch(category._id, {
+          imageUrl: absoluteUrl
+        });
+        
+        results.updated++;
+      } else {
+        results.skipped++;
+      }
+    }
+    
+    return {
+      success: true,
+      message: `Updated ${results.updated} out of ${results.total} category image URLs to absolute paths`,
+      updatedCategories: results.updated,
+      skippedCategories: results.skipped,
+      totalCategories: results.total
+    };
+  }
 }); 

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 interface CategoryImageProps {
   imageUrl: string;
@@ -25,49 +25,49 @@ export function CategoryImage({
   // Use default image if error occurs or no image is provided
   let src = error || !imageUrl ? "/category-images/default.jpg" : imageUrl;
   
-  // Get the hostname for absolute URLs
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
-  
-  // Make the image URL absolute if it's not already and we're in production
-  if (src.startsWith('/category-images/') && process.env.NODE_ENV === 'production') {
-    src = `${baseUrl}${src}`;
-  }
-  
-  // For local images in the public folder, we'll use regular img tag
-  // This helps prevent issues with Next.js Image component on deployment
+  // For local images use simple img tags with proper attributes
   if (src.includes("/category-images/")) {
-    if (fill) {
+    // Create image with fixed dimensions if fill is not required
+    if (!fill) {
       return (
-        <div className="relative w-full h-full">
-          <img
-            src={src}
-            alt={altText}
-            className={`object-cover absolute inset-0 w-full h-full ${className}`}
-            onError={() => setError(true)}
-          />
-        </div>
+        <img
+          src={src}
+          alt={altText}
+          className={className}
+          width={width || 300}
+          height={height || 200}
+          onError={() => {
+            console.error(`Failed to load image: ${src}`);
+            setError(true);
+          }}
+        />
       );
     }
     
+    // For fill mode, we need a container
     return (
-      <img
-        src={src}
-        alt={altText}
-        className={className}
-        width={width}
-        height={height}
-        onError={() => setError(true)}
-      />
+      <div className="relative w-full h-full">
+        <img
+          src={src}
+          alt={altText}
+          className={`object-cover absolute inset-0 w-full h-full ${className}`}
+          onError={() => {
+            console.error(`Failed to load image: ${src}`);
+            setError(true);
+          }}
+        />
+      </div>
     );
   }
   
-  // For remote images, we'll still use Next.js Image with optimization
+  // For remote images, use Next.js Image component
   if (fill) {
     return (
       <Image
         src={src}
         alt={altText}
         fill
+        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
         className={`object-cover ${className}`}
         onError={() => setError(true)}
       />
