@@ -5,7 +5,8 @@
   "framework": "nextjs",
   "outputDirectory": ".next",
   "env": {
-    "NEXT_PUBLIC_CONVEX_URL": "https://wandering-wolf-680.convex.cloud"
+    "NEXT_PUBLIC_CONVEX_URL": "https://wandering-wolf-680.convex.cloud",
+    "NEXT_PUBLIC_VERCEL_URL": "${VERCEL_URL}"
   },
   "headers": [
     {

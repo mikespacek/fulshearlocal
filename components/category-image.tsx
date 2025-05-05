@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface CategoryImageProps {
   imageUrl: string;
@@ -23,11 +23,19 @@ export function CategoryImage({
   const [error, setError] = useState(false);
   
   // Use default image if error occurs or no image is provided
-  const src = error || !imageUrl ? "/category-images/default.jpg" : imageUrl;
+  let src = error || !imageUrl ? "/category-images/default.jpg" : imageUrl;
+  
+  // Get the hostname for absolute URLs
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+  
+  // Make the image URL absolute if it's not already and we're in production
+  if (src.startsWith('/category-images/') && process.env.NODE_ENV === 'production') {
+    src = `${baseUrl}${src}`;
+  }
   
   // For local images in the public folder, we'll use regular img tag
   // This helps prevent issues with Next.js Image component on deployment
-  if (src.startsWith("/category-images/")) {
+  if (src.includes("/category-images/")) {
     if (fill) {
       return (
         <div className="relative w-full h-full">
