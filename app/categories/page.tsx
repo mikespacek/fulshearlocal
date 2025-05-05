@@ -7,7 +7,7 @@ import { Id } from "@/convex/_generated/dataModel";
 import { Navbar } from "@/components/navbar";
 import { SearchBar } from "@/components/search-bar";
 import { Card, CardContent } from "@/components/ui/card";
-import { Utensils, ShoppingBag, MapPin } from "lucide-react";
+import { Utensils, ShoppingBag, MapPin, Filter, SlidersHorizontal } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { BusinessCard } from "@/components/business-card";
@@ -15,6 +15,7 @@ import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import { motion } from "framer-motion";
 import { ForwardRefExoticComponent, RefAttributes } from 'react';
 import { LucideProps } from 'lucide-react';
+import { Footer } from "@/components/footer";
 
 interface Category {
   _id: Id<"categories">;
@@ -73,14 +74,43 @@ const APPROVED_CATEGORIES = [
   "Home Services"
 ];
 
+// Sorting options for businesses
+const SORT_OPTIONS = [
+  { value: "nameAsc", label: "Name (A-Z)" },
+  { value: "nameDesc", label: "Name (Z-A)" },
+  { value: "ratingDesc", label: "Rating (High to Low)" },
+  { value: "ratingAsc", label: "Rating (Low to High)" }
+];
+
+// Rating options for filtering
+const RATING_OPTIONS = [
+  { value: 0, label: "Any rating" },
+  { value: 3, label: "3+ stars" },
+  { value: 4, label: "4+ stars" },
+  { value: 4.5, label: "4.5+ stars" }
+];
+
 export default function CategoriesPage() {
   const [selectedCategory, setSelectedCategory] = useState<Id<"categories"> | null>(null);
   const [mounted, setMounted] = useState(false);
+  const [filterActive, setFilterActive] = useState(false);
+  const [sortOrder, setSortOrder] = useState("nameAsc");
+  const [filterWithWebsite, setFilterWithWebsite] = useState(false);
+  const [minRating, setMinRating] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
   
   // Handle initial animation
   useEffect(() => {
     setMounted(true);
   }, []);
+  
+  // Reset all filters to default values
+  const resetFilters = () => {
+    setSortOrder("nameAsc");
+    setFilterWithWebsite(false);
+    setMinRating(0);
+    setSearchQuery("");
+  };
   
   // Fetch categories
   const unfilteredCategories = useQuery(api.categories.getAll) as Category[] | undefined;
@@ -142,6 +172,40 @@ export default function CategoriesPage() {
       }
     }
   };
+
+  // Filter and sort businesses
+  const filteredAndSortedBusinesses = businesses ? [...businesses]
+    // Apply website filter if active
+    .filter(business => !filterWithWebsite || business.website)
+    // Apply minimum rating filter
+    .filter(business => !minRating || (business.rating && business.rating >= minRating))
+    // Apply search filter
+    .filter(business => {
+      if (!searchQuery.trim()) return true;
+      const query = searchQuery.toLowerCase().trim();
+      return (
+        business.name.toLowerCase().includes(query) ||
+        (business.address && business.address.toLowerCase().includes(query))
+      );
+    })
+    // Apply sorting
+    .sort((a, b) => {
+      switch (sortOrder) {
+        case "nameAsc":
+          return a.name.localeCompare(b.name);
+        case "nameDesc":
+          return b.name.localeCompare(a.name);
+        case "ratingDesc":
+          return (b.rating || 0) - (a.rating || 0);
+        case "ratingAsc":
+          return (a.rating || 0) - (b.rating || 0);
+        default:
+          return 0;
+      }
+    }) : null;
+  
+  // Check if any filter is active
+  const isAnyFilterActive = filterWithWebsite || minRating > 0 || searchQuery.trim() !== '';
   
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -230,12 +294,102 @@ export default function CategoriesPage() {
 
         {/* Selected Category Business Listings */}
         <div className="pt-8 border-t border-gray-100">
-          <h2 className="text-2xl font-bold mb-6">
-            {selectedCategoryName}
-            <span className="ml-3 text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">
-              {businesses ? businesses.length : 0}
-            </span>
-          </h2>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold">
+              {selectedCategoryName}
+              <span className="ml-3 text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">
+                {filteredAndSortedBusinesses ? filteredAndSortedBusinesses.length : businesses ? businesses.length : 0}
+              </span>
+              {isAnyFilterActive && (
+                <span className="ml-2 text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full font-medium">
+                  Filtered
+                </span>
+              )}
+            </h2>
+            
+            {/* Filter toggle button */}
+            <button 
+              onClick={() => setFilterActive(!filterActive)}
+              className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                filterActive ? "bg-blue-100 text-blue-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+            >
+              <SlidersHorizontal className="h-4 w-4 mr-2" />
+              Filters {isAnyFilterActive ? "(Active)" : ""}
+            </button>
+          </div>
+          
+          {/* Filter options */}
+          {filterActive && (
+            <div className="bg-white rounded-lg shadow-sm p-4 mb-6 border border-gray-100">
+              <div className="flex justify-between items-center mb-4">
+                <label className="block text-sm font-medium text-gray-700">Search businesses</label>
+                <button
+                  onClick={resetFilters}
+                  className="text-xs text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  Clear filters
+                </button>
+              </div>
+              
+              <div className="mb-4">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search by name or address..."
+                  className="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-6">
+                <div className="flex-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sort by</label>
+                  <select 
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500"
+                  >
+                    {SORT_OPTIONS.map(option => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                
+                <div className="flex-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Rating</label>
+                  <select 
+                    value={minRating}
+                    onChange={(e) => setMinRating(Number(e.target.value))}
+                    className="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500"
+                  >
+                    {RATING_OPTIONS.map(option => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                
+                <div className="flex-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Features</label>
+                  <div className="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="hasWebsite"
+                      checked={filterWithWebsite}
+                      onChange={() => setFilterWithWebsite(!filterWithWebsite)}
+                      className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                    />
+                    <label htmlFor="hasWebsite" className="ml-2 block text-sm text-gray-700">
+                      Has website
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
           
           {!businesses ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -268,7 +422,7 @@ export default function CategoriesPage() {
               transition={{ duration: 0.5 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {businesses.map((business) => (
+              {filteredAndSortedBusinesses?.map((business) => (
                 <BusinessCard
                   key={business._id}
                   id={business._id}
@@ -285,20 +439,7 @@ export default function CategoriesPage() {
         </div>
       </main>
       
-      <footer className="border-t py-8 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-500 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Fulshear Local. All rights reserved.
-            </p>
-            <div className="flex space-x-6">
-              <Link href="#" className="text-sm text-gray-500 hover:text-blue-600 transition-colors">Terms</Link>
-              <Link href="#" className="text-sm text-gray-500 hover:text-blue-600 transition-colors">Privacy</Link>
-              <Link href="#" className="text-sm text-gray-500 hover:text-blue-600 transition-colors">Contact</Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 } 
