@@ -9,7 +9,7 @@ import { SearchBar } from "@/components/search-bar";
 import { BusinessCard } from "@/components/business-card";
 import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, SlidersHorizontal } from "lucide-react";
 import { use } from "react";
 import DirectCategoryImage from "@/components/direct-category-image";
 import { Footer } from "@/components/footer";
@@ -52,8 +52,28 @@ const APPROVED_CATEGORIES = [
   "Home Services"
 ];
 
+// Sort options
+const SORT_OPTIONS = [
+  { value: "nameAsc", label: "Name (A-Z)" },
+  { value: "nameDesc", label: "Name (Z-A)" },
+  { value: "ratingDesc", label: "Rating (High to Low)" },
+  { value: "ratingAsc", label: "Rating (Low to High)" }
+];
+
+// Rating options
+const RATING_OPTIONS = [
+  { value: 0, label: "Any rating" },
+  { value: 3, label: "3+ stars" },
+  { value: 4, label: "4+ stars" },
+  { value: 4.5, label: "4.5+ stars" }
+];
+
 export default function CategoryPage({ params }: { params: PageParams }) {
   const [searchTerm, setSearchTerm] = useState("");
+  const [showFilters, setShowFilters] = useState(false);
+  const [sortOrder, setSortOrder] = useState("nameAsc");
+  const [minRating, setMinRating] = useState(0);
+  const [hasWebsite, setHasWebsite] = useState(false);
   
   // Use React.use to unwrap params with proper typing
   const resolvedParams = use(params as any) as PageParams;
@@ -72,13 +92,56 @@ export default function CategoryPage({ params }: { params: PageParams }) {
   );
   const category = categories?.find(c => c._id === categoryId);
 
-  // Filter businesses by search term if provided
-  const filteredBusinesses = searchTerm && businesses 
-    ? businesses.filter(business => 
-        business.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        business.address.toLowerCase().includes(searchTerm.toLowerCase())
-      )
-    : businesses;
+  // Filter businesses by search term and other filters
+  const filteredBusinesses = businesses ? businesses
+    .filter(business => {
+      // Apply search filter
+      if (searchTerm) {
+        const searchLower = searchTerm.toLowerCase();
+        if (!business.name.toLowerCase().includes(searchLower) &&
+            !business.address.toLowerCase().includes(searchLower)) {
+          return false;
+        }
+      }
+      
+      // Apply website filter
+      if (hasWebsite && !business.website) {
+        return false;
+      }
+      
+      // Apply rating filter
+      if (minRating > 0 && (!business.rating || business.rating < minRating)) {
+        return false;
+      }
+      
+      return true;
+    })
+    .sort((a, b) => {
+      // Apply sorting
+      switch (sortOrder) {
+        case "nameAsc":
+          return a.name.localeCompare(b.name);
+        case "nameDesc":
+          return b.name.localeCompare(a.name);
+        case "ratingDesc":
+          return (b.rating || 0) - (a.rating || 0);
+        case "ratingAsc":
+          return (a.rating || 0) - (b.rating || 0);
+        default:
+          return 0;
+      }
+    }) : undefined;
+
+  // Check if any filter is active
+  const isAnyFilterActive = hasWebsite || minRating > 0 || searchTerm.trim() !== '';
+
+  // Reset all filters
+  const resetFilters = () => {
+    setSortOrder("nameAsc");
+    setMinRating(0);
+    setHasWebsite(false);
+    setSearchTerm("");
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -137,16 +200,100 @@ export default function CategoryPage({ params }: { params: PageParams }) {
           
           {/* Businesses Section */}
           <section>
-            <div className="mb-8">
-              <h2 className="text-2xl font-semibold mb-2">
-                {searchTerm ? `Search Results: "${searchTerm}"` : `All ${category?.name || 'Businesses'}`}
-              </h2>
-              <p className="text-muted-foreground">
-                {filteredBusinesses ? 
-                  `Showing ${filteredBusinesses.length} ${filteredBusinesses.length === 1 ? 'business' : 'businesses'}` : 
-                  'Loading businesses...'}
-              </p>
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h2 className="text-2xl font-semibold mb-2">
+                  {searchTerm ? `Search Results: "${searchTerm}"` : `All ${category?.name || 'Businesses'}`}
+                  <span className="ml-3 text-sm bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">
+                    {filteredBusinesses ? filteredBusinesses.length : businesses ? businesses.length : 0}
+                  </span>
+                  {isAnyFilterActive && (
+                    <span className="ml-2 text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full font-medium">
+                      Filtered
+                    </span>
+                  )}
+                </h2>
+                <p className="text-muted-foreground">
+                  {filteredBusinesses ? 
+                    `Showing ${filteredBusinesses.length} ${filteredBusinesses.length === 1 ? 'business' : 'businesses'}` : 
+                    'Loading businesses...'}
+                </p>
+              </div>
+
+              <button 
+                onClick={() => setShowFilters(!showFilters)}
+                className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  showFilters ? "bg-blue-100 text-blue-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                <SlidersHorizontal className="h-4 w-4 mr-2" />
+                Filter Options {isAnyFilterActive ? "(Active)" : ""}
+              </button>
             </div>
+
+            {/* Filter options */}
+            {showFilters && (
+              <div className="bg-white rounded-lg shadow-sm p-4 mb-6 border border-gray-100">
+                <h3 className="font-medium text-base mb-3">Filter & Sort Options</h3>
+                
+                <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-6">
+                  <div className="flex-1">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Sort by</label>
+                    <select 
+                      value={sortOrder}
+                      onChange={(e) => setSortOrder(e.target.value)}
+                      className="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      {SORT_OPTIONS.map(option => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Rating</label>
+                    <select 
+                      value={minRating}
+                      onChange={(e) => setMinRating(Number(e.target.value))}
+                      className="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      {RATING_OPTIONS.map(option => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  
+                  <div className="flex-1">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Features</label>
+                    <div className="flex items-center">
+                      <input
+                        type="checkbox"
+                        id="hasWebsite"
+                        checked={hasWebsite}
+                        onChange={() => setHasWebsite(!hasWebsite)}
+                        className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                      />
+                      <label htmlFor="hasWebsite" className="ml-2 block text-sm text-gray-700">
+                        Has website
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-4 flex justify-end">
+                  <button
+                    onClick={resetFilters}
+                    className="text-xs text-blue-600 hover:text-blue-800 font-medium"
+                  >
+                    Reset filters
+                  </button>
+                </div>
+              </div>
+            )}
             
             {!filteredBusinesses ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -159,7 +306,7 @@ export default function CategoryPage({ params }: { params: PageParams }) {
                 <h3 className="text-xl font-medium mb-2">No businesses found</h3>
                 <p className="text-muted-foreground">
                   {searchTerm ? 
-                    'Try adjusting your search term' : 
+                    'Try adjusting your search term or filters' : 
                     `There are no ${category?.name} businesses in our directory yet`}
                 </p>
               </div>
