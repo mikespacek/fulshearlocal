@@ -19,11 +19,20 @@ const nextConfig = {
         hostname: 'maps.googleapis.com',
       },
     ],
+    domains: [
+      'images.unsplash.com',
+      'lh3.googleusercontent.com',
+      'maps.googleapis.com',
+    ],
+    unoptimized: true,
   },
   // Fix for Vercel deployment with Convex
   webpack: (config) => {
     config.externals = [...(config.externals || []), "canvas"];
     return config;
+  },
+  experimental: {
+    serverActions: true,
   },
 }
 
