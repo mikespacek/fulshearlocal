@@ -12,16 +12,22 @@ show_usage() {
   echo "Usage: ./deploy.sh [options]"
   echo "Options:"
   echo "  --vercel-cli      Deploy using Vercel CLI after preparation"
+  echo "  --ignore-lint     Skip linting step during deployment"
   echo "  --help            Show this help message"
 }
 
 # Parse command line arguments
 USE_VERCEL_CLI=false
+IGNORE_LINT=false
 
 for arg in "$@"; do
   case $arg in
     --vercel-cli)
       USE_VERCEL_CLI=true
+      shift
+      ;;
+    --ignore-lint)
+      IGNORE_LINT=true
       shift
       ;;
     --help)
@@ -66,12 +72,16 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Run linting
-echo -e "${BLUE}Running linter...${NC}"
-npm run lint
-if [ $? -ne 0 ]; then
-  echo -e "${RED}Linting issues found! Fix them or re-run with --ignore-lint to continue anyway.${NC}"
-  exit 1
+# Run linting (if not ignored)
+if [ "$IGNORE_LINT" = false ]; then
+  echo -e "${BLUE}Running linter...${NC}"
+  npm run lint
+  if [ $? -ne 0 ]; then
+    echo -e "${RED}Linting issues found! Fix them or re-run with --ignore-lint to continue anyway.${NC}"
+    exit 1
+  fi
+else
+  echo -e "${YELLOW}Skipping linting as requested...${NC}"
 fi
 
 # Build the application
