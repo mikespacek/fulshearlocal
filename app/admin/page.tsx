@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Navbar } from "@/components/navbar";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { AlertCircle, Check, RefreshCw, Trash } from "lucide-react";
+import { AlertCircle, Check, RefreshCw, Trash, MapPin } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
@@ -115,7 +115,7 @@ export default function AdminPage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <h1 className="text-3xl font-bold mb-8">Admin Dashboard</h1>
           
-          <div className="flex items-center justify-end mb-4">
+          <div className="flex items-center justify-end mb-4 gap-4">
             <Button
               variant="outline"
               onClick={() => window.location.href = "/admin/update-categories"}
@@ -123,6 +123,14 @@ export default function AdminPage() {
             >
               <RefreshCw className="h-4 w-4" />
               Update Business Categories
+            </Button>
+            
+            <Button
+              onClick={() => window.location.href = "/admin/add-business"}
+              className="flex items-center gap-2 bg-black hover:bg-gray-900"
+            >
+              <MapPin className="h-4 w-4" />
+              Add Business Manually
             </Button>
           </div>
           
