@@ -12,6 +12,8 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { use } from "react";
 import DirectCategoryImage from "@/components/direct-category-image";
+import { Footer } from "@/components/footer";
+import { BreadcrumbStructuredData } from "@/components/StructuredData";
 
 interface Business {
   _id: Id<"businesses">;
@@ -80,6 +82,20 @@ export default function CategoryPage({ params }: { params: PageParams }) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {category && (
+        <BreadcrumbStructuredData
+          items={[
+            {
+              name: "Home",
+              item: "https://fulshearlocal.com/"
+            },
+            {
+              name: category.name,
+              item: `https://fulshearlocal.com/categories/${categoryId}`
+            }
+          ]}
+        />
+      )}
       <Navbar />
       
       <main className="flex-1 py-8">
@@ -167,11 +183,7 @@ export default function CategoryPage({ params }: { params: PageParams }) {
         </div>
       </main>
       
-      <footer className="border-t py-8">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Fulshear Local. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 } 

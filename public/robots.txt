@@ -1,0 +1,18 @@
+# Allow search engines to crawl public pages
+User-agent: *
+Allow: /
+Allow: /categories/
+Allow: /business/
+Allow: /map/
+
+# Disallow admin, debug and utility pages
+Disallow: /admin/
+Disallow: /debug/
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://fulshearlocal.com/sitemap.xml
+
+# Rate limit
+Crawl-delay: 1 

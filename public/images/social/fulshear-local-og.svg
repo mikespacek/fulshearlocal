@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0F172A"/>
+  
+  <!-- Background Texture -->
+  <rect width="1200" height="630" fill="url(#texture)" fill-opacity="0.05"/>
+  
+  <!-- Gradient Overlay -->
+  <rect width="1200" height="630" fill="url(#gradient)" fill-opacity="0.8"/>
+  
+  <!-- Location Pin Icon -->
+  <path d="M380 240C380 233.373 374.627 228 368 228C361.373 228 356 233.373 356 240C356 246.627 361.373 252 368 252C374.627 252 380 246.627 380 240Z" fill="#F59E0B"/>
+  <path d="M368 200C341.49 200 320 221.49 320 248C320 265.147 328.637 280.34 342 289.47L368 320L394 289.47C407.363 280.34 416 265.147 416 248C416 221.49 394.51 200 368 200ZM368 280C350.327 280 336 265.673 336 248C336 230.327 350.327 216 368 216C385.673 216 400 230.327 400 248C400 265.673 385.673 280 368 280Z" fill="#F59E0B"/>
+  
+  <!-- Title -->
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="76" font-weight="700" fill="white" text-anchor="middle">Fulshear Local</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="40" font-weight="400" fill="#CBD5E1" text-anchor="middle">Business Directory</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#94A3B8" text-anchor="middle">Discover the best of Fulshear, Texas</text>
+  
+  <!-- Star Icons -->
+  <path d="M460 460L466.43 478.01H485.46L470.16 489.25L476.59 507.25L460 496.01L443.41 507.25L449.84 489.25L434.54 478.01H453.57L460 460Z" fill="#F59E0B"/>
+  <path d="M600 460L606.43 478.01H625.46L610.16 489.25L616.59 507.25L600 496.01L583.41 507.25L589.84 489.25L574.54 478.01H593.57L600 460Z" fill="#F59E0B"/>
+  <path d="M740 460L746.43 478.01H765.46L750.16 489.25L756.59 507.25L740 496.01L723.41 507.25L729.84 489.25L714.54 478.01H733.57L740 460Z" fill="#F59E0B"/>
+  
+  <!-- Website URL -->
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#E2E8F0" text-anchor="middle">fulshearlocal.com</text>
+  
+  <!-- Patterns -->
+  <defs>
+    <pattern id="texture" patternUnits="userSpaceOnUse" width="100" height="100" patternTransform="scale(2) rotate(45)">
+      <rect width="100" height="100" fill="#FFFFFF"/>
+      <rect width="100" height="1" fill="#94A3B8" fill-opacity="0.1"/>
+      <rect width="1" height="100" fill="#94A3B8" fill-opacity="0.1"/>
+    </pattern>
+    
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg> 

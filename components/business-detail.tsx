@@ -9,6 +9,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, Clock, Globe, MapPin, Phone, Star, ExternalLink } from "lucide-react";
+import { Footer } from "@/components/footer";
+import { LocalBusinessStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 
 interface BusinessDetailProps {
   id: string;
@@ -174,6 +176,45 @@ export function BusinessDetail({ id }: BusinessDetailProps) {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {business && (
+        <>
+          <LocalBusinessStructuredData
+            name={business.name}
+            description={businessDescription}
+            url={`https://fulshearlocal.com/business/${id}`}
+            telephone={business.phoneNumber}
+            address={business.address ? {
+              streetAddress: business.address,
+              addressLocality: "Fulshear",
+              addressRegion: "TX",
+              postalCode: "77441",
+              addressCountry: "US"
+            } : undefined}
+            geo={business.latitude && business.longitude ? {
+              latitude: business.latitude,
+              longitude: business.longitude
+            } : undefined}
+            image={mainPhoto}
+            openingHours={business.hours}
+          />
+          <BreadcrumbStructuredData
+            items={[
+              {
+                name: "Home",
+                item: "https://fulshearlocal.com/"
+              },
+              {
+                name: category?.name || "Businesses",
+                item: `https://fulshearlocal.com/categories/${category?._id}`
+              },
+              {
+                name: business.name,
+                item: `https://fulshearlocal.com/business/${id}`
+              }
+            ]}
+          />
+        </>
+      )}
       <Navbar />
       <main className="flex-1 py-8">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -392,11 +433,7 @@ export function BusinessDetail({ id }: BusinessDetailProps) {
         </div>
       </main>
       
-      <footer className="border-t py-6">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Fulshear Local. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 } 
