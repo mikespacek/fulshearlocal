@@ -47,11 +47,12 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <Image 
-              src="/logo 1.svg" 
+              src="/logo-optimized.svg" 
               alt="Fulshear Local Logo" 
               width={120} 
               height={40}
               priority
+              quality={100}
               className="h-10 w-auto"
             />
           </Link>
@@ -69,11 +70,13 @@ export function Navbar() {
             <div className="px-6 py-4 border-b">
               <Link href="/" onClick={() => setIsOpen(false)}>
                 <Image 
-                  src="/logo 1.svg" 
+                  src="/logo-optimized.svg" 
                   alt="Fulshear Local Logo" 
                   width={100} 
                   height={35}
                   priority
+                  quality={100}
+                  className="h-9 w-auto"
                 />
               </Link>
             </div>
