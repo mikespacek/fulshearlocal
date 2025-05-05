@@ -3,59 +3,59 @@ const path = require('path');
 const https = require('https');
 
 // Define the categories and image URLs
-// Using Unsplash source for placeholder images (free to use)
+// Using specific Unsplash image URLs instead of random ones
 const categoryImages = [
   {
     name: 'restaurants',
-    url: 'https://source.unsplash.com/random/800x600/?restaurant,food'
+    url: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'shopping',
-    url: 'https://source.unsplash.com/random/800x600/?shopping,retail'
+    url: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'medical',
-    url: 'https://source.unsplash.com/random/800x600/?medical,healthcare'
+    url: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'beauty',
-    url: 'https://source.unsplash.com/random/800x600/?beauty,salon'
+    url: 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'financial',
-    url: 'https://source.unsplash.com/random/800x600/?finance,bank'
+    url: 'https://images.unsplash.com/photo-1607944024060-0450380ddd33?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'real-estate',
-    url: 'https://source.unsplash.com/random/800x600/?realestate,house'
+    url: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'automotive',
-    url: 'https://source.unsplash.com/random/800x600/?automotive,car'
+    url: 'https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'professional',
-    url: 'https://source.unsplash.com/random/800x600/?office,professional'
+    url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'education',
-    url: 'https://source.unsplash.com/random/800x600/?education,school'
+    url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'religious',
-    url: 'https://source.unsplash.com/random/800x600/?church,worship'
+    url: 'https://images.unsplash.com/photo-1438032005730-c779502df39b?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'fitness',
-    url: 'https://source.unsplash.com/random/800x600/?fitness,gym'
+    url: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'entertainment',
-    url: 'https://source.unsplash.com/random/800x600/?entertainment,fun'
+    url: 'https://images.unsplash.com/photo-1593959734793-6e92d102da1e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   },
   {
     name: 'home-services',
-    url: 'https://source.unsplash.com/random/800x600/?homeservice,repair'
+    url: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800'
   }
 ];
 
