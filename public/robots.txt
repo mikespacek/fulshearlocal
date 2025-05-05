@@ -3,7 +3,6 @@ User-agent: *
 Allow: /
 Allow: /categories/
 Allow: /business/
-Allow: /map/
 
 # Disallow admin, debug and utility pages
 Disallow: /admin/
