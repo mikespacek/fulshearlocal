@@ -12,6 +12,7 @@ import { BusinessCard } from "@/components/business-card";
 import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 import { LucideProps } from "lucide-react";
+import { Footer } from "@/components/footer";
 
 interface Category {
   _id: Id<"categories">;
@@ -63,7 +64,7 @@ const APPROVED_CATEGORIES = [
 export default function CategoriesPage() {
   // State management
   const [selectedCategory, setSelectedCategory] = useState<Id<"categories"> | null>(null);
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true);
   const [hasWebsite, setHasWebsite] = useState(false);
   
   // Data fetching
@@ -100,6 +101,25 @@ export default function CategoriesPage() {
   const filteredBusinesses = businesses ? businesses.filter(business => 
     !hasWebsite || business.website
   ) : null;
+  
+  // Sort options
+  const [sortOrder, setSortOrder] = useState("nameAsc");
+  
+  // Apply sorting to filtered businesses
+  const sortedBusinesses = filteredBusinesses ? [...filteredBusinesses].sort((a, b) => {
+    switch (sortOrder) {
+      case "nameAsc":
+        return a.name.localeCompare(b.name);
+      case "nameDesc":
+        return b.name.localeCompare(a.name);
+      case "ratingDesc":
+        return (b.rating || 0) - (a.rating || 0);
+      case "ratingAsc":
+        return (a.rating || 0) - (b.rating || 0);
+      default:
+        return 0;
+    }
+  }) : null;
   
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
@@ -204,23 +224,49 @@ export default function CategoriesPage() {
           
           {showFilters && (
             <div className="bg-white rounded-lg shadow-sm p-4 mb-6 border border-gray-100">
-              <div className="flex items-center mb-4">
-                <input
-                  type="checkbox"
-                  id="hasWebsite"
-                  checked={hasWebsite}
-                  onChange={() => setHasWebsite(!hasWebsite)}
-                  className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
-                />
-                <label htmlFor="hasWebsite" className="ml-2 block text-sm text-gray-700">
-                  Only show businesses with website
-                </label>
+              <h3 className="font-medium text-base mb-3">Filter & Sort Options</h3>
+              
+              <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-6">
+                <div className="flex-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sort by</label>
+                  <select 
+                    value={sortOrder}
+                    onChange={(e) => setSortOrder(e.target.value)}
+                    className="w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-blue-500 focus:border-blue-500"
+                  >
+                    <option value="nameAsc">Name (A-Z)</option>
+                    <option value="nameDesc">Name (Z-A)</option>
+                    <option value="ratingDesc">Rating (High to Low)</option>
+                    <option value="ratingAsc">Rating (Low to High)</option>
+                  </select>
+                </div>
                 
+                <div className="flex-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Features</label>
+                  <div className="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="hasWebsite"
+                      checked={hasWebsite}
+                      onChange={() => setHasWebsite(!hasWebsite)}
+                      className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                    />
+                    <label htmlFor="hasWebsite" className="ml-2 block text-sm text-gray-700">
+                      Only show businesses with website
+                    </label>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-4 flex justify-end">
                 <button
-                  onClick={() => setHasWebsite(false)}
-                  className="ml-auto text-xs text-blue-600 hover:text-blue-800 font-medium"
+                  onClick={() => {
+                    setHasWebsite(false);
+                    setSortOrder("nameAsc");
+                  }}
+                  className="text-xs text-blue-600 hover:text-blue-800 font-medium"
                 >
-                  Clear filters
+                  Reset filters
                 </button>
               </div>
             </div>
@@ -250,7 +296,7 @@ export default function CategoriesPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredBusinesses?.map((business) => (
+              {sortedBusinesses?.map((business) => (
                 <BusinessCard
                   key={business._id}
                   id={business._id}
@@ -267,54 +313,7 @@ export default function CategoriesPage() {
         </div>
       </main>
       
-      {/* Custom Footer implementation */}
-      <footer className="bg-gray-900 text-white py-12 mt-auto">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Fulshear Local</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Discover the best local businesses in Fulshear, Texas. Your comprehensive guide to shops, restaurants, and services.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>
-                  <Link href="/" className="hover:text-white transition-colors">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/map" className="hover:text-white transition-colors">
-                    Map
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li>Fulshear, TX 77441</li>
-                <li>
-                  <a 
-                    href="mailto:info@fulshearlocal.com" 
-                    className="hover:text-white transition-colors"
-                  >
-                    info@fulshearlocal.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-xs text-gray-500">
-            <p>© {new Date().getFullYear()} Fulshear Local. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 } 
