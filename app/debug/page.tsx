@@ -1,117 +1,61 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Navbar } from "@/components/navbar";
-import { CategoryImage } from "@/components/category-image";
+import Link from "next/link";
 
 export default function DebugPage() {
-  const [envVars, setEnvVars] = useState<Record<string, string>>({});
-  const [imageLoaded, setImageLoaded] = useState<Record<string, boolean>>({});
-  
-  const categoryImages = [
-    "/category-images/restaurants.jpg",
-    "/category-images/shopping.jpg",
-    "/category-images/medical.jpg",
-    "/category-images/beauty.jpg",
-    "/category-images/default.jpg",
+  const debugTools = [
+    {
+      title: "Image Test",
+      description: "Test which images are loading properly on the current deployment",
+      path: "/debug/image-test",
+      icon: "🖼️"
+    },
+    {
+      title: "Database Debug",
+      description: "Inspect and fix issues with the Convex database",
+      path: "/debug/database",
+      icon: "🗄️"
+    },
+    {
+      title: "Environment Info",
+      description: "View environment variables and server information",
+      path: "/debug/environment",
+      icon: "🔧"
+    }
   ];
-  
-  useEffect(() => {
-    // Collect environment variables
-    const vars: Record<string, string> = {};
-    
-    // Add Next.js public env vars
-    if (process.env.NEXT_PUBLIC_VERCEL_URL) {
-      vars["NEXT_PUBLIC_VERCEL_URL"] = process.env.NEXT_PUBLIC_VERCEL_URL;
-    }
-    
-    if (process.env.NEXT_PUBLIC_CONVEX_URL) {
-      vars["NEXT_PUBLIC_CONVEX_URL"] = process.env.NEXT_PUBLIC_CONVEX_URL;
-    }
-    
-    vars["NODE_ENV"] = process.env.NODE_ENV || "unknown";
-    vars["Base URL"] = window.location.origin;
-    
-    setEnvVars(vars);
-  }, []);
-  
-  // Test image loading
-  const testImageLoad = (src: string) => {
-    const img = new Image();
-    img.onload = () => {
-      setImageLoaded(prev => ({ ...prev, [src]: true }));
-    };
-    img.onerror = () => {
-      setImageLoaded(prev => ({ ...prev, [src]: false }));
-    };
-    img.src = src;
-  };
-  
-  useEffect(() => {
-    categoryImages.forEach(src => {
-      testImageLoad(src);
-    });
-  }, []);
-  
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-1 py-8">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold mb-6">Debug Page</h1>
+          <div className="mb-6">
+            <Link href="/" className="text-blue-600 hover:underline mb-4 inline-block">
+              &larr; Back to Home
+            </Link>
+            <h1 className="text-3xl font-bold mb-2">Debug Tools</h1>
+            <p className="text-gray-600">
+              Various tools to help diagnose and fix issues with the application.
+            </p>
+          </div>
           
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4">Environment Variables</h2>
-            <div className="bg-gray-100 p-4 rounded-lg">
-              <pre className="whitespace-pre-wrap">
-                {JSON.stringify(envVars, null, 2)}
-              </pre>
-            </div>
-          </section>
-          
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4">Image Loading Test</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {categoryImages.map((src, index) => (
-                <div key={index} className="border rounded-lg p-4">
-                  <p className="text-sm mb-2 truncate">{src}</p>
-                  <div className="aspect-square relative mb-2 bg-gray-200">
-                    <img 
-                      src={src} 
-                      alt={`Test ${index + 1}`} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className={`text-sm font-medium ${
-                    imageLoaded[src] === undefined ? 'text-gray-500' :
-                    imageLoaded[src] ? 'text-green-600' : 'text-red-600'
-                  }`}>
-                    {imageLoaded[src] === undefined ? 'Testing...' :
-                     imageLoaded[src] ? 'Loaded ✓' : 'Failed ✗'}
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {debugTools.map((tool, index) => (
+              <Link 
+                key={index} 
+                href={tool.path}
+                className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+              >
+                <div className="flex items-center mb-4">
+                  <span className="text-3xl mr-3">{tool.icon}</span>
+                  <h2 className="text-xl font-semibold">{tool.title}</h2>
                 </div>
-              ))}
-            </div>
-          </section>
-          
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4">CategoryImage Component Test</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {categoryImages.map((src, index) => (
-                <div key={index} className="border rounded-lg p-4">
-                  <p className="text-sm mb-2 truncate">{src}</p>
-                  <div className="aspect-square relative mb-2 bg-gray-200">
-                    <CategoryImage
-                      imageUrl={src}
-                      altText={`Test ${index + 1}`}
-                      fill
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+                <p className="text-sm text-gray-600">{tool.description}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </main>
     </div>

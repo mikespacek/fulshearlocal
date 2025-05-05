@@ -6,6 +6,7 @@ import Link from "next/link";
 
 export default function ImageTestPage() {
   const [imageStatuses, setImageStatuses] = useState<Record<string, {loaded: boolean, error?: string}>>({});
+  const [baseUrl, setBaseUrl] = useState<string>("");
   
   // List of image paths to test
   const imagePaths = [
@@ -26,6 +27,9 @@ export default function ImageTestPage() {
   ];
 
   useEffect(() => {
+    // Set the base URL once the component mounts (client-side only)
+    setBaseUrl(window.location.origin);
+    
     // Test each image
     imagePaths.forEach(path => {
       const img = new Image();
@@ -71,7 +75,7 @@ export default function ImageTestPage() {
               </div>
               <div className="bg-gray-100 p-3 rounded">
                 <p className="font-medium">Base URL</p>
-                <p className="text-sm text-gray-700 break-all">{typeof window !== 'undefined' ? window.location.origin : ""}</p>
+                <p className="text-sm text-gray-700 break-all">{baseUrl}</p>
               </div>
             </div>
           </div>

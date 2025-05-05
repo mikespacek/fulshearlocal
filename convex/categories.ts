@@ -16,6 +16,27 @@ export const getById = query({
   },
 });
 
+// Update a category by ID
+export const updateCategory = mutation({
+  args: { 
+    id: v.id("categories"),
+    data: v.object({
+      name: v.optional(v.string()),
+      icon: v.optional(v.string()),
+      imageUrl: v.optional(v.string()),
+      description: v.optional(v.string()),
+      order: v.optional(v.number()),
+    })
+  },
+  handler: async (ctx, args) => {
+    // Update the category with the provided data
+    await ctx.db.patch(args.id, args.data);
+    
+    // Return the updated category
+    return await ctx.db.get(args.id);
+  },
+});
+
 // Delete a category by ID
 export const deleteById = mutation({
   args: { id: v.id("categories") },
