@@ -315,7 +315,7 @@ export default function CategoriesPage() {
               }`}
             >
               <SlidersHorizontal className="h-4 w-4 mr-2" />
-              Filters {isAnyFilterActive ? "(Active)" : ""}
+              Filter Options {isAnyFilterActive ? "(Active)" : ""}
             </button>
           </div>
           
