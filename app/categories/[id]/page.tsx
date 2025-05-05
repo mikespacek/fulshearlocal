@@ -33,6 +33,23 @@ interface Category {
 
 type PageParams = { id: string };
 
+// Add the approved categories list
+const APPROVED_CATEGORIES = [
+  "Restaurants",
+  "Shopping",
+  "Medical & Dental",
+  "Beauty & Wellness",
+  "Financial Services",
+  "Real Estate",
+  "Automotive",
+  "Professional Services",
+  "Childcare & Education",
+  "Religious Organizations",
+  "Sports & Fitness",
+  "Recreation & Entertainment",
+  "Home Services"
+];
+
 export default function CategoryPage({ params }: { params: PageParams }) {
   const [searchTerm, setSearchTerm] = useState("");
   
@@ -46,7 +63,11 @@ export default function CategoryPage({ params }: { params: PageParams }) {
   }) as Business[] | undefined;
 
   // Fetch the category details
-  const categories = useQuery(api.categories.getAll) as Category[] | undefined;
+  const unfilteredCategories = useQuery(api.categories.getAll) as Category[] | undefined;
+  // Filter out any categories that aren't in our approved list
+  const categories = unfilteredCategories?.filter(
+    category => APPROVED_CATEGORIES.includes(category.name)
+  );
   const category = categories?.find(c => c._id === categoryId);
 
   // Filter businesses by search term if provided

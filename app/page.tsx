@@ -31,6 +31,23 @@ interface Category {
   description?: string;
 }
 
+// List of approved categories - only show these categories
+const APPROVED_CATEGORIES = [
+  "Restaurants",
+  "Shopping",
+  "Medical & Dental",
+  "Beauty & Wellness",
+  "Financial Services",
+  "Real Estate",
+  "Automotive",
+  "Professional Services",
+  "Childcare & Education",
+  "Religious Organizations",
+  "Sports & Fitness",
+  "Recreation & Entertainment",
+  "Home Services"
+];
+
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<Id<"categories"> | null>(null);
@@ -58,7 +75,12 @@ export default function Home() {
   }
 
   // Fetch categories for our filter
-  const categories = useQuery(api.categories.getAll) as Category[] | undefined;
+  const unfilteredCategories = useQuery(api.categories.getAll) as Category[] | undefined;
+  
+  // Filter out any categories that aren't in our approved list
+  const categories = unfilteredCategories?.filter(
+    category => APPROVED_CATEGORIES.includes(category.name)
+  );
 
   // Get category name map for display
   const categoryMap = new Map();

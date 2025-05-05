@@ -56,6 +56,23 @@ const categoryInfo: Record<string, CategoryInfo> = {
   }
 };
 
+// At the top of the file, add the approved categories list
+const APPROVED_CATEGORIES = [
+  "Restaurants",
+  "Shopping",
+  "Medical & Dental",
+  "Beauty & Wellness",
+  "Financial Services",
+  "Real Estate",
+  "Automotive",
+  "Professional Services",
+  "Childcare & Education",
+  "Religious Organizations",
+  "Sports & Fitness",
+  "Recreation & Entertainment",
+  "Home Services"
+];
+
 export default function CategoriesPage() {
   const [selectedCategory, setSelectedCategory] = useState<Id<"categories"> | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -66,7 +83,12 @@ export default function CategoriesPage() {
   }, []);
   
   // Fetch categories
-  const categories = useQuery(api.categories.getAll) as Category[] | undefined;
+  const unfilteredCategories = useQuery(api.categories.getAll) as Category[] | undefined;
+  
+  // Filter out any categories that aren't in our approved list
+  const categories = unfilteredCategories?.filter(
+    category => APPROVED_CATEGORIES.includes(category.name)
+  );
   
   // Always fetch both queries without conditionals
   const allBusinesses = useQuery(api.businesses.getAll);
