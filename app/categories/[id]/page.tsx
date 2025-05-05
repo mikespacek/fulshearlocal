@@ -10,7 +10,7 @@ import { BusinessCard } from "@/components/business-card";
 import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
+import { CategoryImage } from "@/components/category-image";
 import { use } from "react";
 
 interface Business {
@@ -73,11 +73,11 @@ export default function CategoryPage({ params }: { params: PageParams }) {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
                 <div className="relative h-48 w-full rounded-lg overflow-hidden">
                   {category.imageUrl ? (
-                    <Image
-                      src={category.imageUrl}
-                      alt={category.name}
-                      fill
+                    <CategoryImage
+                      imageUrl={category.imageUrl}
+                      altText={category.name}
                       className="object-cover"
+                      fill
                     />
                   ) : (
                     <div className="h-full w-full bg-gray-200 flex items-center justify-center">

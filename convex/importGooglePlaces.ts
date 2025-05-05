@@ -245,11 +245,11 @@ export const importFulshearBusinesses = action({
                 const photoReferences = placeDetails.photos.slice(0, 10).map((photo: any) => photo.photo_reference);
                 
                 console.log(`Processing ${photoReferences.length} photos for ${placeDetails.name}`);
-                
+              
                 // Convert photo references to URLs, ensuring the first photo is the business profile image
-                photos = photoReferences.map((ref: string) => 
+              photos = photoReferences.map((ref: string) => 
                   `https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photoreference=${ref}&key=${googleApiKey}`
-                );
+              );
 
                 // If the business has a profile_photo_reference property, prioritize it as the first photo
                 if (placeDetails.profile_photo_reference) {

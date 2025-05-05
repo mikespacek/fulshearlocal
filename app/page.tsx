@@ -11,7 +11,7 @@ import { CategoryFilter } from "@/components/category-filter";
 import { BusinessCard } from "@/components/business-card";
 import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
-import Image from "next/image";
+import { CategoryImage } from "@/components/category-image";
 import { MapPin, Star, TrendingUp, Clock, Award, ArrowRight, CheckCircle } from "lucide-react";
 
 interface Business {
@@ -171,12 +171,11 @@ export default function Home() {
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
                       <div className="relative h-full w-full">
-                        <Image
-                          src={categoryImage}
-                          alt={category.name}
+                        <CategoryImage
+                          imageUrl={categoryImage}
+                          altText={category.name}
+                          className="group-hover:scale-105 transition-transform duration-500"
                           fill
-                          sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-20 text-white">

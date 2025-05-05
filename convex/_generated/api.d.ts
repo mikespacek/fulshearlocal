@@ -17,6 +17,7 @@ import type * as addMissingBusinesses from "../addMissingBusinesses.js";
 import type * as businesses from "../businesses.js";
 import type * as categories from "../categories.js";
 import type * as cleanDatabase from "../cleanDatabase.js";
+import type * as cleanupDuplicateCategories from "../cleanupDuplicateCategories.js";
 import type * as cleanupMockBusinesses from "../cleanupMockBusinesses.js";
 import type * as completeReset from "../completeReset.js";
 import type * as fetchGooglePlaces from "../fetchGooglePlaces.js";
@@ -26,6 +27,7 @@ import type * as realBusinessesWithDescriptions from "../realBusinessesWithDescr
 import type * as refreshData from "../refreshData.js";
 import type * as removeUnnecessaryCategories from "../removeUnnecessaryCategories.js";
 import type * as seed from "../seed.js";
+import type * as syncCategories from "../syncCategories.js";
 import type * as updateBusinessCategories from "../updateBusinessCategories.js";
 import type * as updateBusinessPhotos from "../updateBusinessPhotos.js";
 import type * as updateCategories from "../updateCategories.js";
@@ -45,6 +47,7 @@ declare const fullApi: ApiFromModules<{
   businesses: typeof businesses;
   categories: typeof categories;
   cleanDatabase: typeof cleanDatabase;
+  cleanupDuplicateCategories: typeof cleanupDuplicateCategories;
   cleanupMockBusinesses: typeof cleanupMockBusinesses;
   completeReset: typeof completeReset;
   fetchGooglePlaces: typeof fetchGooglePlaces;
@@ -54,6 +57,7 @@ declare const fullApi: ApiFromModules<{
   refreshData: typeof refreshData;
   removeUnnecessaryCategories: typeof removeUnnecessaryCategories;
   seed: typeof seed;
+  syncCategories: typeof syncCategories;
   updateBusinessCategories: typeof updateBusinessCategories;
   updateBusinessPhotos: typeof updateBusinessPhotos;
   updateCategories: typeof updateCategories;

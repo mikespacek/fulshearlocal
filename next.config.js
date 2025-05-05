@@ -28,7 +28,7 @@ const nextConfig = {
         hostname: 'lh3.googleusercontent.com',
       },
     ],
-    unoptimized: false,
+    unoptimized: true,
   },
   // Fix for Vercel deployment with Convex
   webpack: (config) => {

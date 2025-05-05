@@ -84,7 +84,7 @@ export const add = mutation({
     const id = await ctx.db.insert("businesses", args.business);
     return { id, success: true };
   },
-});
+}); 
 
 // Update an existing business
 export const update = mutation({
