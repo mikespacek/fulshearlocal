@@ -73,11 +73,10 @@ export default function CategoryPage({ params }: { params: PageParams }) {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
                 <div className="relative h-48 w-full rounded-lg overflow-hidden">
                   {category.imageUrl ? (
-                    <Image
+                    <img
                       src={category.imageUrl}
                       alt={category.name}
-                      fill
-                      className="object-cover"
+                      className="absolute inset-0 h-full w-full object-cover"
                     />
                   ) : (
                     <div className="h-full w-full bg-gray-200 flex items-center justify-center">

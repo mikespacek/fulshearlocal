@@ -171,12 +171,10 @@ export default function Home() {
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
                       <div className="relative h-full w-full">
-                        <Image
+                        <img
                           src={categoryImage}
                           alt={category.name}
-                          fill
-                          sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 16vw"
-                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-20 text-white">
@@ -234,7 +232,7 @@ export default function Home() {
               </div>
             </section>
           )}
-          
+
           {/* Community Callout */}
           <section className="mb-10 sm:mb-12 md:mb-16 bg-gradient-to-r from-gray-900 to-black rounded-xl overflow-hidden text-white">
             <div className="p-6 sm:p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between">
