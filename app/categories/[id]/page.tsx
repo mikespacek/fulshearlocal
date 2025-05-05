@@ -11,6 +11,7 @@ import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { use } from "react";
+import DirectCategoryImage from "@/components/direct-category-image";
 
 interface Business {
   _id: Id<"businesses">;
@@ -71,21 +72,10 @@ export default function CategoryPage({ params }: { params: PageParams }) {
             {category ? (
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
                 <div className="relative h-48 w-full rounded-lg overflow-hidden">
-                  {category.imageUrl ? (
-                    <img
-                      src={category.imageUrl}
-                      alt={category.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        console.error(`Failed to load image: ${category.imageUrl}`);
-                        e.currentTarget.src = '/category-images/default.jpg';
-                      }}
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-gray-200 flex items-center justify-center">
-                      <span className="text-gray-400 text-5xl">{category.icon || "📷"}</span>
-                    </div>
-                  )}
+                  <DirectCategoryImage
+                    category={category.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="md:col-span-3">
                   <h1 className="text-3xl font-bold mb-3">{category?.name || "Loading..."}</h1>

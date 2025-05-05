@@ -32,6 +32,7 @@ import type * as syncCategories from "../syncCategories.js";
 import type * as updateBusinessCategories from "../updateBusinessCategories.js";
 import type * as updateBusinessPhotos from "../updateBusinessPhotos.js";
 import type * as updateCategories from "../updateCategories.js";
+import type * as updateCategoryAbsoluteUrls from "../updateCategoryAbsoluteUrls.js";
 import type * as updateCategoryImages from "../updateCategoryImages.js";
 import type * as utils_googlePlaces from "../utils/googlePlaces.js";
 
@@ -63,6 +64,7 @@ declare const fullApi: ApiFromModules<{
   updateBusinessCategories: typeof updateBusinessCategories;
   updateBusinessPhotos: typeof updateBusinessPhotos;
   updateCategories: typeof updateCategories;
+  updateCategoryAbsoluteUrls: typeof updateCategoryAbsoluteUrls;
   updateCategoryImages: typeof updateCategoryImages;
   "utils/googlePlaces": typeof utils_googlePlaces;
 }>;

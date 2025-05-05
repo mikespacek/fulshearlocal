@@ -11,6 +11,7 @@ import { CategoryFilter } from "@/components/category-filter";
 import { BusinessCard } from "@/components/business-card";
 import { BusinessCardSkeleton } from "@/components/business-card-skeleton";
 import Link from "next/link";
+import DirectCategoryImage from "@/components/direct-category-image";
 import { MapPin, Star, TrendingUp, Clock, Award, ArrowRight, CheckCircle } from "lucide-react";
 
 interface Business {
@@ -159,7 +160,6 @@ export default function Home() {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
                 {categories.slice(0, 12).map((category) => {
                   // Use real photographs for each category (from category-images folder)
-                  const categoryImage = category.imageUrl || '/category-images/default.jpg';
                   const categoryDescription = category.description || `Find local ${category.name} in Fulshear`;
                   
                   return (
@@ -170,14 +170,10 @@ export default function Home() {
                     >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
                       <div className="relative h-full w-full">
-                        <img
-                          src={categoryImage}
-                          alt={category.name}
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                          onError={(e) => {
-                            console.error(`Failed to load image: ${categoryImage}`);
-                            e.currentTarget.src = '/category-images/default.jpg';
-                          }}
+                        <DirectCategoryImage
+                          category={category.name}
+                          className="group-hover:scale-105 transition-transform duration-500"
+                          fill
                         />
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 z-20 text-white">
