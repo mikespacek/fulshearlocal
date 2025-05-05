@@ -211,6 +211,11 @@ export default function CategoriesPage() {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
       
+      {/* Test element to verify changes are being rendered */}
+      <div className="bg-red-500 text-white text-center py-2 px-4">
+        Testing Updates - This should be visible if changes are being rendered properly
+      </div>
+      
       <main className="flex-1 container py-12 px-4 md:px-6">
         {/* Hero Header */}
         <div className="relative mb-12 rounded-2xl overflow-hidden bg-blue-600">
