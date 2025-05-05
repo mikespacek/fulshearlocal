@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
-    // Ignore TypeScript errors during build to allow deployment on Vercel
+    // Ignore TypeScript errors during build
     ignoreBuildErrors: true,
   },
   eslint: {
@@ -9,16 +9,6 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'maps.googleapis.com',
-      },
-    ],
     domains: [
       'images.unsplash.com',
       'lh3.googleusercontent.com',
@@ -30,13 +20,7 @@ const nextConfig = {
   webpack: (config) => {
     config.externals = [...(config.externals || []), "canvas"];
     return config;
-  },
-  experimental: {
-    serverActions: {
-      allowedOrigins: ["localhost:3000", "*.vercel.app"],
-      bodySizeLimit: "2mb"
-    }
-  },
+  }
 }
 
 module.exports = nextConfig 
