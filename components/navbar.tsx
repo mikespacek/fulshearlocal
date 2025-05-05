@@ -56,13 +56,15 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="p-0">
             <div className="px-6 py-4 border-b">
-              <Image 
-                src="/logo 1.svg" 
-                alt="Fulshear Local Logo" 
-                width={100} 
-                height={35}
-                priority
-              />
+              <Link href="/" onClick={() => setIsOpen(false)}>
+                <Image 
+                  src="/logo 1.svg" 
+                  alt="Fulshear Local Logo" 
+                  width={100} 
+                  height={35}
+                  priority
+                />
+              </Link>
             </div>
             <div className="flex flex-col px-6 py-8">
               {subscribed ? (
